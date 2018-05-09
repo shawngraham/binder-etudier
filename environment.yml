@@ -3,5 +3,5 @@ name: example-environment
 dependencies:
   - python
   - selenium
-  - chromedriver_installer
+  - clinicalgraphics chromedriver 
   - etudier
