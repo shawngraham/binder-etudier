@@ -1,2 +1,0 @@
-etudier
-selenium
