@@ -1,3 +1,0 @@
-xvfb 
-libxi6 
-libgconf-2-4
