@@ -1,3 +1,2 @@
 etudier
-chromedriver_installer==0.0.6
-selenium
+
