@@ -1,3 +1,5 @@
+FROM ubuntu:17.04
+
 # Install Chrome for Selenium
 RUN curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o /chrome.deb
 RUN dpkg -i /chrome.deb || apt-get install -yf
