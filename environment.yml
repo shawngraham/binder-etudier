@@ -4,6 +4,5 @@ channels:
 dependencies:
   - python
   - selenium
-  - clinicalgraphics chromedriver 
   - etudier
   - python-chromedriver-binary 
