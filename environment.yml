@@ -1,7 +1,9 @@
 name: example-environment
-
+channels: 
+  - conda-forge
 dependencies:
   - python
   - selenium
   - clinicalgraphics chromedriver 
   - etudier
+  - python-chromedriver-binary 
