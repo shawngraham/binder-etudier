@@ -1,4 +1,3 @@
 etudier
 chromedriver_installer 
 selenium
-dlib
