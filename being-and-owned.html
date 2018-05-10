@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<style>
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.8;
+  stroke-width: 2px;
+}
+
+.nodes circle {
+  stroke: black;
+  fill: white;
+  stroke-width: 1.5px;
+}
+
+#graph {
+  width: 99vw;
+  height: 99vh;
+}
+
+</style>
+<svg id="graph"></svg>
+<script>
+
+var width = $(window).width();
+var height = $(window).height();
+
+var svg = d3.select("svg")
+    .attr("height", height)
+    .attr("width", width);
+
+var color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+var simulation = d3.forceSimulation()
+    .velocityDecay(0.6)
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+var graph = {
+  "nodes": [
+    {
+      "label": "Legal personhood for animals in New Zealand",
+      "id": "GhY8AH7f45gJ",
+      "url": "http://www.otago.ac.nz/law/otago638163.pdf",
+      "title": "Legal personhood for animals in New Zealand",
+      "authors": "GJ Fraser",
+      "year": "2016"
+    },
+    {
+      "label": "Being and Owning: The Body, Bodily Material, and the Law",
+      "id": "17423801329278082391",
+      "title": "Being and Owning: The Body, Bodily Material, and the Law"
+    },
+    {
+      "label": "Property Rights, Gametes, and Individual Autonomy",
+      "id": "FHF9E_v0lUkJ",
+      "url": "https://www.otago.ac.nz/law/research/journals/otago672746.pdf",
+      "title": "Property Rights, Gametes, and Individual Autonomy",
+      "authors": "EJ Smith",
+      "year": "2017"
+    },
+    {
+      "label": "The functional\u2013formal impasse in (trust) property",
+      "id": "X_a5NYOWdPYJ",
+      "url": "https://www.cambridge.org/core/journals/international-journal-of-law-in-context/article/functionalformal-impasse-in-trust-property/A352B12DBCCCB301AF4B03735CBFAB8C",
+      "title": "The functional\u2013formal impasse in (trust) property",
+      "authors": "J Wall",
+      "year": "2017"
+    },
+    {
+      "label": "Later Iron Age Coinage in Britain: Reconstructing Insular Social Structures and Systems of Value",
+      "id": "8024708208840943481",
+      "url": "https://lra.le.ac.uk/handle/2381/37981",
+      "title": "Later Iron Age Coinage in Britain: Reconstructing Insular Social Structures and Systems of Value",
+      "authors": "M Fanello",
+      "year": "2016"
+    },
+    {
+      "label": "[CITATION][C] Self-Ownership, Property Rights, and the Human Body: A Legal and Philosophical Analysis",
+      "id": "1521489997737068088",
+      "title": "[CITATION][C] Self-Ownership, Property Rights, and the Human Body: A Legal and Philosophical Analysis",
+      "authors": "M Quigley",
+      "year": "2018"
+    },
+    {
+      "label": "THE NATURE AND SIGNIFICANCE OF THE RIGHT TO BODILY INTEGRITY",
+      "id": "15164753329509644737",
+      "url": "https://www.cambridge.org/core/journals/cambridge-law-journal/article/nature-and-significance-of-the-right-to-bodily-integrity/79703F3BE9C5C21BB76338C050E951BC",
+      "title": "THE NATURE AND SIGNIFICANCE OF THE RIGHT TO BODILY INTEGRITY",
+      "authors": "J Herring, J Wall",
+      "year": "2017",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15164753329509644737&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "K\u00f6rperstrafen als moralisches \u00dcbel",
+      "id": "9948490488053570122",
+      "url": "http://budrich-journals.de/index.php/diskurs/article/view/30904",
+      "title": "K\u00f6rperstrafen als moralisches \u00dcbel",
+      "authors": "G Schweiger, G Graf",
+      "year": "2018"
+    },
+    {
+      "label": "MY BODY & I: A NOVEL JUSTIFICATION FOR A NO-FAULT COMPENSATION SCHEME",
+      "id": "6NE0-qU5EbwJ",
+      "url": "https://www.otago.ac.nz/law/research/journals/otago672734.pdf",
+      "title": "MY BODY & I: A NOVEL JUSTIFICATION FOR A NO-FAULT COMPENSATION SCHEME",
+      "authors": "P CLIFFORD",
+      "year": "2017"
+    }
+  ],
+  "links": [
+    {
+      "source": "GhY8AH7f45gJ",
+      "target": "17423801329278082391"
+    },
+    {
+      "source": "17423801329278082391",
+      "target": "FHF9E_v0lUkJ"
+    },
+    {
+      "source": "17423801329278082391",
+      "target": "X_a5NYOWdPYJ"
+    },
+    {
+      "source": "17423801329278082391",
+      "target": "8024708208840943481"
+    },
+    {
+      "source": "17423801329278082391",
+      "target": "1521489997737068088"
+    },
+    {
+      "source": "17423801329278082391",
+      "target": "15164753329509644737"
+    },
+    {
+      "source": "17423801329278082391",
+      "target": "6NE0-qU5EbwJ"
+    },
+    {
+      "source": "15164753329509644737",
+      "target": "9948490488053570122"
+    }
+  ]
+};
+
+var link = svg.append("g")
+    .attr("class", "links")
+  .selectAll("line")
+  .data(graph.links)
+  .enter().append("line");
+
+var node = svg.append("g")
+    .attr("class", "nodes")
+  .selectAll("circle")
+  .data(graph.nodes)
+  .enter().append("circle")
+    .attr("r", 5)
+    .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+node.append("title")
+    .text(function(d) {
+        return d.authors ? d.title + ' - ' + d.authors : d.title
+    });
+
+node.on("click", function(d) {
+  window.open(d.url, '_blank');
+  d3.event.stopPropagation();
+});
+
+simulation
+    .nodes(graph.nodes)
+    .on("tick", ticked);
+
+simulation.force("link")
+    .links(graph.links);
+
+function ticked() {
+  link
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+}
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+</script>

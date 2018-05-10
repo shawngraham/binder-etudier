@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<style>
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.8;
+  stroke-width: 2px;
+}
+
+.nodes circle {
+  stroke: black;
+  fill: white;
+  stroke-width: 1.5px;
+}
+
+#graph {
+  width: 99vw;
+  height: 99vh;
+}
+
+</style>
+<svg id="graph"></svg>
+<script>
+
+var width = $(window).width();
+var height = $(window).height();
+
+var svg = d3.select("svg")
+    .attr("height", height)
+    .attr("width", width);
+
+var color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+var simulation = d3.forceSimulation()
+    .velocityDecay(0.6)
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+var graph = {
+  "nodes": [
+    {
+      "label": "New directions in bioarchaeology: Recent contributions to the study of human social identities",
+      "id": "7828242426326646006",
+      "url": "https://link.springer.com/article/10.1007/s10814-008-9024-4",
+      "title": "New directions in bioarchaeology: Recent contributions to the study of human social identities",
+      "authors": "KJ Knudson, CM Stojanowski",
+      "year": "2008",
+      "cited_by": 171,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7828242426326646006&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Bones of contention: A comparative examination of law governing human remains from archaeological...",
+      "id": "8748346449102412182",
+      "title": "Bones of contention: A comparative examination of law governing human remains from archaeological..."
+    },
+    {
+      "label": "The origins of biocultural dimensions in bioarchaeology",
+      "id": "10341029148208895761",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/9781444390537.ch2/summary",
+      "title": "The origins of biocultural dimensions in bioarchaeology",
+      "authors": "MK Zuckerman, GJ Armelagos",
+      "year": "2011",
+      "cited_by": 58,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10341029148208895761&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Sex and gender in bioarchaeological research",
+      "id": "2252819996314481530",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/9781444390537.ch6/summary",
+      "title": "Sex and gender in bioarchaeological research",
+      "authors": "SE Hollimon",
+      "year": "2011",
+      "cited_by": 55,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2252819996314481530&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Infection, disease, and biosocial processes at the end of the Indus Civilization",
+      "id": "11151988767487438357",
+      "url": "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0084814",
+      "title": "Infection, disease, and biosocial processes at the end of the Indus Civilization",
+      "authors": "GR Schug, KE Blevins, B Cox, K Gray\u2026",
+      "year": "2013",
+      "cited_by": 41,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11151988767487438357&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Skeletal injury across the life course",
+      "id": "11184041727352138037",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/9781444390537.ch14/summary",
+      "title": "Skeletal injury across the life course",
+      "authors": "BA Glencross",
+      "year": "2011",
+      "cited_by": 41,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11184041727352138037&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Practices for the living and the dead: medieval and post-Reformation burials in Scandinavia",
+      "id": "6611440212929350063",
+      "url": "http://www.diva-portal.org/smash/record.jsf?pid=diva2:240817",
+      "title": "Practices for the living and the dead: medieval and post-Reformation burials in Scandinavia",
+      "authors": "K Jonsson",
+      "year": "2009",
+      "cited_by": 35,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6611440212929350063&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The past of sex, gender, and health: bioarchaeology of the aging skeleton",
+      "id": "8824201241669269378",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1548-1433.2012.01428.x/full",
+      "title": "The past of sex, gender, and health: bioarchaeology of the aging skeleton",
+      "authors": "SC Agarwal",
+      "year": "2012",
+      "cited_by": 38,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8824201241669269378&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Pre-Columbian Andean sickness ideology and the social experience of leishmaniasis: a contextualized analysis of bioarchaeological and paleopathological data from\u00a0\u2026",
+      "id": "6177391479265736749",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1879981711000040",
+      "title": "Pre-Columbian Andean sickness ideology and the social experience of leishmaniasis: a contextualized analysis of bioarchaeological and paleopathological data from\u00a0\u2026",
+      "authors": "SJ Marsteller, C Torres-Rouff, KJ Knudson",
+      "year": "2011",
+      "cited_by": 35,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6177391479265736749&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Bioarchaeology of human sacrifice: violence, identity and the evolution of ritual killing at Cerro Cerrillos, Peru",
+      "id": "4873329603678557833",
+      "url": "https://www.cambridge.org/core/journals/antiquity/article/bioarchaeology-of-human-sacrifice-violence-identity-and-the-evolution-of-ritual-killing-at-cerro-cerrillos-peru/32B2960D8906EC1B4ABA92629A59CA21",
+      "title": "Bioarchaeology of human sacrifice: violence, identity and the evolution of ritual killing at Cerro Cerrillos, Peru",
+      "authors": "HD Klaus, J Centuri\u00f3n, M Curo",
+      "year": "2010",
+      "cited_by": 30,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4873329603678557833&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Between\u2010group Differences in the Patterning of Musculo\u2010skeletal Stress Markers: Avoiding Confounding Factors by Focusing on Qualitative Aspects of Physical\u00a0\u2026",
+      "id": "1460374730563944510",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/oa.1243/full",
+      "title": "Between\u2010group Differences in the Patterning of Musculo\u2010skeletal Stress Markers: Avoiding Confounding Factors by Focusing on Qualitative Aspects of Physical\u00a0\u2026",
+      "authors": "S Stefanovi\u0107, M Por\u010di\u0107",
+      "year": "2013",
+      "cited_by": 27,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1460374730563944510&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Mobility and the diversity of Early Neolithic lives: isotopic evidence from skeletons",
+      "id": "14770327547083302351",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0278416512000104",
+      "title": "Mobility and the diversity of Early Neolithic lives: isotopic evidence from skeletons",
+      "authors": "RA Bentley",
+      "year": "2013",
+      "cited_by": 28,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14770327547083302351&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Cultural law: international, comparative, and indigenous",
+      "id": "14684434648392889813",
+      "url": "https://books.google.ca/books?hl=en&lr=&id=OyirBAAAQBAJ&oi=fnd&pg=PR23&ots=Pirz1xd3EE&sig=kJ7uoILr7QWX1Ah1yiIwWDX_FnY",
+      "title": "Cultural law: international, comparative, and indigenous",
+      "authors": "JAR Nafziger, RK Paterson, AD Renteln",
+      "year": "2010",
+      "cited_by": 56,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14684434648392889813&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Indigenous peoples, customary law and human rights\u2013why living law matters",
+      "id": "16629789719155368810",
+      "url": "https://books.google.com/books?hl=en&lr=&id=e3JeBAAAQBAJ&oi=fnd&pg=PP1&ots=YphWoYkEFa&sig=Qo9NnMsRG05igzVlTnsozlQ3SEA",
+      "title": "Indigenous peoples, customary law and human rights\u2013why living law matters",
+      "authors": "B Tobin",
+      "year": "2014",
+      "cited_by": 44,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16629789719155368810&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The settlement of international cultural heritage disputes",
+      "id": "1616865547387191973",
+      "url": "https://books.google.com/books?hl=en&lr=&id=DekkAwAAQBAJ&oi=fnd&pg=PP1&ots=G0Z7jDRKKA&sig=dIqdf09cpBTKVgjK4LLDOgdr7sU",
+      "title": "The settlement of international cultural heritage disputes",
+      "authors": "A Chechi",
+      "year": "2014",
+      "cited_by": 19,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1616865547387191973&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "[CITATION][C] Cultural heritage in international investment law and arbitration",
+      "id": "10510357527756775219",
+      "title": "[CITATION][C] Cultural heritage in international investment law and arbitration",
+      "authors": "V Vadi",
+      "year": "2014",
+      "cited_by": 22,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10510357527756775219&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "\u201cItalian Hours\u201d: The globalization of cultural property law",
+      "id": "8690217653301420038",
+      "url": "https://academic.oup.com/icon/article-abstract/9/2/369/649612",
+      "title": "\u201cItalian Hours\u201d: The globalization of cultural property law",
+      "authors": "L Casini",
+      "year": "2011",
+      "cited_by": 14,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8690217653301420038&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Indigenous Peoples' Cultural Property Claims",
+      "id": "16721932117795645780",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-319-01655-9.pdf",
+      "title": "Indigenous Peoples' Cultural Property Claims",
+      "authors": "K Kuprecht",
+      "year": "2016",
+      "cited_by": 16,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16721932117795645780&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Reframing cultural diplomacy: the instrumentalization of culture under the soft power theory",
+      "id": "4755478151837713839",
+      "url": "http://www.cultureunbound.ep.liu.se/v8/a12/cu16v8a12.pdf",
+      "title": "Reframing cultural diplomacy: the instrumentalization of culture under the soft power theory",
+      "authors": "MM Zamorano",
+      "year": "2016",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4755478151837713839&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Il giudice antropologo: Costituzione e tecniche di composizione dei conflitti multiculturali",
+      "id": "5404767721462674611",
+      "url": "https://www.torrossa.com/resources/an/2651893",
+      "title": "Il giudice antropologo: Costituzione e tecniche di composizione dei conflitti multiculturali",
+      "authors": "I Ruggiu",
+      "year": "2012",
+      "cited_by": 21,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5404767721462674611&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Immunity from seizure and suit in Australia: the protection of cultural objects on Loan Act 2013",
+      "id": "16317952575917715267",
+      "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/immunity-from-seizure-and-suit-in-australia-the-protection-of-cultural-objects-on-loan-act-2013/F64794BAD9B2D28694081579E0E337F4",
+      "title": "Immunity from seizure and suit in Australia: the protection of cultural objects on Loan Act 2013",
+      "authors": "C Forrest",
+      "year": "2014",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16317952575917715267&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Cultural defenses in international criminal tribunals: a preliminary consideration of the issues",
+      "id": "7108036231371292250",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/sjlta18&section=26",
+      "title": "Cultural defenses in international criminal tribunals: a preliminary consideration of the issues",
+      "authors": "AD Renteln",
+      "year": "2011",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7108036231371292250&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Cultural co-ownership: preventing and solving cultural property claims",
+      "id": "12221497930837884031",
+      "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/cultural-coownership-preventing-and-solving-cultural-property-claims/E61D449A1CD23CB570C2B0EE6AC4FA65",
+      "title": "Cultural co-ownership: preventing and solving cultural property claims",
+      "authors": "MA Renold",
+      "year": "2015",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12221497930837884031&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Goading a Reluctant Dinosaur: Mutual Recognition Agreements as a Policy Response to the Misapprop...",
+      "id": "3753917766714900092",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/pepplr34&section=42",
+      "title": "Goading a Reluctant Dinosaur: Mutual Recognition Agreements as a Policy Response to the Misapprop...",
+      "authors": "P Kuruk",
+      "year": "2006",
+      "cited_by": 27,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3753917766714900092&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "In re Tam",
+      "id": "9806644333158430855",
+      "url": "/scholar_case?case=9806644333158430855&hl=en&as_sdt=2005&sciodt=0,5",
+      "title": "In re Tam",
+      "authors": "808 F. 3d 1321",
+      "year": "Federal Circuit",
+      "cited_by": 154,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9806644333158430855&as_sdt=2005&sciodt=6&hl=en"
+    },
+    {
+      "label": "Cultural relics, intellectual property, and intangible heritage",
+      "id": "17362209681001861886",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/temple81&section=16",
+      "title": "Cultural relics, intellectual property, and intangible heritage",
+      "authors": "PK Yu",
+      "year": "2008",
+      "cited_by": 64,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17362209681001861886&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "In re Tam",
+      "id": "10198669657380292565",
+      "url": "/scholar_case?case=10198669657380292565&hl=en&as_sdt=2005&sciodt=0,5",
+      "title": "In re Tam",
+      "authors": "785 F. 3d 567",
+      "year": "Federal Circuit",
+      "cited_by": 47,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10198669657380292565&as_sdt=2005&sciodt=6&hl=en"
+    },
+    {
+      "label": "A sui generis regime for traditional knowledge: the cultural divide in intellectual property law",
+      "id": "5438245202650714833",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/marq15&section=6",
+      "title": "A sui generis regime for traditional knowledge: the cultural divide in intellectual property law",
+      "authors": "JJ OseiTutu",
+      "year": "2011",
+      "cited_by": 35,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5438245202650714833&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Protecting Newly Discovered Antiquities: Thinking Outside the Fee Simple Box",
+      "id": "6429838684249526296",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/flr76&section=37",
+      "title": "Protecting Newly Discovered Antiquities: Thinking Outside the Fee Simple Box",
+      "authors": "PT Wendel",
+      "year": "2007",
+      "cited_by": 26,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6429838684249526296&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Justifying property rights in Native American traditional knowledge",
+      "id": "11597685332351772634",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/twlr15&section=15",
+      "title": "Justifying property rights in Native American traditional knowledge",
+      "authors": "JT Cross",
+      "year": "2008",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11597685332351772634&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Regulating Access to Tradional Knowledge and Genetic Resources: The Disclosure Requirement as a Strategy to Combat Biopiracy",
+      "id": "18432635179602494881",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/sdintl17&section=5",
+      "title": "Regulating Access to Tradional Knowledge and Genetic Resources: The Disclosure Requirement as a Strategy to Combat Biopiracy",
+      "authors": "P Kuruk",
+      "year": "2015",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18432635179602494881&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The United States and Iraq: Plant Patent Protection and Saving Seed",
+      "id": "8307466044055128939",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wasglo9&section=23",
+      "title": "The United States and Iraq: Plant Patent Protection and Saving Seed",
+      "authors": "KT Crosby",
+      "year": "2010",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8307466044055128939&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Legal Effects and Policy Considerations for Free Trade Agreements: What Is Wrong with FTAs?",
+      "id": "15295590585615987184",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-642-30888-8_3",
+      "title": "Legal Effects and Policy Considerations for Free Trade Agreements: What Is Wrong with FTAs?",
+      "authors": "RM Hilty, T Jaeger",
+      "year": "2015",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15295590585615987184&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Traditional Knowledge: Is Perpetual Protection a Good Idea",
+      "id": "7305889921698207667",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/idea50&section=30",
+      "title": "Traditional Knowledge: Is Perpetual Protection a Good Idea",
+      "authors": "JJ Oseitutu",
+      "year": "2009",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7305889921698207667&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Reburying the past: the effects of repatriation and reburial on scientific inquiry",
+      "id": "12824968710680184360",
+      "title": "Reburying the past: the effects of repatriation and reburial on scientific inquiry",
+      "authors": "E Weiss",
+      "year": "2008",
+      "cited_by": 18,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12824968710680184360&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The archaeology of human bones",
+      "id": "3134329545539964743",
+      "url": "https://books.google.com/books?hl=en&lr=&id=xUhZBwAAQBAJ&oi=fnd&pg=PP1&ots=nAHbAJJmOn&sig=10l5HNWeWNRBFPvWhjWqtNo9wLM",
+      "title": "The archaeology of human bones",
+      "authors": "S Mays",
+      "year": "2010",
+      "cited_by": 831,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3134329545539964743&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "An anthropology of repatriation: Contemporary physical anthropological and Native American ontologies of practice",
+      "id": "4709839626268057553",
+      "url": "http://www.journals.uchicago.edu/doi/abs/10.1086/662331",
+      "title": "An anthropology of repatriation: Contemporary physical anthropological and Native American ontologies of practice",
+      "authors": "AM Kakaliouras",
+      "year": "2012",
+      "cited_by": 42,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4709839626268057553&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Limiting Principles and Empowering Practices in American Indian Religious Freedoms",
+      "id": "15965167057738106816",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/conlr45&section=14",
+      "title": "Limiting Principles and Empowering Practices in American Indian Religious Freedoms",
+      "authors": "KA Carpenter",
+      "year": "2012",
+      "cited_by": 16,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15965167057738106816&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Touching the body: The living and the dead in Osteoarchaeology and the performance art of Marina Abramovi\u0107",
+      "id": "247258008090862602",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/00293652.2012.703686",
+      "title": "Touching the body: The living and the dead in Osteoarchaeology and the performance art of Marina Abramovi\u0107",
+      "authors": "J Sofaer",
+      "year": "2012",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=247258008090862602&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Tapu and the invention of the \u201cdeath taboo\u201d: An analysis of the transformation of a Polynesian cultural concept",
+      "id": "1970759156376964355",
+      "url": "http://journals.sagepub.com/doi/abs/10.1177/1469605313503229",
+      "title": "Tapu and the invention of the \u201cdeath taboo\u201d: An analysis of the transformation of a Polynesian cultural concept",
+      "authors": "H Gilmore, C Schafer\u2026",
+      "year": "2013",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1970759156376964355&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Places Worth Saving: A Legal Guide to the Protection of Historic Cemeteries in Louisiana and Recommendations for Additional Protection",
+      "id": "17488877497799804714",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/loyolr55&section=24",
+      "title": "Places Worth Saving: A Legal Guide to the Protection of Historic Cemeteries in Louisiana and Recommendations for Additional Protection",
+      "authors": "RM Seidemann, RL Moss",
+      "year": "2009",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17488877497799804714&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Anatomical and Functional Consideration of the Trigemino-Facial Nervous Communication and Facial Expresssion Muscles",
+      "id": "49719647131006578",
+      "url": "https://synapse.koreamed.org/search.php?where=aview&id=10.11637/kjpa.2013.26.1.1&code=0107KJPA&vmode=AR",
+      "title": "Anatomical and Functional Consideration of the Trigemino-Facial Nervous Communication and Facial Expresssion Muscles",
+      "authors": "HM Yang, KS Hu, HJ Kim",
+      "year": "2013",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=49719647131006578&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Giving up the dead?: the impact and effectiveness of the Human Tissue Act and the Guidance for the Care of Human Remains in English Museums",
+      "id": "4095977366680099020",
+      "url": "https://theses.ncl.ac.uk/dspace/handle/10443/1344",
+      "title": "Giving up the dead?: the impact and effectiveness of the Human Tissue Act and the Guidance for the Care of Human Remains in English Museums",
+      "authors": "E White",
+      "year": "2011",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4095977366680099020&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Read all about it?: newspaper coverage of the archaeological excavation, retention, and reburial of human remains within the United Kingdom",
+      "id": "204801036950381620",
+      "url": "https://theses.ncl.ac.uk/dspace/bitstream/10443/2281/2/dspacelicence.pdf",
+      "title": "Read all about it?: newspaper coverage of the archaeological excavation, retention, and reburial of human remains within the United Kingdom",
+      "authors": "VM Park",
+      "year": "2013",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=204801036950381620&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "A Review of Codes of Ethics in the United States and Ethical Dilemmas Surrounding the Native American Graves Protection and Repatriation Act (NAGPRA)",
+      "id": "17780876633990939854",
+      "url": "https://synapse.koreamed.org/search.php?where=aview&id=10.11637/kjpa.2014.27.2.47&code=0107KJPA&vmode=FULL",
+      "title": "A Review of Codes of Ethics in the United States and Ethical Dilemmas Surrounding the Native American Graves Protection and Repatriation Act (NAGPRA)",
+      "authors": "J Kim, DW Steadman",
+      "year": "2014",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17780876633990939854&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Cultural Heritage Issues",
+      "id": "3726730512114066737",
+      "url": "http://booksandjournals.brillonline.com/content/books/9789004189928",
+      "title": "Cultural Heritage Issues",
+      "authors": "JA Nafziger, AM Nicgorski",
+      "year": "2009",
+      "cited_by": 16,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3726730512114066737&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Conservation without nature: the trouble with in situ versus ex situ conservation",
+      "id": "5745387218019692169",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0016718513002200",
+      "title": "Conservation without nature: the trouble with in situ versus ex situ conservation",
+      "authors": "I Braverman",
+      "year": "2014",
+      "cited_by": 32,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5745387218019692169&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Provenance and price: autoregulation of the antiquities market?",
+      "id": "12157497946515048791",
+      "url": "https://link.springer.com/article/10.1007/s10610-014-9235-9",
+      "title": "Provenance and price: autoregulation of the antiquities market?",
+      "authors": "N Brodie",
+      "year": "2014",
+      "cited_by": 17,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12157497946515048791&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The concept of \u201ccultural affiliation\u201d in NAGPRA: its potential and limits in the global protection of indigenous cultural property rights",
+      "id": "14953701022637427755",
+      "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/concept-of-cultural-affiliation-in-nagpra-its-potential-and-limits-in-the-global-protection-of-indigenous-cultural-property-rights/2EB2D738076627576CBE2E9B8CF9CF24",
+      "title": "The concept of \u201ccultural affiliation\u201d in NAGPRA: its potential and limits in the global protection of indigenous cultural property rights",
+      "authors": "K Kuprecht",
+      "year": "2012",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14953701022637427755&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Culture and Customs of Libya",
+      "id": "8008533159339929138",
+      "url": "https://books.google.com/books?hl=en&lr=&id=aBGk0uIqHdQC&oi=fnd&pg=PP2&ots=gw5rUB49Op&sig=hvo8PSoIqWfX_szoEfI6zhJ14B8",
+      "title": "Culture and Customs of Libya",
+      "authors": "T Falola, J Morgan, BA Oyeniyi",
+      "year": "2012",
+      "cited_by": 10,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8008533159339929138&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Private international law, art and cultural heritage",
+      "id": "14475116189378172729",
+      "url": "https://books.google.com/books?hl=en&lr=&id=-sDiBwAAQBAJ&oi=fnd&pg=PR1&ots=Yx-nLw49yi&sig=LZecxPf-jvVbxXsjhfsQxX7nlME",
+      "title": "Private international law, art and cultural heritage",
+      "authors": "C Roodt",
+      "year": "2015",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14475116189378172729&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Heading Home: French law enables return of maori heads to New Zealand",
+      "id": "12087636775247271480",
+      "url": "https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/heading-home-french-law-enables-return-of-maori-heads-to-new-zealand/07F63E58690D319F522E88A308E0FA27",
+      "title": "Heading Home: French law enables return of maori heads to New Zealand",
+      "authors": "RK Paterson",
+      "year": "2010",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12087636775247271480&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The case for repatriating China's cultural objects",
+      "id": "7282363829472699072",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-981-10-0597-8.pdf",
+      "title": "The case for repatriating China's cultural objects",
+      "authors": "Z Liu",
+      "year": "2016",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7282363829472699072&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Art, cultural heritage and the market: legal and ethical issues",
+      "id": "16709038780406155517",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-642-45094-5_1",
+      "title": "Art, cultural heritage and the market: legal and ethical issues",
+      "authors": "V Vadi, H Schneider",
+      "year": "Cultural Heritage and the Market",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16709038780406155517&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Engaging bodies in the public imagination: Bioarchaeology as social science, science, and humanities",
+      "id": "8721734731632698595",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/ajhb.22522/full",
+      "title": "Engaging bodies in the public imagination: Bioarchaeology as social science, science, and humanities",
+      "authors": "CM Stojanowski, WN Duncan",
+      "year": "2015",
+      "cited_by": 15,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8721734731632698595&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The osteological paradox 20 years later: past perspectives, future directions",
+      "id": "8995338734298021985",
+      "url": "https://link.springer.com/article/10.1007/s10814-015-9084-1",
+      "title": "The osteological paradox 20 years later: past perspectives, future directions",
+      "authors": "SN DeWitte, CM Stojanowski",
+      "year": "2015",
+      "cited_by": 74,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8995338734298021985&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Exploring the social construction of disability: An application of the bioarchaeology of personhood model to a pathological skeleton from ancient Bahrain",
+      "id": "13097041289955012436",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1879981715300206",
+      "title": "Exploring the social construction of disability: An application of the bioarchaeology of personhood model to a pathological skeleton from ancient Bahrain",
+      "authors": "AT Boutin",
+      "year": "2016",
+      "cited_by": 11,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13097041289955012436&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Bioarchaeology and kinship: integrating theory, social relatedness, and biology in ancient family research",
+      "id": "18123359463869575758",
+      "url": "https://link.springer.com/article/10.1007/s10814-015-9086-z",
+      "title": "Bioarchaeology and kinship: integrating theory, social relatedness, and biology in ancient family research",
+      "authors": "KM Johnson, KS Paul",
+      "year": "2016",
+      "cited_by": 10,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18123359463869575758&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Incisor ablation among the late upper paleolithic people of Tam Hang (Northern Laos): Social identity, mortuary practice, and oral health",
+      "id": "709685490717545745",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/ajpa.22988/full",
+      "title": "Incisor ablation among the late upper paleolithic people of Tam Hang (Northern Laos): Social identity, mortuary practice, and oral health",
+      "authors": "JC Willman, L Shackelford\u2026",
+      "year": "2016",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=709685490717545745&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Bioarchaeology and the skeletons of the pre-Columbian Maya",
+      "id": "1605451285454602764",
+      "url": "https://link.springer.com/article/10.1007/s10814-016-9098-3",
+      "title": "Bioarchaeology and the skeletons of the pre-Columbian Maya",
+      "authors": "AK Scherer",
+      "year": "2017",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1605451285454602764&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Stronger together: Advancing a global bioarchaeology",
+      "id": "18034728172639869782",
+      "url": "http://journals.upress.ufl.edu/bioarchaeology/article/view/164",
+      "title": "Stronger together: Advancing a global bioarchaeology",
+      "authors": "BJ Baker, SC Agarwal",
+      "year": "2017",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18034728172639869782&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Conflicting Cases: A Bibliometric Analysis of the Role of Case Studies in Paleopathology",
+      "id": "6BvhQ1-y5XsJ",
+      "url": "https://dspace.library.uvic.ca/bitstream/handle/1828/7770/SmithTaylor_Honours_2016.pdf?sequence=3",
+      "title": "Conflicting Cases: A Bibliometric Analysis of the Role of Case Studies in Paleopathology",
+      "authors": "T Smith",
+      "year": "2016"
+    },
+    {
+      "label": "[CITATION][C] Utilization of epidemiological, archaeological, and genome data for assessing the health of historic communities",
+      "id": "-Ba7YD_PtK8J",
+      "title": "[CITATION][C] Utilization of epidemiological, archaeological, and genome data for assessing the health of historic communities",
+      "authors": "NA Kelvin",
+      "year": "2015"
+    },
+    {
+      "label": "Conclusion: Challenging the Narrative",
+      "id": "14514344849164711196",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-71114-0_12",
+      "title": "Conclusion: Challenging the Narrative",
+      "authors": "KC Nystrom",
+      "year": "2018"
+    },
+    {
+      "label": "A Journal of Collegiate Anthropology",
+      "id": "7051869087135016739",
+      "url": "https://www.researchgate.net/profile/Lindsey_Thorson/publication/319311510_A_Book_Review_Essay_of_Recent_Publications_Concerning_Human_Skeletal_Trauma_Analysis_Violence_and_Conflict/links/59a354f6aca2726b90285a63/A-Book-Review-Essay-of-Recent-Publications-Concerning-Human-Skeletal-Trauma-Analysis-Violence-and-Conflict.pdf",
+      "title": "A Journal of Collegiate Anthropology",
+      "authors": "J Skinner, S Christie, L Ghisleni, LJH Thorson",
+      "year": "researchgate.net"
+    },
+    {
+      "label": "Repatriation of cultural objects to indigenous peoples: A comparative analysis of US and...",
+      "id": "16848442208346554360",
+      "url": "http://www.jstor.org/stable/40708093",
+      "title": "Repatriation of cultural objects to indigenous peoples: A comparative analysis of US and...",
+      "authors": "EM Koehler",
+      "year": "2007",
+      "cited_by": 12,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16848442208346554360&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "In defense of property",
+      "id": "12216817345466881943",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ylr118&section=36",
+      "title": "In defense of property",
+      "authors": "KA Carpenter, SK Katyal, AR Riley",
+      "year": "2008",
+      "cited_by": 212,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12216817345466881943&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Culture, intangibles and metrics in environmental management",
+      "id": "13129942843385577310",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0301479712006184",
+      "title": "Culture, intangibles and metrics in environmental management",
+      "authors": "T Satterfield, R Gregory, S Klain, M Roberts\u2026",
+      "year": "2013",
+      "cited_by": 120,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13129942843385577310&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The challenges of incorporating cultural ecosystem services into environmental assessment",
+      "id": "16700457331537124076",
+      "url": "https://link.springer.com/article/10.1007/s13280-013-0386-6",
+      "title": "The challenges of incorporating cultural ecosystem services into environmental assessment",
+      "authors": "D Satz, RK Gould, KMA Chan, A Guerry, B Norton\u2026",
+      "year": "2013",
+      "cited_by": 113,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16700457331537124076&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "NAGPRA at 20: what have the States done to expand human remains protections?",
+      "id": "13282788154598893154",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1548-1379.2010.01098.x/full",
+      "title": "NAGPRA at 20: what have the States done to expand human remains protections?",
+      "authors": "RM Seidemann",
+      "year": "2010",
+      "cited_by": 11,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13282788154598893154&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Yearbook of Cultural Property Law 2008",
+      "id": "15827467639649894355",
+      "url": "https://www.taylorfrancis.com/books/9781315415406",
+      "title": "Yearbook of Cultural Property Law 2008",
+      "authors": "S Hutt, D Tarler",
+      "year": "2016",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15827467639649894355&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Ts' msyen Revolution: The Poetics and Politics of Reclaiming",
+      "id": "18171474535227416603",
+      "url": "https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1448&context=dissertations_2",
+      "title": "Ts' msyen Revolution: The Poetics and Politics of Reclaiming",
+      "authors": "RRR Gray",
+      "year": "2015",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18171474535227416603&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Mapping intergenerational memories (Part I): Proving the contemporary truth of the indigenous past",
+      "id": "18182858740299646626",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2377486",
+      "title": "Mapping intergenerational memories (Part I): Proving the contemporary truth of the indigenous past",
+      "authors": "R Hershey, J McCormack, G Newell",
+      "year": "2014",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18182858740299646626&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Native American Oral Traditional Evidence in American Courts: Reliable Evidence or Useless Myth",
+      "id": "3699320819635862391",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/dlr118&section=26",
+      "title": "Native American Oral Traditional Evidence in American Courts: Reliable Evidence or Useless Myth",
+      "authors": "R Awan",
+      "year": "2013",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3699320819635862391&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "A, Chahta sia: Reevaluating the Native American Graves Protection and Repatriation Act",
+      "id": "93sETBvsFVoJ",
+      "url": "http://scholarsbank.uoregon.edu/xmlui/handle/1794/18631",
+      "title": "A, Chahta sia: Reevaluating the Native American Graves Protection and Repatriation Act",
+      "authors": "M Reynolds",
+      "year": "2014"
+    },
+    {
+      "label": "La dignit\u00e0 come rappresentazione giuridica della condizione umana",
+      "id": "15757793582106883562",
+      "url": "https://iris.unitn.it/handle/11572/97282",
+      "title": "La dignit\u00e0 come rappresentazione giuridica della condizione umana",
+      "authors": "C Piciocchi",
+      "year": "2013",
+      "cited_by": 10,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15757793582106883562&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "They Sell Skulls Online?! A Review of Internet Sales of Human Skulls on eBay and the Laws in Place to Restrict Sales",
+      "id": "13919556070448757988",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/1556-4029.13147/full",
+      "title": "They Sell Skulls Online?! A Review of Internet Sales of Human Skulls on eBay and the Laws in Place to Restrict Sales",
+      "authors": "CL Halling, RM Seidemann",
+      "year": "2016",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13919556070448757988&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Cultural affiliation is not enough: the repatriation of Ainu human remains",
+      "id": "5354078848937461966",
+      "url": "https://www.cambridge.org/core/journals/polar-record/article/div-classtitlecultural-affiliation-is-not-enough-the-repatriation-of-ainu-human-remainsdiv/24D908B5A40B3DE2B20D4CEBB9E0570C",
+      "title": "Cultural affiliation is not enough: the repatriation of Ainu human remains",
+      "authors": "N Nakamura",
+      "year": "2017",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5354078848937461966&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The unburied victims of Kenya's Mau Mau Rebellion: where and when does the violence end?",
+      "id": "16804605113892239873",
+      "url": "https://books.google.com/books?hl=en&lr=&id=ubP_DQAAQBAJ&oi=fnd&pg=PA14&ots=gc1kJLJeNY&sig=cOpWTEFQutKG2WkNX8KRK51SbDE",
+      "title": "The unburied victims of Kenya's Mau Mau Rebellion: where and when does the violence end?",
+      "authors": "DM Anderson, PJ Lane",
+      "year": "2016",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16804605113892239873&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Anatomical Taphonomy at the Source: Alterations to a Sample of 84 Teaching Skulls at a Medical School",
+      "id": "12092988032293707486",
+      "url": "https://www.researchgate.net/profile/James_Pokines/publication/320536287_Anatomical_taphonomy_at_the_source_Alterations_to_a_sample_of_84_teaching_skulls_at_a_medical_school/links/59ea3de6aca272cddddb7aff/Anatomical-taphonomy-at-the-source-Alterations-to-a-sample-of-84-teaching-skulls-at-a-medical-school.pdf",
+      "title": "Anatomical Taphonomy at the Source: Alterations to a Sample of 84 Teaching Skulls at a Medical School",
+      "authors": "JT Pokines, N Appel, C Pollock, CJ Eck\u2026",
+      "year": "2017",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12092988032293707486&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The Road to Repatriation",
+      "id": "zZuERUZSFS8J",
+      "url": "https://www.oswego.edu/writing-across-the-curriculum/sites/www.oswego.edu.writing-across-the-curriculum/files/ant_cilento_2-24-16.docx",
+      "title": "The Road to Repatriation",
+      "authors": "SN Cilento",
+      "year": "oswego.edu"
+    },
+    {
+      "label": "Private Collections in Public Spaces: Identifying and Addressing Display and Treatment Concerns for Culturally-Sensitive Objects in Formerly Private\u00a0\u2026",
+      "id": "10197871556136515459",
+      "url": "http://search.proquest.com/openview/3a9679190e030605e25a07e8ee15d6a7/1?pq-origsite=gscholar&cbl=18750&diss=y",
+      "title": "Private Collections in Public Spaces: Identifying and Addressing Display and Treatment Concerns for Culturally-Sensitive Objects in Formerly Private\u00a0\u2026",
+      "authors": "KM Crosmer",
+      "year": "2016"
+    },
+    {
+      "label": "Perceptions of Repatriation in Anthropological Literature",
+      "id": "p0QOYrdUYtoJ",
+      "url": "http://dspace.library.uvic.ca/handle/1828/8065",
+      "title": "Perceptions of Repatriation in Anthropological Literature",
+      "authors": "S Kroeger",
+      "year": "2017"
+    },
+    {
+      "label": "Personhood and Re-Embodiment in Osteological Practice",
+      "id": "12009620999824671283",
+      "url": "https://books.google.com/books?hl=en&lr=&id=kBg9DAAAQBAJ&oi=fnd&pg=PA39&ots=UqGfHwvN6f&sig=CM29lI103O2DZ7pFL6j1rFA5xRg",
+      "title": "Personhood and Re-Embodiment in Osteological Practice",
+      "authors": "J McClelland, JI Cerezo-Rom\u00e1n",
+      "year": "2016",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12009620999824671283&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Contemporary Museum Policies and the Ethics of Accepting Human Remains",
+      "id": "9471982395736510190",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/cura.12064/full",
+      "title": "Contemporary Museum Policies and the Ethics of Accepting Human Remains",
+      "authors": "HJH Edgar, ALM Rautman",
+      "year": "2014"
+    },
+    {
+      "label": "The protection and repatriation of Indigenous cultural heritage in the United States",
+      "id": "976165050133756667",
+      "url": "http://booksandjournals.brillonline.com/content/books/10.1163/ej.9789004160361.i-466.13?crawler=true",
+      "title": "The protection and repatriation of Indigenous cultural heritage in the United States",
+      "authors": "JAR Nafziger",
+      "year": "2006",
+      "cited_by": 11,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=976165050133756667&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Indigenous International Repatriation",
+      "id": "3912336697710475027",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/arzjl44&section=35",
+      "title": "Indigenous International Repatriation",
+      "authors": "H Keeler",
+      "year": "2012",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3912336697710475027&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "NAGPRA in Colorado: a success story",
+      "id": "9736309805930724566",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ucollr83&section=16",
+      "title": "NAGPRA in Colorado: a success story",
+      "authors": "C Harms",
+      "year": "2011",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9736309805930724566&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Tipping NAGPRA's Balancing Act: The Inequitable Disposition of Culturally Unidentified Human Remains under NAGPRA's New Provision",
+      "id": "5739872194105744485",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wmitch37&section=67",
+      "title": "Tipping NAGPRA's Balancing Act: The Inequitable Disposition of Culturally Unidentified Human Remains under NAGPRA's New Provision",
+      "authors": "MH Birkhold",
+      "year": "2010",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5739872194105744485&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Note: Tipping Nagpra's Balancing Act: The Inequitable Disposition of\" Culturally Unidentified\" Human Remains Under Nagpra's New Provision",
+      "id": "1355716055126163854",
+      "url": "https://open.mitchellhamline.edu/cgi/viewcontent.cgi?article=1422&context=wmlr",
+      "title": "Note: Tipping Nagpra's Balancing Act: The Inequitable Disposition of\" Culturally Unidentified\" Human Remains Under Nagpra's New Provision",
+      "authors": "MH Birkhold",
+      "year": "2011",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1355716055126163854&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Cultural property aspects in international law: the case of the (still) inadequate safeguarding of indigenous peoples'(tangible) cultural heritage",
+      "id": "5960686924319621908",
+      "url": "https://www.cambridge.org/core/journals/netherlands-international-law-review/article/cultural-property-aspects-in-international-law-the-case-of-the-still-inadequate-safeguarding-of-indigenous-peoples-tangible-cultural-heritage/3511380D5D7B225C8C3917C64E5D0CDE",
+      "title": "Cultural property aspects in international law: the case of the (still) inadequate safeguarding of indigenous peoples'(tangible) cultural heritage",
+      "authors": "A Yupsanis",
+      "year": "2011",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5960686924319621908&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Introduction: Propri\u00e9t\u00e9 intellectuelle et \u00e9thique",
+      "id": "3953018181696619386",
+      "url": "https://www.erudit.org/en/journals/etudinuit/2011-v35-n1-2-etudinuit0322/1012833ar/abstract/",
+      "title": "Introduction: Propri\u00e9t\u00e9 intellectuelle et \u00e9thique",
+      "authors": "M Nagy",
+      "year": "2011",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3953018181696619386&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Exploring International Repatriation between US Museums and First Nations in Canada",
+      "id": "4DQdRrFBhH0J",
+      "url": "https://digital.lib.washington.edu/researchworks/handle/1773/39755",
+      "title": "Exploring International Repatriation between US Museums and First Nations in Canada",
+      "authors": "EG Wessells",
+      "year": "2017"
+    },
+    {
+      "label": "Make No Bones about It: The Need to Reform the Native American Graves Protection and Repatriation Act",
+      "id": "722969612872206408",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/qplj30&section=20",
+      "title": "Make No Bones about It: The Need to Reform the Native American Graves Protection and Repatriation Act",
+      "authors": "ED Melillo",
+      "year": "2016"
+    },
+    {
+      "label": "Altered meanings: The Department of the Interior's rewriting of the Native American Graves...",
+      "id": "13358235593005825989",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/tempnlt28&section=4",
+      "title": "Altered meanings: The Department of the Interior's rewriting of the Native American Graves...",
+      "authors": "RM Seidemann",
+      "year": "2009",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13358235593005825989&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Better Late than Never-The Effect of the Native American Graves Protection and Repatriation Act's 2010 Regulations",
+      "id": "10571347683715863452",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wflr46&section=37",
+      "title": "Better Late than Never-The Effect of the Native American Graves Protection and Repatriation Act's 2010 Regulations",
+      "authors": "ZE Niesel",
+      "year": "2011",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10571347683715863452&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Protecting Non-indigenous Human Remains under Cultural Heritage Law",
+      "id": "10018963896255216803",
+      "url": "https://academic.oup.com/chinesejil/article-abstract/14/4/709/340347",
+      "title": "Protecting Non-indigenous Human Remains under Cultural Heritage Law",
+      "authors": "J Huang",
+      "year": "2015",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10018963896255216803&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The Supreme Court of the United States",
+      "id": "3869024832318161324",
+      "url": "http://www.jstor.org/stable/1106576",
+      "title": "The Supreme Court of the United States",
+      "authors": "J White",
+      "year": "1922"
+    },
+    {
+      "label": "PETITION FOR A WRIT OF CERTIORARI",
+      "id": "3787473813018929543",
+      "url": "https://www.mcmanislaw.com/Templates/media/files/PDFs/2015-11-19-Petition-for-Writ-of-Certiorari-Appendix.pdf",
+      "title": "PETITION FOR A WRIT OF CERTIORARI",
+      "authors": "T WHITE, RL BETTINGER, M SCHOENINGER",
+      "year": "2015"
+    }
+  ],
+  "links": [
+    {
+      "source": "7828242426326646006",
+      "target": "8748346449102412182"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "10341029148208895761"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "2252819996314481530"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "11151988767487438357"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "11184041727352138037"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "6611440212929350063"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "8824201241669269378"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "6177391479265736749"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "4873329603678557833"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "1460374730563944510"
+    },
+    {
+      "source": "7828242426326646006",
+      "target": "14770327547083302351"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "14684434648392889813"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "3753917766714900092"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "12824968710680184360"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "3726730512114066737"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "8721734731632698595"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "16848442208346554360"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "13282788154598893154"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "976165050133756667"
+    },
+    {
+      "source": "8748346449102412182",
+      "target": "13358235593005825989"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "16629789719155368810"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "1616865547387191973"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "10510357527756775219"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "8690217653301420038"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "16721932117795645780"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "4755478151837713839"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "5404767721462674611"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "16317952575917715267"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "7108036231371292250"
+    },
+    {
+      "source": "14684434648392889813",
+      "target": "12221497930837884031"
+    },
+    {
+      "source": "10510357527756775219",
+      "target": "3726730512114066737"
+    },
+    {
+      "source": "16721932117795645780",
+      "target": "3726730512114066737"
+    },
+    {
+      "source": "16721932117795645780",
+      "target": "976165050133756667"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "9806644333158430855"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "17362209681001861886"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "10198669657380292565"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "5438245202650714833"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "6429838684249526296"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "11597685332351772634"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "18432635179602494881"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "8307466044055128939"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "15295590585615987184"
+    },
+    {
+      "source": "3753917766714900092",
+      "target": "7305889921698207667"
+    },
+    {
+      "source": "6429838684249526296",
+      "target": "16848442208346554360"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "3134329545539964743"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "4709839626268057553"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "15965167057738106816"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "247258008090862602"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "1970759156376964355"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "17488877497799804714"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "49719647131006578"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "4095977366680099020"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "204801036950381620"
+    },
+    {
+      "source": "12824968710680184360",
+      "target": "17780876633990939854"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "5745387218019692169"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "12157497946515048791"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "14953701022637427755"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "8008533159339929138"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "14475116189378172729"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "12087636775247271480"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "7282363829472699072"
+    },
+    {
+      "source": "3726730512114066737",
+      "target": "16709038780406155517"
+    },
+    {
+      "source": "14475116189378172729",
+      "target": "976165050133756667"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "8995338734298021985"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "13097041289955012436"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "18123359463869575758"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "709685490717545745"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "1605451285454602764"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "18034728172639869782"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "6BvhQ1-y5XsJ"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "-Ba7YD_PtK8J"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "14514344849164711196"
+    },
+    {
+      "source": "8721734731632698595",
+      "target": "7051869087135016739"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "12216817345466881943"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "13129942843385577310"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "16700457331537124076"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "13282788154598893154"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "15827467639649894355"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "18171474535227416603"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "18182858740299646626"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "3699320819635862391"
+    },
+    {
+      "source": "16848442208346554360",
+      "target": "93sETBvsFVoJ"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "15757793582106883562"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "13919556070448757988"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "5354078848937461966"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "16804605113892239873"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "12092988032293707486"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "zZuERUZSFS8J"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "10197871556136515459"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "p0QOYrdUYtoJ"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "12009620999824671283"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "9471982395736510190"
+    },
+    {
+      "source": "13282788154598893154",
+      "target": "13358235593005825989"
+    },
+    {
+      "source": "15827467639649894355",
+      "target": "13358235593005825989"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "3912336697710475027"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "9736309805930724566"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "5739872194105744485"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "1355716055126163854"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "5960686924319621908"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "3953018181696619386"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "4DQdRrFBhH0J"
+    },
+    {
+      "source": "976165050133756667",
+      "target": "722969612872206408"
+    },
+    {
+      "source": "5739872194105744485",
+      "target": "13358235593005825989"
+    },
+    {
+      "source": "1355716055126163854",
+      "target": "13358235593005825989"
+    },
+    {
+      "source": "13358235593005825989",
+      "target": "10571347683715863452"
+    },
+    {
+      "source": "13358235593005825989",
+      "target": "10018963896255216803"
+    },
+    {
+      "source": "13358235593005825989",
+      "target": "3869024832318161324"
+    },
+    {
+      "source": "13358235593005825989",
+      "target": "3787473813018929543"
+    }
+  ]
+};
+
+var link = svg.append("g")
+    .attr("class", "links")
+  .selectAll("line")
+  .data(graph.links)
+  .enter().append("line");
+
+var node = svg.append("g")
+    .attr("class", "nodes")
+  .selectAll("circle")
+  .data(graph.nodes)
+  .enter().append("circle")
+    .attr("r", 5)
+    .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+node.append("title")
+    .text(function(d) {
+        return d.authors ? d.title + ' - ' + d.authors : d.title
+    });
+
+node.on("click", function(d) {
+  window.open(d.url, '_blank');
+  d3.event.stopPropagation();
+});
+
+simulation
+    .nodes(graph.nodes)
+    .on("tick", ticked);
+
+simulation.force("link")
+    .links(graph.links);
+
+function ticked() {
+  link
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+}
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+</script>
