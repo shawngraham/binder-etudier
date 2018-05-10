@@ -1,0 +1,1174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="url" type="string" />
+      <attribute id="1" title="title" type="string" />
+      <attribute id="2" title="authors" type="string" />
+      <attribute id="3" title="year" type="string" />
+      <attribute id="4" title="cited_by" type="long" />
+      <attribute id="5" title="cited_by_url" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>10/05/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="7556527499680598700" label="Body shopping: The economy fueled by flesh and blood">
+        <attvalues>
+          <attvalue for="0" value="https://repository.library.georgetown.edu/handle/10822/548337" />
+          <attvalue for="1" value="Body shopping: The economy fueled by flesh and blood" />
+          <attvalue for="2" value="D Dickenson" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="63" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7556527499680598700&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1971084081186387568" label="Law and the human body: property rights, ownership and control">
+        <attvalues>
+          <attvalue for="1" value="Law and the human body: property rights, ownership and control" />
+        </attvalues>
+      </node>
+      <node id="13428854610867163914" label="Intellectual property rights and the life science industries: a twentieth century history">
+        <attvalues>
+          <attvalue for="0" value="https://www.taylorfrancis.com/books/9781351927147" />
+          <attvalue for="1" value="Intellectual property rights and the life science industries: a twentieth century history" />
+          <attvalue for="2" value="G Dutfield" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="304" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13428854610867163914&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7808630135051906131" label="Our bodies, whose property?">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=iofSMrpBgZEC&amp;oi=fnd&amp;pg=PP1&amp;ots=MS0QoIUUYx&amp;sig=tfLuWibZaMebGp2xsEdaFvSgYzk" />
+          <attvalue for="1" value="Our bodies, whose property?" />
+          <attvalue for="2" value="A Phillips" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="67" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7808630135051906131&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3033523631393697915" label="Me medicine vs. we medicine: Reclaiming biotechnology for the common good">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=UVqrAgAAQBAJ&amp;oi=fnd&amp;pg=PR7&amp;ots=C-zrgCYjkV&amp;sig=W4ZjlRQzObl0y89I9igpim785Pg" />
+          <attvalue for="1" value="Me medicine vs. we medicine: Reclaiming biotechnology for the common good" />
+          <attvalue for="2" value="D Dickenson" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="57" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3033523631393697915&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7095272042712320853" label="The sociology of the body">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=VJxw1loC-MkC&amp;oi=fnd&amp;pg=PA47&amp;ots=2Bbt8uisWi&amp;sig=2ZW3OXbgQ0KxvJIPJsh6ZhjiTfg" />
+          <attvalue for="1" value="The sociology of the body" />
+          <attvalue for="2" value="S Nettleton" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="50" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7095272042712320853&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13636996700787081111" label="Should we display the dead?">
+        <attvalues>
+          <attvalue for="0" value="https://www108.lamp.le.ac.uk/ojs1/index.php/mas/article/view/144" />
+          <attvalue for="1" value="Should we display the dead?" />
+          <attvalue for="2" value="SJMM Alberti, P Bienkowski, MJ Chapman…" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="39" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13636996700787081111&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9254746649961730462" label="Global ethics: An introduction">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=gKDCBQAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=ga2a1qNElj&amp;sig=lSiI3EIdDCGiUc2XHtSpazqWM2g" />
+          <attvalue for="1" value="Global ethics: An introduction" />
+          <attvalue for="2" value="H Widdows" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="40" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9254746649961730462&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9198222430491730086" label="Border disputes across bodies: Exploitation in trafficking for prostitution and egg sale for stem cell research">
+        <attvalues>
+          <attvalue for="0" value="http://www.utpjournals.press/doi/abs/10.3138/ijfab.2.1.5" />
+          <attvalue for="1" value="Border disputes across bodies: Exploitation in trafficking for prostitution and egg sale for stem cell research" />
+          <attvalue for="2" value="H Widdows" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="38" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9198222430491730086&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14864580230541288113" label="Ova donation for stem cell research: an international perspective">
+        <attvalues>
+          <attvalue for="0" value="http://www.utpjournals.press/doi/abs/10.3138/ijfab.1.2.125" />
+          <attvalue for="1" value="Ova donation for stem cell research: an international perspective" />
+          <attvalue for="2" value="D Dickenson, IA Idiakez" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="34" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14864580230541288113&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3240585032961970202" label="The genome incorporated: Constructing biodigital identity">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=JIe1CwAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=_kFA3jrsGW&amp;sig=KobxrBGU-IkGokoaFxUmyZoISoc" />
+          <attvalue for="1" value="The genome incorporated: Constructing biodigital identity" />
+          <attvalue for="2" value="K O'Riordan" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="26" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3240585032961970202&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13599249941591853318" label="Bioequity–property and the human body">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=K5IGDAAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=nfBjzbC2EV&amp;sig=cKOC89NHcGePrcIR_T16cS1e3Z8" />
+          <attvalue for="1" value="Bioequity–property and the human body" />
+          <attvalue for="2" value="N Hoppe" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13599249941591853318&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="386723840638153978" label="Privacy, confidentiality, and health research">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.ca/books?hl=en&amp;lr=&amp;id=rrMhAwAAQBAJ&amp;oi=fnd&amp;pg=PR13&amp;ots=M8-oQMDV3v&amp;sig=v5m7MUXOAfn94sXopr4Npbqxjo0" />
+          <attvalue for="1" value="Privacy, confidentiality, and health research" />
+          <attvalue for="2" value="WW Lowrance" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="35" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=386723840638153978&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9910138931836225244" label="From the principles of genomic data sharing to the practices of data access committees">
+        <attvalues>
+          <attvalue for="0" value="http://embomolmed.embopress.org/content/7/5/507.abstract" />
+          <attvalue for="1" value="From the principles of genomic data sharing to the practices of data access committees" />
+          <attvalue for="2" value="M Shabani, BM Knoppers…" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9910138931836225244&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="192763985016504527" label="Towards Principles–Based Approaches to Governance of Health–Related Research Using Personal Data">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/div-classtitletowards-principlesbased-approaches-to-governance-of-healthrelated-research-using-personal-datadiv/DD65426D5E18432590A03C158BD35BB3" />
+          <attvalue for="1" value="Towards Principles–Based Approaches to Governance of Health–Related Research Using Personal Data" />
+          <attvalue for="2" value="G Laurie, N Sethi" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="18" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=192763985016504527&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4003080078466903751" label="Big Data in medical research and EU data protection law: challenges to the consent or anonymise approach">
+        <attvalues>
+          <attvalue for="0" value="https://www.nature.com/articles/ejhg2015239" />
+          <attvalue for="1" value="Big Data in medical research and EU data protection law: challenges to the consent or anonymise approach" />
+          <attvalue for="2" value="M Mostert, AL Bredenoord, MCIH Biesaart…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="19" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4003080078466903751&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="447342903296504236" label="“You hoped we would sleep walk into accepting the collection of our data”: controversies surrounding the UK care. data scheme and their wider relevance for …">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s11019-015-9661-6" />
+          <attvalue for="1" value="“You hoped we would sleep walk into accepting the collection of our data”: controversies surrounding the UK care. data scheme and their wider relevance for …" />
+          <attvalue for="2" value="S Sterckx, V Rakic, J Cockbain, P Borry" />
+          <attvalue for="3" value="health care and …" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=447342903296504236&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4885694588010730607" label="International guidelines for privacy in genomic biobanking (or the unexpected virtue of pluralism)">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/jlme.12312/full" />
+          <attvalue for="1" value="International guidelines for privacy in genomic biobanking (or the unexpected virtue of pluralism)" />
+          <attvalue for="2" value="A Thorogood, MH Zawati" />
+          <attvalue for="3" value="Medicine &amp; …" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4885694588010730607&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2655971133650071082" label="Biobanks in oral health: Promises and implications of post-neoliberal science and innovation">
+        <attvalues>
+          <attvalue for="0" value="http://online.liebertpub.com/doi/abs/10.1089/omi.2015.0123" />
+          <attvalue for="1" value="Biobanks in oral health: Promises and implications of post-neoliberal science and innovation" />
+          <attvalue for="2" value="K Birch, ES Dove, M Chiappetta…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2655971133650071082&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13420647880156531501" label="Medical law: a very short introduction">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=dz5oAgAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=7GuigCN0og&amp;sig=Oai8yaggFC-nXIolysO3nh0VYS0" />
+          <attvalue for="1" value="Medical law: a very short introduction" />
+          <attvalue for="2" value="C Foster" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13420647880156531501&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17089023999631552930" label="Privacy law, data sharing policies, and medical data: a comparative perspective">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-3-319-23633-9_24" />
+          <attvalue for="1" value="Privacy law, data sharing policies, and medical data: a comparative perspective" />
+          <attvalue for="2" value="ES Dove, M Phillips" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17089023999631552930&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="988395465080786080" label="Facilitating the ethical use of health data for the benefit of society: electronic health records, consent and the duty of easy rescue">
+        <attvalues>
+          <attvalue for="0" value="http://rsta.royalsocietypublishing.org/content/374/2083/20160130.abstract" />
+          <attvalue for="1" value="Facilitating the ethical use of health data for the benefit of society: electronic health records, consent and the duty of easy rescue" />
+          <attvalue for="2" value="SP Mann, J Savulescu…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=988395465080786080&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6820051766763973572" label="BIOMEDICAL RESEARCH ETHICS">
+        <attvalues>
+          <attvalue for="0" value="https://www.researchgate.net/profile/Daniela_Diaconescu/publication/286991435_Bioethical_dilemmas_in_using_animal_in_medical_research_Challenges_and_opportunities/links/567506f108ae125516e203df.pdf" />
+          <attvalue for="1" value="BIOMEDICAL RESEARCH ETHICS" />
+          <attvalue for="2" value="L Rogozea, DE DIACONESCU, EA DINU…" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6820051766763973572&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10147228918361759042" label="Persons, property, and community">
+        <attvalues>
+          <attvalue for="0" value="https://journals.kent.ac.uk/kent/index.php/feministsatlaw/article/view/37" />
+          <attvalue for="1" value="Persons, property, and community" />
+          <attvalue for="2" value="M Davies" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="34" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10147228918361759042&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5001935081305454455" label="The changing nature of public science">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/content/pdf/10.1007/3-540-28886-4_1.pdf" />
+          <attvalue for="1" value="The changing nature of public science" />
+          <attvalue for="2" value="H Nowotny" />
+          <attvalue for="3" value="2005" />
+          <attvalue for="4" value="52" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5001935081305454455&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6650990543683806344" label="Opening up ownership: Community belonging, belongings, and the productive life of property">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/j.1747-4469.2007.00072.x/full" />
+          <attvalue for="1" value="Opening up ownership: Community belonging, belongings, and the productive life of property" />
+          <attvalue for="2" value="D Cooper" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="49" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6650990543683806344&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9731887324644440594" label="Law, policy and reproductive autonomy">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=bovbBAAAQBAJ&amp;oi=fnd&amp;pg=PR1&amp;ots=KfHHpsb1o4&amp;sig=veWefa8gnqz3DzObodYlC-KgMok" />
+          <attvalue for="1" value="Law, policy and reproductive autonomy" />
+          <attvalue for="2" value="E Nelson" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="44" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9731887324644440594&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9303979080695346896" label="The Dead, the Law, and the Politics of the Past">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/j.1467-6478.2004.00302.x/full" />
+          <attvalue for="1" value="The Dead, the Law, and the Politics of the Past" />
+          <attvalue for="2" value="K McEvoy, H Conway" />
+          <attvalue for="3" value="2004" />
+          <attvalue for="4" value="38" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9303979080695346896&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10096472572938085523" label="Android science and animal rights, does an analogy exist?">
+        <attvalues>
+          <attvalue for="0" value="http://www.tandfonline.com/doi/abs/10.1080/09540090600879711" />
+          <attvalue for="1" value="Android science and animal rights, does an analogy exist?" />
+          <attvalue for="2" value="DJ Calverley" />
+          <attvalue for="3" value="2006" />
+          <attvalue for="4" value="27" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10096472572938085523&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14032267165727104285" label="Political economy, capitalism, and popular culture">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=Sca-AAAAQBAJ&amp;oi=fnd&amp;pg=PR7&amp;ots=XxxO9hHacD&amp;sig=mxjHosS2ByVyvE1taX1Y9FJZP6Q" />
+          <attvalue for="1" value="Political economy, capitalism, and popular culture" />
+          <attvalue for="2" value="RD Lipschutz" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14032267165727104285&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7833127983146185326" label="Impersonations: Troubling the person in law and culture">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=Cedb9BtmXysC&amp;oi=fnd&amp;pg=PR9&amp;ots=m-ZBezNvwO&amp;sig=ALa-aC-NeORupno8lInuLF3jp7w" />
+          <attvalue for="1" value="Impersonations: Troubling the person in law and culture" />
+          <attvalue for="2" value="SN Hamilton" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7833127983146185326&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7553942180809764680" label="Personal stem cell banking and the problem with property">
+        <attvalues>
+          <attvalue for="0" value="http://www.tandfonline.com/doi/abs/10.1080/14649365.2011.574795" />
+          <attvalue for="1" value="Personal stem cell banking and the problem with property" />
+          <attvalue for="2" value="M Fannin" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7553942180809764680&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17206374127293316399" label="Digital identity–The legal person?">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0267364909000624" />
+          <attvalue for="1" value="Digital identity–The legal person?" />
+          <attvalue for="2" value="C Sullivan" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17206374127293316399&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12029715825047962897" label="Autonomic computing, genomic data and human agency: the case for embodiment">
+        <attvalues>
+          <attvalue for="0" value="https://www.taylorfrancis.com/books/e/9781136807671/chapters/10.4324%2F9780203828342-12" />
+          <attvalue for="1" value="Autonomic computing, genomic data and human agency: the case for embodiment" />
+          <attvalue for="2" value="HY Kang" />
+          <attvalue for="3" value="Human Agency and Autonomic Computing" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12029715825047962897&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3531298846210677032" label="Yearworth v. North Bristol NHS Trust: property, principles, precedents and paradigms">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/cambridge-law-journal/article/yearworthv-north-bristol-nhs-trust-property-principles-precedents-and-paradigms/9A63C865243FF37B6161144A290664C9" />
+          <attvalue for="1" value="Yearworth v. North Bristol NHS Trust: property, principles, precedents and paradigms" />
+          <attvalue for="2" value="SHE Harmon, GT Laurie" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3531298846210677032&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14647610264440258720" label="The connected self: The ethics and governance of the genetic individual">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=W_cgAwAAQBAJ&amp;oi=fnd&amp;pg=PR9&amp;ots=I1MkqLT3Sx&amp;sig=P1o7wIPwIOemJsB1CVg9A-ZmvFc" />
+          <attvalue for="1" value="The connected self: The ethics and governance of the genetic individual" />
+          <attvalue for="2" value="H Widdows" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="26" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14647610264440258720&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5194733928315874265" label="The ethics of biobanking: key issues and controversies">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s10728-011-0184-x" />
+          <attvalue for="1" value="The ethics of biobanking: key issues and controversies" />
+          <attvalue for="2" value="H Widdows, S Cordell" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5194733928315874265&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3324877372193757049" label="Is the commercialisation of human tissue and body material forbidden in the countries of the European Union?">
+        <attvalues>
+          <attvalue for="0" value="http://jme.bmj.com/content/early/2011/06/22/jme.2010.038760.short" />
+          <attvalue for="1" value="Is the commercialisation of human tissue and body material forbidden in the countries of the European Union?" />
+          <attvalue for="2" value="C Lenk, K Beier" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3324877372193757049&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1983580798706716962" label="What Is It? Whose It? Re-Positioning the Fetus in the Context of Research?">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/cambridge-law-journal/article/what-is-it-whose-it-repositioning-the-fetus-in-the-context-of-research/4B37A32C56920BAA4B709394FADC9BDC" />
+          <attvalue for="1" value="What Is It? Whose It? Re-Positioning the Fetus in the Context of Research?" />
+          <attvalue for="2" value="A Alghrani, M Brazier" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1983580798706716962&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17709238489087013081" label="Stem cell research and the collaborative regulation of innovation">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=aE1WAgAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=nORIT8ryG4&amp;sig=TEhGmp48QTgjXoEVyuY_APKIcIM" />
+          <attvalue for="1" value="Stem cell research and the collaborative regulation of innovation" />
+          <attvalue for="2" value="S Devaney" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17709238489087013081&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15681824224355738746" label="Persons, Parts and Property: How Should We Regulate Human Tissue in the 21st Century?">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=f9GdBQAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=eSUSe1qecH&amp;sig=1NhilG6GHERJ_p0ZHWLnBnbtWfk" />
+          <attvalue for="1" value="Persons, Parts and Property: How Should We Regulate Human Tissue in the 21st Century?" />
+          <attvalue for="2" value="I Goold, K Greasley, J Herring, L Skene" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15681824224355738746&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12807484792526645635" label="Dignity and the use of body parts">
+        <attvalues>
+          <attvalue for="0" value="http://jme.bmj.com/content/early/2012/08/13/medethics-2012-100763.short" />
+          <attvalue for="1" value="Dignity and the use of body parts" />
+          <attvalue for="2" value="C Foster" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12807484792526645635&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17423801329278082391" label="Being and Owning: The Body, Bodily Material, and the Law">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=9BSCCQAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=F44QDIiMV_&amp;sig=JzcBk1dTzECF3KejV4aSUwjmzDU" />
+          <attvalue for="1" value="Being and Owning: The Body, Bodily Material, and the Law" />
+          <attvalue for="2" value="J Wall" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17423801329278082391&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10788932619595700330" label="Propertisation and Commercialisation: On Controlling the Uses of Human Biomaterials">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/1468-2230.12086/full" />
+          <attvalue for="1" value="Propertisation and Commercialisation: On Controlling the Uses of Human Biomaterials" />
+          <attvalue for="2" value="M Quigley" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10788932619595700330&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="839050694358475277" label="The Law of the Body">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/emlj62&amp;section=17" />
+          <attvalue for="1" value="The Law of the Body" />
+          <attvalue for="2" value="MM Render" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="19" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=839050694358475277&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5713801732799407434" label="Indescendibility">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/calr102&amp;section=21" />
+          <attvalue for="1" value="Indescendibility" />
+          <attvalue for="2" value="D Horton" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="28" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5713801732799407434&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17942983029150337910" label="Do Tell-The Rights of Donor-Conceived Offspring">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/hoflr42&amp;section=42" />
+          <attvalue for="1" value="Do Tell-The Rights of Donor-Conceived Offspring" />
+          <attvalue for="2" value="N Cahn" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="17" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17942983029150337910&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2351645677270264313" label="Modern Prostitution Legal Reform &amp; the Return of Violational Consent">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/virjcr3&amp;section=4" />
+          <attvalue for="1" value="Modern Prostitution Legal Reform &amp; the Return of Violational Consent" />
+          <attvalue for="2" value="A Peters" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2351645677270264313&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8892390036551226133" label="Reproduction Reconceived">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/mnlr101&amp;section=17" />
+          <attvalue for="1" value="Reproduction Reconceived" />
+          <attvalue for="2" value="CM Cahill" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8892390036551226133&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14264123579377189866" label="Securing Sequences: Ensuring Adequate Protections for Genetic Samples in the Age of Big Data">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/cdozo37&amp;section=61" />
+          <attvalue for="1" value="Securing Sequences: Ensuring Adequate Protections for Genetic Samples in the Age of Big Data" />
+          <attvalue for="2" value="ER Pike" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14264123579377189866&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12027238464712618667" label="Reconstructing Pregnancy">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/smulr69&amp;section=8" />
+          <attvalue for="1" value="Reconstructing Pregnancy" />
+          <attvalue for="2" value="SM Matambanadzo" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12027238464712618667&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10484049060056044840" label="Knowing the Suffering of Others: Legal Perspectives on Pain and Its Meanings">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=7BzzAwAAQBAJ&amp;oi=fnd&amp;pg=PR7&amp;ots=wUxp_TmQJo&amp;sig=wwTK-eiZSRYX4iLRUF2Jj35ZuMM" />
+          <attvalue for="1" value="Knowing the Suffering of Others: Legal Perspectives on Pain and Its Meanings" />
+          <attvalue for="2" value="MD Carodine" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10484049060056044840&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16627868433978875733" label="Damaged Bodies, Damaged Lives: Immigrant Worker Injuries as Dignity Takings">
+        <attvalues>
+          <attvalue for="0" value="https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/chknt92&amp;section=50" />
+          <attvalue for="1" value="Damaged Bodies, Damaged Lives: Immigrant Worker Injuries as Dignity Takings" />
+          <attvalue for="2" value="R Nadas, J Rathod" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="A5miHMrCTbgJ" label="Spacing (in) Diaspora: Law, Literature and the Roma">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=M3kqDwAAQBAJ&amp;oi=fnd&amp;pg=PP5&amp;ots=DIFp26KBnn&amp;sig=cT_6LEYMad9ZsoqFULQqaXOGzvk" />
+          <attvalue for="1" value="Spacing (in) Diaspora: Law, Literature and the Roma" />
+          <attvalue for="2" value="E Patchett" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="XXu_N0tqPAIJ" label="RESPONSE TO THE LAW OF THE BODY BY MEREDITH M. RENDER">
+        <attvalues>
+          <attvalue for="0" value="http://law.emory.edu/elj/_documents/volumes/63/6/online/gold.pdf" />
+          <attvalue for="1" value="RESPONSE TO THE LAW OF THE BODY BY MEREDITH M. RENDER" />
+          <attvalue for="2" value="ER Gold" />
+          <attvalue for="3" value="law.emory.edu" />
+        </attvalues>
+      </node>
+      <node id="7589182030691366643" label="The international legal governance of the human genome">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.ca/books?hl=en&amp;lr=&amp;id=C3t8AgAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=GGESENHl9q&amp;sig=9Ev3vWlEzzw5XymJMVsHvoBm804" />
+          <attvalue for="1" value="The international legal governance of the human genome" />
+          <attvalue for="2" value="C Kuppuswamy" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="17" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7589182030691366643&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3949944803448691697" label="A human rights approach to an international code of conduct for genomic and clinical data sharing">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s00439-014-1432-6" />
+          <attvalue for="1" value="A human rights approach to an international code of conduct for genomic and clinical data sharing" />
+          <attvalue for="2" value="BM Knoppers, JR Harris, I Budin-Ljøsne, ES Dove" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="46" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3949944803448691697&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11779770240469129020" label="Negotiating bioethics: the governance of UNESCO's Bioethics Programme">
+        <attvalues>
+          <attvalue for="0" value="http://www.oapen.org/search?identifier=478071" />
+          <attvalue for="1" value="Negotiating bioethics: the governance of UNESCO's Bioethics Programme" />
+          <attvalue for="2" value="A Langlois" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="30" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11779770240469129020&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10261984444471489982" label="Open Bioinformation in the Life Sciences as a Gatekeeper for Innovation and Development">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-3-319-13311-9_7" />
+          <attvalue for="1" value="Open Bioinformation in the Life Sciences as a Gatekeeper for Innovation and Development" />
+          <attvalue for="2" value="R Caso, R Ducato" />
+          <attvalue for="3" value="Development and Innovation" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10261984444471489982&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8174930007500216859" label="Group rights in biolaw: a model approach">
+        <attvalues>
+          <attvalue for="0" value="https://www.era.lib.ed.ac.uk/handle/1842/5951" />
+          <attvalue for="1" value="Group rights in biolaw: a model approach" />
+          <attvalue for="2" value="KN Kanellopoulou" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8174930007500216859&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10795560021638764112" label="Ensayos sobre bioética">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=6miN77QhAZkC&amp;oi=fnd&amp;pg=PA9&amp;ots=U_ARap5E0B&amp;sig=aBzKfES3iZOOgtUBBuzR38WZFWU" />
+          <attvalue for="1" value="Ensayos sobre bioética" />
+          <attvalue for="2" value="MTL de la Vieja" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10795560021638764112&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13357069337126690288" label="Synthetic biology, concerns and risks: looking for a (constitutionally oriented) regulatory framework and a system of governance for a new emerging technology">
+        <attvalues>
+          <attvalue for="0" value="http://eprints-phd.biblio.unitn.it/966/" />
+          <attvalue for="1" value="Synthetic biology, concerns and risks: looking for a (constitutionally oriented) regulatory framework and a system of governance for a new emerging technology" />
+          <attvalue for="2" value="IA Colussi" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13357069337126690288&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4998650744317865745" label="Paweł Kwiatkowski">
+        <attvalues>
+          <attvalue for="0" value="https://www.ceeol.com/content-files/document-497788.pdf" />
+          <attvalue for="1" value="Paweł Kwiatkowski" />
+          <attvalue for="2" value="U Declaration" />
+          <attvalue for="3" value="PRZEGLAD PRAWNICZY UNIWERSYTETU IM …" />
+        </attvalues>
+      </node>
+      <node id="13528065407709143956" label="Human dignity mediated">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=BC0lDwAAQBAJ&amp;oi=fnd&amp;pg=PA253&amp;ots=Mt4wPq4Wyt&amp;sig=aTgUHi8grO-4sOrvDo_aV-UA6w0" />
+          <attvalue for="1" value="Human dignity mediated" />
+          <attvalue for="2" value="U Soirila" />
+          <attvalue for="3" value="Citizenship and Belonging in Law …" />
+        </attvalues>
+      </node>
+      <node id="2009257450775023451" label="Genomics &amp; Patents: Human Heritage and the Cost of Innovation">
+        <attvalues>
+          <attvalue for="0" value="https://cmgm.stanford.edu/biochem/biochem118/Projects/2011%20Winter/Kima-2011.pdf" />
+          <attvalue for="1" value="Genomics &amp; Patents: Human Heritage and the Cost of Innovation" />
+          <attvalue for="2" value="K Uche, D Brutlag" />
+          <attvalue for="3" value="Biochemistry 118Q: Genomics &amp; Medicine" />
+        </attvalues>
+      </node>
+      <node id="1985220309834059913" label="Public international law with regard to the social consequences of the development of genetics">
+        <attvalues>
+          <attvalue for="0" value="http://pressto.amu.edu.pl/index.php/ppuam/article/view/7287" />
+          <attvalue for="1" value="Public international law with regard to the social consequences of the development of genetics" />
+          <attvalue for="2" value="P Kwiatkowski" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="8617549629918097176" label="Embedding biobanks as tools for personalised medicine">
+        <attvalues>
+          <attvalue for="0" value="http://www.ntnu.no/ojs/index.php/norepid/article/view/1490" />
+          <attvalue for="1" value="Embedding biobanks as tools for personalised medicine" />
+          <attvalue for="2" value="J Kaye" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="18" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8617549629918097176&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17777989010486374406" label="Broad consent versus dynamic consent in biobank research: Is passive participation an ethical problem?">
+        <attvalues>
+          <attvalue for="0" value="https://www.nature.com/articles/ejhg2012282" />
+          <attvalue for="1" value="Broad consent versus dynamic consent in biobank research: Is passive participation an ethical problem?" />
+          <attvalue for="2" value="KS Steinsbekk, BK Myskja, B Solberg" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="120" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17777989010486374406&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10604974686868814948" label="Reforming biobank consent policy: a necessary move away from broad consent toward dynamic consent">
+        <attvalues>
+          <attvalue for="0" value="http://online.liebertpub.com/doi/full/10.1089/gtmb.2013.1550" />
+          <attvalue for="1" value="Reforming biobank consent policy: a necessary move away from broad consent toward dynamic consent" />
+          <attvalue for="2" value="DT Stein, SF Terry" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="27" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10604974686868814948&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4668529521674275279" label="Introducing research initiatives into healthcare: what do doctors think?">
+        <attvalues>
+          <attvalue for="0" value="http://online.liebertpub.com/doi/abs/10.1089/bio.2013.0069" />
+          <attvalue for="1" value="Introducing research initiatives into healthcare: what do doctors think?" />
+          <attvalue for="2" value="L Wyld, S Smith, NJ Hawkins, J Long…" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4668529521674275279&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5930700012305769056" label="Biobanking: from vision to reality">
+        <attvalues>
+          <attvalue for="0" value="http://www.ntnu.no/ojs/index.php/norepid/article/download/1482/1327" />
+          <attvalue for="1" value="Biobanking: from vision to reality" />
+          <attvalue for="2" value="JR Harris, A Haugan, I Budin-Ljøsne" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5930700012305769056&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6903684753040741593" label="An Overview of Biorepositories—Past, Present, and Future">
+        <attvalues>
+          <attvalue for="0" value="https://academic.oup.com/milmed/article-abstract/180/suppl_10/57/4259733" />
+          <attvalue for="1" value="An Overview of Biorepositories—Past, Present, and Future" />
+          <attvalue for="2" value="M Siwek" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6903684753040741593&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5394901585869199611" label="Croatian National Centre for Biobanking–a new perspective in biobanks governance?">
+        <attvalues>
+          <attvalue for="0" value="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4157382/" />
+          <attvalue for="1" value="Croatian National Centre for Biobanking–a new perspective in biobanks governance?" />
+          <attvalue for="2" value="A Borovečki, L Caenazzo, D Ježek…" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5394901585869199611&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4586047875804681496" label="[CITATION][C] Best practices for human biorepositories. Biobanks">
+        <attvalues>
+          <attvalue for="1" value="[CITATION][C] Best practices for human biorepositories. Biobanks" />
+          <attvalue for="2" value="RAM El-Desouki" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4586047875804681496&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11596190718597949730" label="Hukuki ve Etik Yönleri İle Biyotıp Araştırmalarında Biyobankalar">
+        <attvalues>
+          <attvalue for="0" value="http://www.openaccess.hacettepe.edu.tr:8080/xmlui/handle/11655/1037" />
+          <attvalue for="1" value="Hukuki ve Etik Yönleri İle Biyotıp Araştırmalarında Biyobankalar" />
+          <attvalue for="2" value="M Emir" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11596190718597949730&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15423533966809575089" label="Patients' attitudes towards the return of incidental findings after research with residual tissue: a mixed methods study">
+        <attvalues>
+          <attvalue for="0" value="https://www.liebertpub.com/doi/abs/10.1089/gtmb.2017.0222" />
+          <attvalue for="1" value="Patients' attitudes towards the return of incidental findings after research with residual tissue: a mixed methods study" />
+          <attvalue for="2" value="E Vermeulen, S Rebers, NK Aaronson…" />
+          <attvalue for="3" value="2018" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15423533966809575089&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14627380957032179720" label="Consentimiento Informado para Biobancos: Un debate ético abierto">
+        <attvalues>
+          <attvalue for="0" value="http://www.redalyc.org/html/3438/343845607012/" />
+          <attvalue for="1" value="Consentimiento Informado para Biobancos: Un debate ético abierto" />
+          <attvalue for="2" value="N Serrano-Díaz, E Guío-Mahecha…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14627380957032179720&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6730577843891611166" label="Singing the Body electric: the human Voice and Sound technology">
+        <attvalues>
+          <attvalue for="0" value="https://www.taylorfrancis.com/books/9781317054856" />
+          <attvalue for="1" value="Singing the Body electric: the human Voice and Sound technology" />
+          <attvalue for="2" value="M Young" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6730577843891611166&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5979963996459397078" label="A java-based remote live coding system for controlling multiple raspberry pi units">
+        <attvalues>
+          <attvalue for="0" value="http://www.olliebown.com/files/papers/bown-young-johnson-FINAL-icmc2013.pdf" />
+          <attvalue for="1" value="A java-based remote live coding system for controlling multiple raspberry pi units" />
+          <attvalue for="2" value="O Bown, M Young, S Johnson" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5979963996459397078&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6026989829782924733" label="Voice in devising/devising through voice: A conversation with Mikhail Karikis, Elaine Mitchener and Jessica Walker">
+        <attvalues>
+          <attvalue for="0" value="http://www.ingentaconnect.com/content/intellect/jivs/2016/00000001/00000002/art00006" />
+          <attvalue for="1" value="Voice in devising/devising through voice: A conversation with Mikhail Karikis, Elaine Mitchener and Jessica Walker" />
+          <attvalue for="2" value="M Karikis, E Mitchener, J Walker…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6026989829782924733&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6836757119334246269" label="Voicing the Technological Body: Some Musicological Reflections on Combinations of Voice and Technology in Popular Music">
+        <attvalues>
+          <attvalue for="0" value="http://jrfm.eu/index.php/ojs_jrfm/article/view/52" />
+          <attvalue for="1" value="Voicing the Technological Body: Some Musicological Reflections on Combinations of Voice and Technology in Popular Music" />
+          <attvalue for="2" value="F Heesch" />
+          <attvalue for="3" value="Film and Media (JRFM)" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6836757119334246269&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13392545375984736408" label="Let Me Whisper in Your Earbud: Curating Sound for Ubiquitous Tiny Speakers">
+        <attvalues>
+          <attvalue for="0" value="https://www.mitpressjournals.org/doi/abs/10.1162/LMJ_a_00959" />
+          <attvalue for="1" value="Let Me Whisper in Your Earbud: Curating Sound for Ubiquitous Tiny Speakers" />
+          <attvalue for="2" value="M Young" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="1146060599605003974" label="An experiment in educational research-creation using music as diagram">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1177/1077800417725352" />
+          <attvalue for="1" value="An experiment in educational research-creation using music as diagram" />
+          <attvalue for="2" value="S Riddle" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="eLVgH0GMFM4J" label="Weaving “Eroticism, Cosmology, and Politics” in Early Female Technopop: Three Discourses with the Informatics of Domination">
+        <attvalues>
+          <attvalue for="0" value="https://www.tandfonline.com/doi/abs/10.1080/03007766.2016.1169646" />
+          <attvalue for="1" value="Weaving “Eroticism, Cosmology, and Politics” in Early Female Technopop: Three Discourses with the Informatics of Domination" />
+          <attvalue for="2" value="A Liu-Rosenbaum" />
+          <attvalue for="3" value="2018" />
+        </attvalues>
+      </node>
+      <node id="2557509032222559428" label="Classical voice and the microphone: A work in progress">
+        <attvalues>
+          <attvalue for="0" value="https://search.informit.com.au/documentSummary;dn=237512928853872;res=IELHSS" />
+          <attvalue for="1" value="Classical voice and the microphone: A work in progress" />
+          <attvalue for="2" value="K Cummings" />
+          <attvalue for="3" value="2015" />
+        </attvalues>
+      </node>
+      <node id="7876321752150340169" label="Shaping the pancadão: Improvisation and Studio Creativity on Rio Funk Independent Recordings from the Early 1990s">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-3-658-17740-9_21" />
+          <attvalue for="1" value="Shaping the pancadão: Improvisation and Studio Creativity on Rio Funk Independent Recordings from the Early 1990s" />
+          <attvalue for="2" value="A Michailowsky" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="IDlquwtadDIJ" label="[CITATION][C] Using and Performing with Words and Things">
+        <attvalues>
+          <attvalue for="1" value="[CITATION][C] Using and Performing with Words and Things" />
+          <attvalue for="2" value="M Coeckelbergh, M Coeckelbergh" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="N9YWw5LPNDEJ" label="Designing and Playing the Strophonion">
+        <attvalues>
+          <attvalue for="0" value="https://www.econtact.ca/18_3/nowitz_strophonion.html" />
+          <attvalue for="1" value="Designing and Playing the Strophonion" />
+          <attvalue for="2" value="A Nowitz" />
+          <attvalue for="3" value="econtact.ca" />
+        </attvalues>
+      </node>
+      <node id="5107715048930069569" label="Clinical labor: Tissue donors and research subjects in the global bioeconomy">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=UMsjAwAAQBAJ&amp;oi=fnd&amp;pg=PP6&amp;ots=ONfWza7ciQ&amp;sig=4cARP2BaGEWWV8uNzNO5ZUOF_-4" />
+          <attvalue for="1" value="Clinical labor: Tissue donors and research subjects in the global bioeconomy" />
+          <attvalue for="2" value="M Cooper, C Waldby" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="226" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5107715048930069569&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1496098308455888683" label="Placental surfaces and the geographies of bodily interiors">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1068/a44698" />
+          <attvalue for="1" value="Placental surfaces and the geographies of bodily interiors" />
+          <attvalue for="2" value="R Colls, M Fannin" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1496098308455888683&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13559264618187656961" label="Knowledge and attitude of maternity nurses regarding cord blood collection and stem cells: An educational intervention">
+        <attvalues>
+          <attvalue for="0" value="http://www.sciedu.ca/journal/index.php/jnep/article/view/5834" />
+          <attvalue for="1" value="Knowledge and attitude of maternity nurses regarding cord blood collection and stem cells: An educational intervention" />
+          <attvalue for="2" value="HS Mohammed, HAEL Sayed" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13559264618187656961&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7856274636500839381" label="Cord Blood and Tissue Banking: Supporting Expectant Parent's Decision Making.">
+        <attvalues>
+          <attvalue for="0" value="http://search.ebscohost.com/login.aspx?direct=true&amp;profile=ehost&amp;scope=site&amp;authtype=crawler&amp;jrnl=08878625&amp;AN=87666689&amp;h=Sg9H4H0%2FLcmZgm8lNiOaE9jjBjvr%2FXx5JPGxvgyywY%2BicHdAnTmnUC6G7cu%2Bk5Ng2zeuCj9UJ2Pw71nFWZ8jZQ%3D%3D&amp;crl=c" />
+          <attvalue for="1" value="Cord Blood and Tissue Banking: Supporting Expectant Parent's Decision Making." />
+          <attvalue for="2" value="CA Cooper, M Severson" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7856274636500839381&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8287817792625816234" label="Origin stories from a regional placenta tissue collection">
+        <attvalues>
+          <attvalue for="0" value="http://www.tandfonline.com/doi/abs/10.1080/14636778.2014.999153" />
+          <attvalue for="1" value="Origin stories from a regional placenta tissue collection" />
+          <attvalue for="2" value="M Fannin, J Kent" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8287817792625816234&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7058840971522897929" label="身体, 身体观以及人文地理学对身体的研究">
+        <attvalues>
+          <attvalue for="0" value="http://www.dlyj.ac.cn/article/2015/1000-0585/36611" />
+          <attvalue for="1" value="身体, 身体观以及人文地理学对身体的研究" />
+          <attvalue for="2" value="陶伟， 王绍续， 朱竑" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7058840971522897929&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="426897983099235587" label="From the Incinerator to the Bank: A Feminist Qualitative Study of Private Cord Blood Banking in Canada">
+        <attvalues>
+          <attvalue for="0" value="http://yorkspace.library.yorku.ca/xmlui/handle/10315/29885" />
+          <attvalue for="1" value="From the Incinerator to the Bank: A Feminist Qualitative Study of Private Cord Blood Banking in Canada" />
+          <attvalue for="2" value="JYJ Haw" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=426897983099235587&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14197841523952537487" label="Health care professionals' knowledge, attitudes and practices relating to umbilical cord blood banking and donation: an integrative review">
+        <attvalues>
+          <attvalue for="0" value="https://bmcpregnancychildbirth.biomedcentral.com/articles/10.1186/s12884-016-0863-6" />
+          <attvalue for="1" value="Health care professionals' knowledge, attitudes and practices relating to umbilical cord blood banking and donation: an integrative review" />
+          <attvalue for="2" value="L Peberdy, J Young, L Kearney" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14197841523952537487&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18302930588592989635" label="(Re) collections: Engaging Feminist Geography with Embodied and Relational Experiences of Pregnancy Losses">
+        <attvalues>
+          <attvalue for="0" value="http://etheses.dur.ac.uk/10786" />
+          <attvalue for="1" value="(Re) collections: Engaging Feminist Geography with Embodied and Relational Experiences of Pregnancy Losses" />
+          <attvalue for="2" value="A McNiven" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18302930588592989635&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8542182399420540674" label="Spacing the subject: Thinking subjectivity after non‐representational theory">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/gec3.12347/full" />
+          <attvalue for="1" value="Spacing the subject: Thinking subjectivity after non‐representational theory" />
+          <attvalue for="2" value="P Simpson" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8542182399420540674&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12616480293456491208" label="Managing access to biobanks: How can we reconcile individual privacy and public interests...">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1177/096853321001000404" />
+          <attvalue for="1" value="Managing access to biobanks: How can we reconcile individual privacy and public interests..." />
+          <attvalue for="2" value="G Laurie, P Mallia, DA Frenkel…" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12616480293456491208&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7422765167167830374" label="The tension between data sharing and the protection of privacy in genomics research">
+        <attvalues>
+          <attvalue for="0" value="http://www.annualreviews.org/doi/abs/10.1146/annurev-genom-082410-101454" />
+          <attvalue for="1" value="The tension between data sharing and the protection of privacy in genomics research" />
+          <attvalue for="2" value="J Kaye" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="116" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7422765167167830374&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16759694415018945500" label="Towards a data sharing Code of Conduct for international genomic research">
+        <attvalues>
+          <attvalue for="0" value="https://genomemedicine.biomedcentral.com/articles/10.1186/gm262" />
+          <attvalue for="1" value="Towards a data sharing Code of Conduct for international genomic research" />
+          <attvalue for="2" value="BM Knoppers, JR Harris…" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="88" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16759694415018945500&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3308394174370673107" label="Sampling populations of humans across the world: ELSI issues">
+        <attvalues>
+          <attvalue for="0" value="http://www.annualreviews.org/doi/abs/10.1146/annurev-genom-090711-163834" />
+          <attvalue for="1" value="Sampling populations of humans across the world: ELSI issues" />
+          <attvalue for="2" value="BM Knoppers, MH Zawati…" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="49" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3308394174370673107&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5257462345969431933" label="Reflexive governance in biobanking: on the value of policy led approaches and the need to recognise the limits of law">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s00439-011-1066-x" />
+          <attvalue for="1" value="Reflexive governance in biobanking: on the value of policy led approaches and the need to recognise the limits of law" />
+          <attvalue for="2" value="G Laurie" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="33" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5257462345969431933&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1077432864692951006" label="Biobanks, data sharing, and the drive for a global privacy governance framework">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/jlme.12311/full" />
+          <attvalue for="1" value="Biobanks, data sharing, and the drive for a global privacy governance framework" />
+          <attvalue for="2" value="ES Dove" />
+          <attvalue for="3" value="Medicine &amp; Ethics" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1077432864692951006&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4519340978406569450" label="The tension between data sharing and the protection of privacy in genomics research">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-94-017-9573-9_8" />
+          <attvalue for="1" value="The tension between data sharing and the protection of privacy in genomics research" />
+          <attvalue for="2" value="J Kaye" />
+          <attvalue for="3" value="law and governance of biobanking" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4519340978406569450&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2683891492185694255" label="Biobank Report: United Kingdom">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1177/1073110516644202" />
+          <attvalue for="1" value="Biobank Report: United Kingdom" />
+          <attvalue for="2" value="J Kaye, J Bell, L Briceno…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2683891492185694255&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2598305449794892878" label="THE POTENTIAL IMPACT OF THE EU GENERAL DATA PROTECTION REGULATION ON PHARMACOGENOMICS RESEARCH">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/mlv36&amp;section=19" />
+          <attvalue for="1" value="THE POTENTIAL IMPACT OF THE EU GENERAL DATA PROTECTION REGULATION ON PHARMACOGENOMICS RESEARCH" />
+          <attvalue for="2" value="RDMA Dias" />
+          <attvalue for="3" value="Genetics" />
+        </attvalues>
+      </node>
+      <node id="6223898086696357613" label="The Right to Know and the Right Not to Know Revisited: Part One">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s41649-017-0012-1" />
+          <attvalue for="1" value="The Right to Know and the Right Not to Know Revisited: Part One" />
+          <attvalue for="2" value="R Brownsword, J Wale" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6223898086696357613&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="7556527499680598700" target="1971084081186387568" />
+      <edge id="1" source="7556527499680598700" target="13428854610867163914" />
+      <edge id="2" source="7556527499680598700" target="7808630135051906131" />
+      <edge id="3" source="7556527499680598700" target="3033523631393697915" />
+      <edge id="4" source="7556527499680598700" target="7095272042712320853" />
+      <edge id="5" source="7556527499680598700" target="13636996700787081111" />
+      <edge id="6" source="7556527499680598700" target="9254746649961730462" />
+      <edge id="7" source="7556527499680598700" target="9198222430491730086" />
+      <edge id="8" source="7556527499680598700" target="14864580230541288113" />
+      <edge id="9" source="7556527499680598700" target="3240585032961970202" />
+      <edge id="10" source="7556527499680598700" target="13599249941591853318" />
+      <edge id="11" source="1971084081186387568" target="386723840638153978" />
+      <edge id="12" source="1971084081186387568" target="10147228918361759042" />
+      <edge id="13" source="1971084081186387568" target="3531298846210677032" />
+      <edge id="14" source="1971084081186387568" target="839050694358475277" />
+      <edge id="15" source="1971084081186387568" target="7589182030691366643" />
+      <edge id="16" source="1971084081186387568" target="8617549629918097176" />
+      <edge id="17" source="1971084081186387568" target="6730577843891611166" />
+      <edge id="18" source="1971084081186387568" target="7553942180809764680" />
+      <edge id="19" source="1971084081186387568" target="12616480293456491208" />
+      <edge id="20" source="386723840638153978" target="9910138931836225244" />
+      <edge id="21" source="386723840638153978" target="192763985016504527" />
+      <edge id="22" source="386723840638153978" target="4003080078466903751" />
+      <edge id="23" source="386723840638153978" target="447342903296504236" />
+      <edge id="24" source="386723840638153978" target="4885694588010730607" />
+      <edge id="25" source="386723840638153978" target="2655971133650071082" />
+      <edge id="26" source="386723840638153978" target="13420647880156531501" />
+      <edge id="27" source="386723840638153978" target="17089023999631552930" />
+      <edge id="28" source="386723840638153978" target="988395465080786080" />
+      <edge id="29" source="386723840638153978" target="6820051766763973572" />
+      <edge id="30" source="10147228918361759042" target="5001935081305454455" />
+      <edge id="31" source="10147228918361759042" target="6650990543683806344" />
+      <edge id="32" source="10147228918361759042" target="9731887324644440594" />
+      <edge id="33" source="10147228918361759042" target="9303979080695346896" />
+      <edge id="34" source="10147228918361759042" target="10096472572938085523" />
+      <edge id="35" source="10147228918361759042" target="14032267165727104285" />
+      <edge id="36" source="10147228918361759042" target="7833127983146185326" />
+      <edge id="37" source="10147228918361759042" target="7553942180809764680" />
+      <edge id="38" source="10147228918361759042" target="17206374127293316399" />
+      <edge id="39" source="10147228918361759042" target="12029715825047962897" />
+      <edge id="40" source="9731887324644440594" target="3531298846210677032" />
+      <edge id="41" source="7553942180809764680" target="5107715048930069569" />
+      <edge id="42" source="7553942180809764680" target="1496098308455888683" />
+      <edge id="43" source="7553942180809764680" target="13559264618187656961" />
+      <edge id="44" source="7553942180809764680" target="7856274636500839381" />
+      <edge id="45" source="7553942180809764680" target="8287817792625816234" />
+      <edge id="46" source="7553942180809764680" target="7058840971522897929" />
+      <edge id="47" source="7553942180809764680" target="426897983099235587" />
+      <edge id="48" source="7553942180809764680" target="14197841523952537487" />
+      <edge id="49" source="7553942180809764680" target="18302930588592989635" />
+      <edge id="50" source="7553942180809764680" target="8542182399420540674" />
+      <edge id="51" source="3531298846210677032" target="14647610264440258720" />
+      <edge id="52" source="3531298846210677032" target="5194733928315874265" />
+      <edge id="53" source="3531298846210677032" target="3324877372193757049" />
+      <edge id="54" source="3531298846210677032" target="1983580798706716962" />
+      <edge id="55" source="3531298846210677032" target="17709238489087013081" />
+      <edge id="56" source="3531298846210677032" target="15681824224355738746" />
+      <edge id="57" source="3531298846210677032" target="12807484792526645635" />
+      <edge id="58" source="3531298846210677032" target="17423801329278082391" />
+      <edge id="59" source="3531298846210677032" target="10788932619595700330" />
+      <edge id="60" source="14647610264440258720" target="12616480293456491208" />
+      <edge id="61" source="839050694358475277" target="5713801732799407434" />
+      <edge id="62" source="839050694358475277" target="17942983029150337910" />
+      <edge id="63" source="839050694358475277" target="2351645677270264313" />
+      <edge id="64" source="839050694358475277" target="8892390036551226133" />
+      <edge id="65" source="839050694358475277" target="14264123579377189866" />
+      <edge id="66" source="839050694358475277" target="12027238464712618667" />
+      <edge id="67" source="839050694358475277" target="10484049060056044840" />
+      <edge id="68" source="839050694358475277" target="16627868433978875733" />
+      <edge id="69" source="839050694358475277" target="A5miHMrCTbgJ" />
+      <edge id="70" source="839050694358475277" target="XXu_N0tqPAIJ" />
+      <edge id="71" source="7589182030691366643" target="3949944803448691697" />
+      <edge id="72" source="7589182030691366643" target="11779770240469129020" />
+      <edge id="73" source="7589182030691366643" target="10261984444471489982" />
+      <edge id="74" source="7589182030691366643" target="8174930007500216859" />
+      <edge id="75" source="7589182030691366643" target="10795560021638764112" />
+      <edge id="76" source="7589182030691366643" target="13357069337126690288" />
+      <edge id="77" source="7589182030691366643" target="4998650744317865745" />
+      <edge id="78" source="7589182030691366643" target="13528065407709143956" />
+      <edge id="79" source="7589182030691366643" target="2009257450775023451" />
+      <edge id="80" source="7589182030691366643" target="1985220309834059913" />
+      <edge id="81" source="8617549629918097176" target="17777989010486374406" />
+      <edge id="82" source="8617549629918097176" target="10604974686868814948" />
+      <edge id="83" source="8617549629918097176" target="4668529521674275279" />
+      <edge id="84" source="8617549629918097176" target="5930700012305769056" />
+      <edge id="85" source="8617549629918097176" target="6903684753040741593" />
+      <edge id="86" source="8617549629918097176" target="5394901585869199611" />
+      <edge id="87" source="8617549629918097176" target="4586047875804681496" />
+      <edge id="88" source="8617549629918097176" target="11596190718597949730" />
+      <edge id="89" source="8617549629918097176" target="15423533966809575089" />
+      <edge id="90" source="8617549629918097176" target="14627380957032179720" />
+      <edge id="91" source="6730577843891611166" target="5979963996459397078" />
+      <edge id="92" source="6730577843891611166" target="6026989829782924733" />
+      <edge id="93" source="6730577843891611166" target="6836757119334246269" />
+      <edge id="94" source="6730577843891611166" target="13392545375984736408" />
+      <edge id="95" source="6730577843891611166" target="1146060599605003974" />
+      <edge id="96" source="6730577843891611166" target="eLVgH0GMFM4J" />
+      <edge id="97" source="6730577843891611166" target="2557509032222559428" />
+      <edge id="98" source="6730577843891611166" target="7876321752150340169" />
+      <edge id="99" source="6730577843891611166" target="IDlquwtadDIJ" />
+      <edge id="100" source="6730577843891611166" target="N9YWw5LPNDEJ" />
+      <edge id="101" source="12616480293456491208" target="7422765167167830374" />
+      <edge id="102" source="12616480293456491208" target="16759694415018945500" />
+      <edge id="103" source="12616480293456491208" target="3308394174370673107" />
+      <edge id="104" source="12616480293456491208" target="5257462345969431933" />
+      <edge id="105" source="12616480293456491208" target="1077432864692951006" />
+      <edge id="106" source="12616480293456491208" target="4519340978406569450" />
+      <edge id="107" source="12616480293456491208" target="2683891492185694255" />
+      <edge id="108" source="12616480293456491208" target="2598305449794892878" />
+      <edge id="109" source="12616480293456491208" target="6223898086696357613" />
+    </edges>
+  </graph>
+</gexf>

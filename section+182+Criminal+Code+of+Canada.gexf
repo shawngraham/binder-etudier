@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="url" type="string" />
+      <attribute id="1" title="title" type="string" />
+      <attribute id="2" title="authors" type="string" />
+      <attribute id="3" title="year" type="string" />
+      <attribute id="4" title="cited_by" type="long" />
+      <attribute id="5" title="cited_by_url" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>10/05/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="2790147971522139411" label="SEXUALITY &amp; THE CRIMINAL LAW IN CANADA: ISSUES FOR SEX EDUCATORS AND THERAPISTS.">
+        <attvalues>
+          <attvalue for="0" value="http://search.ebscohost.com/login.aspx?direct=true&amp;profile=ehost&amp;scope=site&amp;authtype=crawler&amp;jrnl=11884517&amp;AN=25150932&amp;h=tveKNRV3IlS%2BS2YdJ5VggtGR4DtUE8ceLmDQ4ISxOGGn6e9h%2F182ZFoFuBb6DDDTZDF3b1HYibS9ybMIbEq%2BqA%3D%3D&amp;crl=c" />
+          <attvalue for="1" value="SEXUALITY &amp; THE CRIMINAL LAW IN CANADA: ISSUES FOR SEX EDUCATORS AND THERAPISTS." />
+          <attvalue for="2" value="MJ MacDonald" />
+          <attvalue for="3" value="1994" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2790147971522139411&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7072474857778591479" label="Teenage sexual and reproductive behavior in developed countries">
+        <attvalues>
+          <attvalue for="0" value="https://pdfs.semanticscholar.org/849c/54dcd5188a775dce2a05c096c50c9b445e23.pdf" />
+          <attvalue for="1" value="Teenage sexual and reproductive behavior in developed countries" />
+          <attvalue for="2" value="E Maticka-Tyndale, A McKay…" />
+          <attvalue for="3" value="2001" />
+          <attvalue for="4" value="28" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7072474857778591479&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15870344738835719000" label="Dealing with sexual abuse of adults with a developmental disability who also have impaired communication: Supportive procedures for detection, disclosure …">
+        <attvalues>
+          <attvalue for="0" value="http://search.proquest.com/openview/6de393d718917b71e4258340b06437c0/1?pq-origsite=gscholar&amp;cbl=33400" />
+          <attvalue for="1" value="Dealing with sexual abuse of adults with a developmental disability who also have impaired communication: Supportive procedures for detection, disclosure …" />
+          <attvalue for="2" value="L Burke, C Bedard, S Ludwig" />
+          <attvalue for="3" value="1998" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15870344738835719000&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="588192888366503813" label="Rape acknowledgement and attributions of responsibility: The links between research, teaching and practice">
+        <attvalues>
+          <attvalue for="0" value="http://search.proquest.com/openview/11f437f6a6c3f31c0ef087a2aa381c0e/1?pq-origsite=gscholar&amp;cbl=33400" />
+          <attvalue for="1" value="Rape acknowledgement and attributions of responsibility: The links between research, teaching and practice" />
+          <attvalue for="2" value="HE Dunlap" />
+          <attvalue for="3" value="1997" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=588192888366503813&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5349866036780099410" label="Risk to self">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=E3xQ2hHMceIC&amp;oi=fnd&amp;pg=PA143&amp;ots=kbFRQVHqbu&amp;sig=HgGKAy-aSK3udbK5yTXJ0nTknGs" />
+          <attvalue for="1" value="Risk to self" />
+          <attvalue for="2" value="BL Murray, E Upshall" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5349866036780099410&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1129375404462025569" label="Policy development for museums: A First Nations perspective">
+        <attvalues>
+          <attvalue for="0" value="http://ojs.library.ubc.ca/index.php/bcstudies/article/download/1387/1431" />
+          <attvalue for="1" value="Policy development for museums: A First Nations perspective" />
+          <attvalue for="2" value="RE Atleo" />
+          <attvalue for="3" value="1991" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1129375404462025569&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="232304611668383564" label="Authentic science experiences as a vehicle to change students' orientations toward science and scientific career choices: Learning from the path followed by …">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s11422-009-9183-8" />
+          <attvalue for="1" value="Authentic science experiences as a vehicle to change students' orientations toward science and scientific career choices: Learning from the path followed by …" />
+          <attvalue for="2" value="M van Eijck, WM Roth" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="43" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=232304611668383564&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3152508746406318074" label="Collections and objections: aboriginal material culture in southern Ontario">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=H90JE18jrZ0C&amp;oi=fnd&amp;pg=PR7&amp;ots=qyDaOoTbNP&amp;sig=lmeCRPMRwZPlK6AtQ3sN-pndJwo" />
+          <attvalue for="1" value="Collections and objections: aboriginal material culture in southern Ontario" />
+          <attvalue for="2" value="M Hamilton" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="32" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3152508746406318074&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12377837878390017068" label="Imagination of science in education: From epics to novelization">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=XBGIN5NHizMC&amp;oi=fnd&amp;pg=PR7&amp;ots=FZzL187fHP&amp;sig=AzCvbBkKcVtPrfpNHLOnXYHqByI" />
+          <attvalue for="1" value="Imagination of science in education: From epics to novelization" />
+          <attvalue for="2" value="M Van Eijck, WM Roth" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="18" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12377837878390017068&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13047363846447469092" label="The ancient Nuu-chah-nulth strategy of hahuulthi: Education for indigenous cultural survivance">
+        <attvalues>
+          <attvalue for="0" value="http://www.academia.edu/download/7578188/MarleneAtleoHishukLearn2006.doc" />
+          <attvalue for="1" value="The ancient Nuu-chah-nulth strategy of hahuulthi: Education for indigenous cultural survivance" />
+          <attvalue for="2" value="MR Atleo" />
+          <attvalue for="3" value="Cultural" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13047363846447469092&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4262626384096824517" label="Questioning locality: the UBC Museum of Anthropology and its hinterlands">
+        <attvalues>
+          <attvalue for="0" value="https://journals.openedition.org/etnografica/2025" />
+          <attvalue for="1" value="Questioning locality: the UBC Museum of Anthropology and its hinterlands" />
+          <attvalue for="2" value="A Shelton" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4262626384096824517&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8056098852243755487" label="Huupukwanum Tupaat: Out of the Mist: Treasures of the Nuu‐chah‐nulth Chiefs at the Denver Museum of Nature and Science, Denver, Colorado">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1525/mua.2001.25.1.48/full" />
+          <attvalue for="1" value="Huupukwanum Tupaat: Out of the Mist: Treasures of the Nuu‐chah‐nulth Chiefs at the Denver Museum of Nature and Science, Denver, Colorado" />
+          <attvalue for="2" value="J Sinclair" />
+          <attvalue for="3" value="2001" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8056098852243755487&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15660986835128825369" label="Novelizing Native and scientific discourse">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-94-007-5392-1_9" />
+          <attvalue for="1" value="Novelizing Native and scientific discourse" />
+          <attvalue for="2" value="M van Eijck, WM Roth" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15660986835128825369&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10274644213518007284" label="Preserving Native Space">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-94-6209-632-5_6" />
+          <attvalue for="1" value="Preserving Native Space" />
+          <attvalue for="2" value="J Clapperton" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="V5oSkGzFJxcJ" label="5. PRESERVING NATIVE SPACE: THE XÁ: YTEM LONGHOUSE INTERPRETIVE CENTRE">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=1eglBAAAQBAJ&amp;oi=fnd&amp;pg=PA69&amp;ots=TU_8UZJNUP&amp;sig=2O3jCSKuAlpwBicH_aJW4c2PxXI" />
+          <attvalue for="1" value="5. PRESERVING NATIVE SPACE: THE XÁ: YTEM LONGHOUSE INTERPRETIVE CENTRE" />
+          <attvalue for="2" value="J CLAPPERTON" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="18010254703178680116" label="Legislation for Animal welfare">
+        <attvalues>
+          <attvalue for="1" value="Legislation for Animal welfare" />
+          <attvalue for="2" value="TL Whiting" />
+          <attvalue for="3" value="organized by Alberta Farm …" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18010254703178680116&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5648957919626842877" label="Canadian consumer valuation of farm animal welfare and quality verification–the case of pork">
+        <attvalues>
+          <attvalue for="0" value="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.830.9131&amp;rep=rep1&amp;type=pdf" />
+          <attvalue for="1" value="Canadian consumer valuation of farm animal welfare and quality verification–the case of pork" />
+          <attvalue for="2" value="AD Uzea" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5648957919626842877&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12872345759804345080" label="CONSUMER AND MARKET DEMAND AGRICULTURAL POLICY RESEARCH NETWORK">
+        <attvalues>
+          <attvalue for="0" value="http://www.prairieswine.com/pdf/39392.pdf" />
+          <attvalue for="1" value="CONSUMER AND MARKET DEMAND AGRICULTURAL POLICY RESEARCH NETWORK" />
+          <attvalue for="2" value="FA Welfare, A Uzea, JE Hobbs" />
+          <attvalue for="3" value="2008" />
+        </attvalues>
+      </node>
+      <node id="TGkUsJ2V7yMJ" label="The Dead Body Offence in Canada: How Courts Interpret and Apply Section 182 of the Criminal Code">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/callb35&amp;section=34" />
+          <attvalue for="1" value="The Dead Body Offence in Canada: How Courts Interpret and Apply Section 182 of the Criminal Code" />
+          <attvalue for="2" value="A Bolieiro" />
+          <attvalue for="3" value="2010" />
+        </attvalues>
+      </node>
+      <node id="12430728799269814376" label="The Disposition of Human Remains and Organ Donation: Increasing Testamentary Freedom while Upholding the No Property Rule">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wesjalals7&amp;section=5" />
+          <attvalue for="1" value="The Disposition of Human Remains and Organ Donation: Increasing Testamentary Freedom while Upholding the No Property Rule" />
+          <attvalue for="2" value="LM Mimnagh" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="fsv_9GjBbsIJ" label="Sex Crimes, Prostitution and Pornography: A Posthumous Report of the Law Reform Commission of Canada">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/canbarev73&amp;section=29" />
+          <attvalue for="1" value="Sex Crimes, Prostitution and Pornography: A Posthumous Report of the Law Reform Commission of Canada" />
+          <attvalue for="2" value="J Barnes" />
+          <attvalue for="3" value="HeinOnline" />
+        </attvalues>
+      </node>
+      <node id="REPV-L1CN8kJ" label="Supreme and County Court Decisions">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/clwqrty7&amp;section=34" />
+          <attvalue for="1" value="Supreme and County Court Decisions" />
+          <attvalue for="2" value="MR Robertson" />
+          <attvalue for="3" value="HeinOnline" />
+        </attvalues>
+      </node>
+      <node id="8003355105190003647" label="The legal regulation of sexual activity and the protection of females">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ohlj21&amp;section=17" />
+          <attvalue for="1" value="The legal regulation of sexual activity and the protection of females" />
+          <attvalue for="2" value="G Parker" />
+          <attvalue for="3" value="1983" />
+          <attvalue for="4" value="12" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8003355105190003647&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18076604855570094284" label="Reading Gaol Revisited: Admission of Uncharged Misconduct Evidence in Sex Offender Cases">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ajcl21&amp;section=11" />
+          <attvalue for="1" value="Reading Gaol Revisited: Admission of Uncharged Misconduct Evidence in Sex Offender Cases" />
+          <attvalue for="2" value="TJ Reed" />
+          <attvalue for="3" value="1993" />
+          <attvalue for="4" value="110" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18076604855570094284&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4676179966883593743" label="Making good: Law and moral regulation in Canada, 1867-1939">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=lnKrT6fay9AC&amp;oi=fnd&amp;pg=PR9&amp;ots=hlBRNoh1vf&amp;sig=rWx9A4rzFwx76vzg30oKhwrRqlk" />
+          <attvalue for="1" value="Making good: Law and moral regulation in Canada, 1867-1939" />
+          <attvalue for="2" value="C Strange, TM Loo" />
+          <attvalue for="3" value="1997" />
+          <attvalue for="4" value="109" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4676179966883593743&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15577180451892604809" label="Chasing the social evil: Moral fervour and the evolution of Canada's prostitution laws, 1867-1917">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/canadian-journal-of-law-and-society-la-revue-canadienne-droit-et-societe/article/chasing-the-social-evil-moral-fervour-and-the-evolution-of-canadas-prostitution-laws-18671917/0FC9EFA13FCED6A45F7F85839FBE8457" />
+          <attvalue for="1" value="Chasing the social evil: Moral fervour and the evolution of Canada's prostitution laws, 1867-1917" />
+          <attvalue for="2" value="JPS McLaren" />
+          <attvalue for="3" value="1986" />
+          <attvalue for="4" value="56" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15577180451892604809&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13419051798319541361" label="Misconceptions: Unmarried Motherhood and the Ontario Children of Unmarried Parents Act, 1921 to 1969">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=9mhtz6xc51UC&amp;oi=fnd&amp;pg=PR7&amp;ots=wjQXF7Mw_s&amp;sig=YX7RPgvFXcpkBtm95qrwuFPPGqg" />
+          <attvalue for="1" value="Misconceptions: Unmarried Motherhood and the Ontario Children of Unmarried Parents Act, 1921 to 1969" />
+          <attvalue for="2" value="AL Chambers" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13419051798319541361&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11051540732422846551" label="Feminist perspectives on Law: Canadian theory and practice">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/cajwol2&amp;section=8" />
+          <attvalue for="1" value="Feminist perspectives on Law: Canadian theory and practice" />
+          <attvalue for="2" value="SB Boyd, EA Sheehy" />
+          <attvalue for="3" value="1986" />
+          <attvalue for="4" value="18" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11051540732422846551&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16752696036649808812" label="Canadian Prostitution Control Between 1914 and 1970: An Exercise in Chauvinist Reasoning">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/canadian-journal-of-law-and-society-la-revue-canadienne-droit-et-societe/article/canadian-prostitution-control-between-1914-and-1970-an-exercise-in-chauvinist-reasoning/81EDA344F77DD51B7A7B1816931E8B3F" />
+          <attvalue for="1" value="Canadian Prostitution Control Between 1914 and 1970: An Exercise in Chauvinist Reasoning" />
+          <attvalue for="2" value="EN Larsen" />
+          <attvalue for="3" value="1992" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16752696036649808812&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10387987944130524411" label="Masking and unmasking the sexual abuse of children: Perceptions of violence against children in “The Badlands” of Ontario, 1916-1930">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1177/036319900002500404" />
+          <attvalue for="1" value="Masking and unmasking the sexual abuse of children: Perceptions of violence against children in “The Badlands” of Ontario, 1916-1930" />
+          <attvalue for="2" value="J Sangster" />
+          <attvalue for="3" value="2000" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10387987944130524411&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1986560122871695617" label="“The Other Woman: Lizzie Cyr and the Origins of the 'Persons Case'”*">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/canadian-journal-of-law-and-society-la-revue-canadienne-droit-et-societe/article/other-woman-lizzie-cyr-and-the-origins-of-the-persons-case/187434128D1472823BD34F69C27E657C" />
+          <attvalue for="1" value="“The Other Woman: Lizzie Cyr and the Origins of the 'Persons Case'”*" />
+          <attvalue for="2" value="D Bright" />
+          <attvalue for="3" value="1998" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1986560122871695617&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2535539759875346882" label="Le Code criminel canadien 1892-1927: Étude des acteurs sociaux">
+        <attvalues>
+          <attvalue for="0" value="http://www.utpjournals.press/doi/pdf/10.3138/CHR.79.2.261" />
+          <attvalue for="1" value="Le Code criminel canadien 1892-1927: Étude des acteurs sociaux" />
+          <attvalue for="2" value="A Cellard, G Pelletier" />
+          <attvalue for="3" value="1998" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2535539759875346882&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14533247712599900118" label="Changing images of deviance: Nineteenth-century Canadian anti-prostitution movements">
+        <attvalues>
+          <attvalue for="0" value="http://www.tandfonline.com/doi/abs/10.1080/01639625.2010.548273" />
+          <attvalue for="1" value="Changing images of deviance: Nineteenth-century Canadian anti-prostitution movements" />
+          <attvalue for="2" value="RA Ball" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14533247712599900118&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10044929425116867787" label="Biotechnology and the challenge of property: property rights in dead bodies, body parts,...">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.ca/books?hl=en&amp;lr=&amp;id=LIkHDAAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;dq=%22section+182%22+%22Criminal+Code+of+Canada%22&amp;ots=Zo5WLRUhkn&amp;sig=pY4W-xk7XY2wnRwySJHQiqeMq2A" />
+          <attvalue for="1" value="Biotechnology and the challenge of property: property rights in dead bodies, body parts,..." />
+          <attvalue for="2" value="RN Nwabueze" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="39" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10044929425116867787&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7808630135051906131" label="Our bodies, whose property?">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=iofSMrpBgZEC&amp;oi=fnd&amp;pg=PP1&amp;ots=MS0QoIVO5C&amp;sig=t1hgcSSlZdE_PL1qZlDmAlhyB2s" />
+          <attvalue for="1" value="Our bodies, whose property?" />
+          <attvalue for="2" value="A Phillips" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="67" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7808630135051906131&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13599249941591853318" label="Bioequity–property and the human body">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=K5IGDAAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=nfBjzbDYN_&amp;sig=tjMMJtcx4L4LVQ51zLFfoZ9eBgo" />
+          <attvalue for="1" value="Bioequity–property and the human body" />
+          <attvalue for="2" value="N Hoppe" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13599249941591853318&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6851339913969242339" label="Protecting the Traditional Knowledge and Cultural Expressions of Russia's Numerically-Small Indigenous Peoples: What Has Been Done, What Remains to Be …">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/twlr15&amp;section=18" />
+          <attvalue for="1" value="Protecting the Traditional Knowledge and Cultural Expressions of Russia's Numerically-Small Indigenous Peoples: What Has Been Done, What Remains to Be …" />
+          <attvalue for="2" value="M Newcity" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="15" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6851339913969242339&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16623181315964122190" label="Dissecting the dissectors: knowledge, attitude, and practice of body bequests by Nigerian anatomists">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/ase.1298/full" />
+          <attvalue for="1" value="Dissecting the dissectors: knowledge, attitude, and practice of body bequests by Nigerian anatomists" />
+          <attvalue for="2" value="EG Anyanwu, EN Obikili" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16623181315964122190&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12693297149795329496" label="Dying to live: migrant deaths and citizenship politics along European borders: transgressions, disruptions, and mobilizations">
+        <attvalues>
+          <attvalue for="0" value="http://www.tandfonline.com/doi/abs/10.1080/13621025.2016.1182682" />
+          <attvalue for="1" value="Dying to live: migrant deaths and citizenship politics along European borders: transgressions, disruptions, and mobilizations" />
+          <attvalue for="2" value="K Rygiel" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="12" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12693297149795329496&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15367389431968107744" label="Intellectual property and the ethical/legal status of human DNA: The (ir) relevance of context">
+        <attvalues>
+          <attvalue for="0" value="https://www.erudit.org/en/journals/etudinuit/2011-v35-n1-2-etudinuit0322/1012839ar/abstract/" />
+          <attvalue for="1" value="Intellectual property and the ethical/legal status of human DNA: The (ir) relevance of context" />
+          <attvalue for="2" value="D Pullman, G Nicholas" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15367389431968107744&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="610203159904099518" label="Over My Dead Body: How the Albrecht Decisions Complicate the Constitutional Dilemma of Due Process &amp; the Dead">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/utol41&amp;section=9" />
+          <attvalue for="1" value="Over My Dead Body: How the Albrecht Decisions Complicate the Constitutional Dilemma of Due Process &amp; the Dead" />
+          <attvalue for="2" value="DLW Knope" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=610203159904099518&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13703754963079310990" label="Legal and ethical regulation of biomedical research in developing countries">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=0tMFDAAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=cxbJQgtDTn&amp;sig=_xWwZKaSMqpnYvNzok5QtGI53bM" />
+          <attvalue for="1" value="Legal and ethical regulation of biomedical research in developing countries" />
+          <attvalue for="2" value="RN Nwabueze" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13703754963079310990&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14950425476209012120" label="Biobanks: Patents Or Open Science?">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=C2dEAgAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=uQ1M6lOW9o&amp;sig=QJWH3vafg4DiqKkEZBBgkUxAoTc" />
+          <attvalue for="1" value="Biobanks: Patents Or Open Science?" />
+          <attvalue for="2" value="A De Robbio" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14950425476209012120&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16763964473637133233" label="From principles to practice: Implementing genetic database governance">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1177/096853320800900201" />
+          <attvalue for="1" value="From principles to practice: Implementing genetic database governance" />
+          <attvalue for="2" value="SMC Gibbons" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16763964473637133233&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8377092972995166617" label="An ostensible exercise in modernity: law, religious intervention, and social science in the case of Bedford vs. Canada">
+        <attvalues>
+          <attvalue for="0" value="http://lurepository.lakeheadu.ca:8080/handle/2453/493" />
+          <attvalue for="1" value="An ostensible exercise in modernity: law, religious intervention, and social science in the case of Bedford vs. Canada" />
+          <attvalue for="2" value="V Lucky" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="2790147971522139411" target="7072474857778591479" />
+      <edge id="1" source="2790147971522139411" target="15870344738835719000" />
+      <edge id="2" source="2790147971522139411" target="588192888366503813" />
+      <edge id="3" source="2790147971522139411" target="5349866036780099410" />
+      <edge id="4" source="1129375404462025569" target="232304611668383564" />
+      <edge id="5" source="1129375404462025569" target="3152508746406318074" />
+      <edge id="6" source="1129375404462025569" target="12377837878390017068" />
+      <edge id="7" source="1129375404462025569" target="13047363846447469092" />
+      <edge id="8" source="1129375404462025569" target="4262626384096824517" />
+      <edge id="9" source="1129375404462025569" target="8056098852243755487" />
+      <edge id="10" source="1129375404462025569" target="15660986835128825369" />
+      <edge id="11" source="1129375404462025569" target="10274644213518007284" />
+      <edge id="12" source="1129375404462025569" target="V5oSkGzFJxcJ" />
+      <edge id="13" source="18010254703178680116" target="5648957919626842877" />
+      <edge id="14" source="18010254703178680116" target="12872345759804345080" />
+      <edge id="15" source="8003355105190003647" target="18076604855570094284" />
+      <edge id="16" source="8003355105190003647" target="4676179966883593743" />
+      <edge id="17" source="8003355105190003647" target="15577180451892604809" />
+      <edge id="18" source="8003355105190003647" target="13419051798319541361" />
+      <edge id="19" source="8003355105190003647" target="11051540732422846551" />
+      <edge id="20" source="8003355105190003647" target="16752696036649808812" />
+      <edge id="21" source="8003355105190003647" target="10387987944130524411" />
+      <edge id="22" source="8003355105190003647" target="1986560122871695617" />
+      <edge id="23" source="8003355105190003647" target="2535539759875346882" />
+      <edge id="24" source="8003355105190003647" target="14533247712599900118" />
+      <edge id="25" source="10044929425116867787" target="7808630135051906131" />
+      <edge id="26" source="10044929425116867787" target="13599249941591853318" />
+      <edge id="27" source="10044929425116867787" target="6851339913969242339" />
+      <edge id="28" source="10044929425116867787" target="16623181315964122190" />
+      <edge id="29" source="10044929425116867787" target="12693297149795329496" />
+      <edge id="30" source="10044929425116867787" target="15367389431968107744" />
+      <edge id="31" source="10044929425116867787" target="610203159904099518" />
+      <edge id="32" source="10044929425116867787" target="13703754963079310990" />
+      <edge id="33" source="10044929425116867787" target="14950425476209012120" />
+      <edge id="34" source="10044929425116867787" target="16763964473637133233" />
+    </edges>
+  </graph>
+</gexf>

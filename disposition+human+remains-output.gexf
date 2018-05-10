@@ -1,0 +1,1034 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="url" type="string" />
+      <attribute id="1" title="title" type="string" />
+      <attribute id="2" title="authors" type="string" />
+      <attribute id="3" title="year" type="string" />
+      <attribute id="4" title="cited_by" type="long" />
+      <attribute id="5" title="cited_by_url" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>09/05/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="17459526444552842673" label="Please Don't Bury Me Down in That Cold Cold Ground: The Need for Uniform Laws on the Disposition...">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/elder15&amp;section=15" />
+          <attvalue for="1" value="Please Don't Bury Me Down in That Cold Cold Ground: The Need for Uniform Laws on the Disposition..." />
+          <attvalue for="2" value="AM Murphy" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17459526444552842673&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11026343725763211753" label="In re Estate of Whalen">
+        <attvalues>
+          <attvalue for="0" value="/scholar_case?case=11026343725763211753&amp;hl=en&amp;as_sdt=20000005&amp;sciodt=0,21" />
+          <attvalue for="1" value="In re Estate of Whalen" />
+          <attvalue for="2" value="827 NW 2d 184" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11026343725763211753&amp;as_sdt=20000005&amp;sciodt=6&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11769582669022344930" label="Individualized Justice in Disputes over Dead Bodies">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/vanlr61&amp;section=43" />
+          <attvalue for="1" value="Individualized Justice in Disputes over Dead Bodies" />
+          <attvalue for="2" value="FH Foster" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="24" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11769582669022344930&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8139987294272742286" label="The Will as Personal Narrative">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/elder20&amp;section=16" />
+          <attvalue for="1" value="The Will as Personal Narrative" />
+          <attvalue for="2" value="KJ Sneddon" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="19" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8139987294272742286&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2903422134679591735" label="Immortal fame: Publicity rights, taxation, and the power of testation">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/geolr44&amp;section=4" />
+          <attvalue for="1" value="Immortal fame: Publicity rights, taxation, and the power of testation" />
+          <attvalue for="2" value="JC Tate" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2903422134679591735&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13282788154598893154" label="NAGPRA at 20: what have the States done to expand human remains protections?">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/j.1548-1379.2010.01098.x/full" />
+          <attvalue for="1" value="NAGPRA at 20: what have the States done to expand human remains protections?" />
+          <attvalue for="2" value="RM Seidemann" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13282788154598893154&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11038314520784899152" label="Alcor Life Extension Found. v. Richardson">
+        <attvalues>
+          <attvalue for="0" value="/scholar_case?case=11038314520784899152&amp;hl=en&amp;as_sdt=20000005&amp;sciodt=0,21" />
+          <attvalue for="1" value="Alcor Life Extension Found. v. Richardson" />
+          <attvalue for="2" value="785 NW 2d 717" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11038314520784899152&amp;as_sdt=20000005&amp;sciodt=6&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1045751950962712256" label="Privacy as Quasi-Property">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ilr101&amp;section=34" />
+          <attvalue for="1" value="Privacy as Quasi-Property" />
+          <attvalue for="2" value="LH Scholz" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1045751950962712256&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11204381944452711949" label="Letting the Dead Bury the Dead: Missouri's Right of Sepulcher Addresses the Modern Decedent's Wishes">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/molr75&amp;section=10" />
+          <attvalue for="1" value="Letting the Dead Bury the Dead: Missouri's Right of Sepulcher Addresses the Modern Decedent's Wishes" />
+          <attvalue for="2" value="KE Naguit" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11204381944452711949&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14692078523421079383" label="Dead Bodies Everywhere (Dun Dun Dun): Funeral Trends in this Recession and the Laws Regulating These Changes">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/epcplj2&amp;section=20" />
+          <attvalue for="1" value="Dead Bodies Everywhere (Dun Dun Dun): Funeral Trends in this Recession and the Laws Regulating These Changes" />
+          <attvalue for="2" value="MC Wells" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14692078523421079383&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2739886401915390046" label="Nail in the Coffin: Can Elderly Americans Afford to Die">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/elder21&amp;section=8" />
+          <attvalue for="1" value="Nail in the Coffin: Can Elderly Americans Afford to Die" />
+          <attvalue for="2" value="EH Boldt" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2739886401915390046&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11739996013510217385" label="The problem of aging human remains and living individuals: a review">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0379073809003703" />
+          <attvalue for="1" value="The problem of aging human remains and living individuals: a review" />
+          <attvalue for="2" value="E Cunha, E Baccino, L Martrille, F Ramsthaler…" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="325" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11739996013510217385&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4881580923203956045" label="Accuracy of Cameriere, Haavikko, and Willems radiographic methods on age estimation on Bosnian–Herzegovian children age groups 6–13">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s00414-010-0515-8" />
+          <attvalue for="1" value="Accuracy of Cameriere, Haavikko, and Willems radiographic methods on age estimation on Bosnian–Herzegovian children age groups 6–13" />
+          <attvalue for="2" value="I Galić, M Vodanović, R Cameriere, E Nakaš…" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="91" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4881580923203956045&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7934490092242261220" label="Age estimation by pulp/tooth ratio in lower premolars by orthopantomography">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0379073811003604" />
+          <attvalue for="1" value="Age estimation by pulp/tooth ratio in lower premolars by orthopantomography" />
+          <attvalue for="2" value="R Cameriere, S De Luca, I Alemán, L Ferrante…" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="65" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7934490092242261220&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16576458212667355509" label="Age estimation and the medial clavicular epiphysis: analysis of the age of majority in an Australian population using computed tomography">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s12024-010-9200-y" />
+          <attvalue for="1" value="Age estimation and the medial clavicular epiphysis: analysis of the age of majority in an Australian population using computed tomography" />
+          <attvalue for="2" value="RB Bassed, OH Drummer, C Briggs…" />
+          <attvalue for="3" value="medicine" />
+          <attvalue for="4" value="58" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16576458212667355509&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17057765114709777001" label="Dental age estimation using Demirjian and Willems methods: cross sectional study on children from the Former Yugoslav Republic of Macedonia">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0379073813004696" />
+          <attvalue for="1" value="Dental age estimation using Demirjian and Willems methods: cross sectional study on children from the Former Yugoslav Republic of Macedonia" />
+          <attvalue for="2" value="V Ambarkova, I Galić, M Vodanović…" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="56" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17057765114709777001&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5319195264761148410" label="Human age estimation combining third molar and skeletal development">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s00414-011-0639-5" />
+          <attvalue for="1" value="Human age estimation combining third molar and skeletal development" />
+          <attvalue for="2" value="PW Thevissen, J Kaur, G Willems" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="53" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5319195264761148410&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9057208030924582658" label="Reliability of Schmeling's stages of ossification of medial clavicular epiphyses and its validity to assess 18 years of age in living subjects">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s00414-012-0769-4" />
+          <attvalue for="1" value="Reliability of Schmeling's stages of ossification of medial clavicular epiphyses and its validity to assess 18 years of age in living subjects" />
+          <attvalue for="2" value="R Cameriere, S De Luca, D De Angelis…" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="47" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9057208030924582658&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17784909259016541617" label="A new method to estimate adult age‐at‐death using the acetabulum">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/ajpa.22026/full" />
+          <attvalue for="1" value="A new method to estimate adult age‐at‐death using the acetabulum" />
+          <attvalue for="2" value="SE Calce" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="46" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17784909259016541617&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4913210848574757555" label="The application of histomorphometry and Fourier Transform Infrared Spectroscopy to the analysis of early Anglo-Saxon burned bone">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0305440311001555" />
+          <attvalue for="1" value="The application of histomorphometry and Fourier Transform Infrared Spectroscopy to the analysis of early Anglo-Saxon burned bone" />
+          <attvalue for="2" value="KE Squires, TJU Thompson, M Islam…" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="45" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4913210848574757555&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4536182433089615348" label="Age estimation in U-20 football players using 3.0 tesla MRI of the clavicle">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0379073814002060" />
+          <attvalue for="1" value="Age estimation in U-20 football players using 3.0 tesla MRI of the clavicle" />
+          <attvalue for="2" value="V Vieth, R Schulz, P Brinkmeier, J Dvorak…" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="40" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4536182433089615348&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4692122987607651292" label="Dental age estimation based on third molar eruption in first nations people of Canada">
+        <attvalues>
+          <attvalue for="0" value="https://www.researchgate.net/profile/Heidi_Pfeiffer/publication/49760193_Dental_age_estimation_based_on_third_molar_eruption_in_First_Nation_people_of_Canada/links/54dc9aeb0cf282895a3ab56b/Dental-age-estimation-based-on-third-molar-eruption-in-First-Nation-people-of-Canada.pdf" />
+          <attvalue for="1" value="Dental age estimation based on third molar eruption in first nations people of Canada" />
+          <attvalue for="2" value="A Olze, BR Pynn, V Kraul, R Schulz…" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="39" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4692122987607651292&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17358803452393244181" label="Privileging Claims to the Past: Ancient Human Remains and Contemporary Cultural Values">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/arzjl31&amp;section=23" />
+          <attvalue for="1" value="Privileging Claims to the Past: Ancient Human Remains and Contemporary Cultural Values" />
+          <attvalue for="2" value="R Tsosie" />
+          <attvalue for="3" value="1999" />
+          <attvalue for="4" value="50" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17358803452393244181&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5889843512418934402" label="Rethinking the tribal sovereignty doctrine: Cultural sovereignty and the collective future of Indian nations">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/stanlp12&amp;section=22" />
+          <attvalue for="1" value="Rethinking the tribal sovereignty doctrine: Cultural sovereignty and the collective future of Indian nations" />
+          <attvalue for="2" value="W Coffey, R Tsosie" />
+          <attvalue for="3" value="2001" />
+          <attvalue for="4" value="240" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5889843512418934402&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5129918602336596004" label="State ex rel. Commissioner of Transportation v. Medicine Bird">
+        <attvalues>
+          <attvalue for="0" value="/scholar_case?case=5129918602336596004&amp;hl=en&amp;as_sdt=20000005&amp;sciodt=0,21" />
+          <attvalue for="1" value="State ex rel. Commissioner of Transportation v. Medicine Bird" />
+          <attvalue for="2" value="63 SW 3d 734" />
+          <attvalue for="3" value="2001" />
+          <attvalue for="4" value="110" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5129918602336596004&amp;as_sdt=20000005&amp;sciodt=6&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12356773994561377854" label="Memory pieces and footprints: multivocality and the meanings of ancient times and ancestral places among the Zuni and Hopi">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1525/aa.2006.108.1.148/full" />
+          <attvalue for="1" value="Memory pieces and footprints: multivocality and the meanings of ancient times and ancestral places among the Zuni and Hopi" />
+          <attvalue for="2" value="C Colwell‐Chanthaphonh…" />
+          <attvalue for="3" value="2006" />
+          <attvalue for="4" value="108" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12356773994561377854&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17362209681001861886" label="Cultural relics, intellectual property, and intangible heritage">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/temple81&amp;section=16" />
+          <attvalue for="1" value="Cultural relics, intellectual property, and intangible heritage" />
+          <attvalue for="2" value="PK Yu" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="64" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17362209681001861886&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10989458171452468689" label="Risk avoidance, cultural discrimination, and environmental justice for indigenous peoples">
+        <attvalues>
+          <attvalue for="0" value="http://www.jstor.org/stable/24114287" />
+          <attvalue for="1" value="Risk avoidance, cultural discrimination, and environmental justice for indigenous peoples" />
+          <attvalue for="2" value="CA O'Neill" />
+          <attvalue for="3" value="2003" />
+          <attvalue for="4" value="57" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10989458171452468689&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3488910630040972419" label="Property law: Rules, policies, and practices">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=8L_fDgAAQBAJ&amp;oi=fnd&amp;pg=PT32&amp;ots=dCS7_NnuNt&amp;sig=Lhx0nMzsZm8orhEKwQiJL7ts08I" />
+          <attvalue for="1" value="Property law: Rules, policies, and practices" />
+          <attvalue for="2" value="JW Singer, BR Berger" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="53" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3488910630040972419&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5078974747507895525" label="The New Deal Origins of American Legal Pluralism">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/flsulr29&amp;section=13" />
+          <attvalue for="1" value="The New Deal Origins of American Legal Pluralism" />
+          <attvalue for="2" value="D Tsuk" />
+          <attvalue for="3" value="2001" />
+          <attvalue for="4" value="52" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5078974747507895525&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1800878730888470099" label="Circulation, accumulation, and the power of Shuar shrunken heads">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1525/can.2007.22.3.357/full" />
+          <attvalue for="1" value="Circulation, accumulation, and the power of Shuar shrunken heads" />
+          <attvalue for="2" value="SL Rubenstein" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="38" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1800878730888470099&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17562568837704782305" label="Cultural Nationalists, Internationalists, and “Intra-nationalists'': Who's Right and Whose Right?">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/cultural-nationalists-internationalists-and-intranationalists-whos-right-and-whose-right/B200FC33A62655713222B8A10494B644" />
+          <attvalue for="1" value="Cultural Nationalists, Internationalists, and “Intra-nationalists'': Who's Right and Whose Right?" />
+          <attvalue for="2" value="J Watkins" />
+          <attvalue for="3" value="2005" />
+          <attvalue for="4" value="31" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17562568837704782305&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14785782626791987391" label="The New Challenge to Native Identity: An Essay on Indigeneity and Whiteness">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wajlp18&amp;section=7" />
+          <attvalue for="1" value="The New Challenge to Native Identity: An Essay on Indigeneity and Whiteness" />
+          <attvalue for="2" value="R Tsosie" />
+          <attvalue for="3" value="2005" />
+          <attvalue for="4" value="31" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14785782626791987391&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9150014883505773863" label="Codeine disposition in human hair after single and multiple doses">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s002280050129" />
+          <attvalue for="1" value="Codeine disposition in human hair after single and multiple doses" />
+          <attvalue for="2" value="DE Rollins, DG Wilkins, GG Krueger" />
+          <attvalue for="3" value="1996" />
+          <attvalue for="4" value="49" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9150014883505773863&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5648744234272252653" label="Testing for GHB in hair by GC/MS/MS after a single exposure. Application to document sexual assault">
+        <attvalues>
+          <attvalue for="0" value="http://www.astm.org/DIGITAL_LIBRARY/JOURNALS/FORENSIC/PAGES/JFS2002209.htm" />
+          <attvalue for="1" value="Testing for GHB in hair by GC/MS/MS after a single exposure. Application to document sexual assault" />
+          <attvalue for="2" value="P Kintz, V Cirimele, C Jamey, B Ludes" />
+          <attvalue for="3" value="2003" />
+          <attvalue for="4" value="139" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5648744234272252653&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1300487769780795764" label="Anabolic steroids in sport: biochemical, clinical and analytical perspectives">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1258/000456303766476977" />
+          <attvalue for="1" value="Anabolic steroids in sport: biochemical, clinical and analytical perspectives" />
+          <attvalue for="2" value="AT Kicman, DB Gower" />
+          <attvalue for="3" value="2003" />
+          <attvalue for="4" value="129" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1300487769780795764&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18340784075127997319" label="Codeine concentration in hair after oral administration is dependent on melanin content">
+        <attvalues>
+          <attvalue for="0" value="http://clinchem.aaccjnls.org/content/45/9/1485.short" />
+          <attvalue for="1" value="Codeine concentration in hair after oral administration is dependent on melanin content" />
+          <attvalue for="2" value="R Kronstrand, S Förstberg-Peterson…" />
+          <attvalue for="3" value="1999" />
+          <attvalue for="4" value="111" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18340784075127997319&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11422487062322369514" label="Plasma and oral fluid pharmacokinetics and pharmacodynamics after oral codeine administration">
+        <attvalues>
+          <attvalue for="0" value="http://clinchem.aaccjnls.org/user/logout?current=node/25077" />
+          <attvalue for="1" value="Plasma and oral fluid pharmacokinetics and pharmacodynamics after oral codeine administration" />
+          <attvalue for="2" value="I Kim, AJ Barnes, JM Oyler, R Schepers…" />
+          <attvalue for="3" value="2002" />
+          <attvalue for="4" value="108" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11422487062322369514&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5542809056682621416" label="Testing for the undetectable in drug-facilitated sexual assault using hair analyzed by tandem mass spectrometry as evidence">
+        <attvalues>
+          <attvalue for="0" value="https://journals.lww.com/drug-monitoring/Abstract/2004/04000/Testing_for_the_Undetectable_in_Drug_Facilitated.22.aspx" />
+          <attvalue for="1" value="Testing for the undetectable in drug-facilitated sexual assault using hair analyzed by tandem mass spectrometry as evidence" />
+          <attvalue for="2" value="P Kintz, M Villain, B Ludes" />
+          <attvalue for="3" value="2004" />
+          <attvalue for="4" value="86" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5542809056682621416&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="945316809774285821" label="The effect of hair color on the incorporation of codeine into human hair">
+        <attvalues>
+          <attvalue for="0" value="https://academic.oup.com/jat/article-abstract/27/8/545/872220" />
+          <attvalue for="1" value="The effect of hair color on the incorporation of codeine into human hair" />
+          <attvalue for="2" value="DE Rollins, DG Wilkins, GG Krueger…" />
+          <attvalue for="3" value="2003" />
+          <attvalue for="4" value="91" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=945316809774285821&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5340121564545550085" label="Simultaneous quantification of opiates, cocaine, and metabolites in hair by LC-APCI-MS/MS">
+        <attvalues>
+          <attvalue for="0" value="http://pubs.acs.org/doi/abs/10.1021/ac049555t" />
+          <attvalue for="1" value="Simultaneous quantification of opiates, cocaine, and metabolites in hair by LC-APCI-MS/MS" />
+          <attvalue for="2" value="KB Scheidweiler, MA Huestis" />
+          <attvalue for="3" value="2004" />
+          <attvalue for="4" value="82" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5340121564545550085&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12255048152072684990" label="Hair analysis in toxicology">
+        <attvalues>
+          <attvalue for="0" value="https://www.degruyter.com/view/j/cclm.2004.42.issue-11/cclm.2004.247/cclm.2004.247.xml" />
+          <attvalue for="1" value="Hair analysis in toxicology" />
+          <attvalue for="2" value="M Villain, V Cirimele, P Kintz" />
+          <attvalue for="3" value="2004" />
+          <attvalue for="4" value="79" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12255048152072684990&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12887805790666309" label="Dose—concentration relationships in hair from subjects in a controlled heroin-maintenance program">
+        <attvalues>
+          <attvalue for="0" value="https://academic.oup.com/jat/article-abstract/22/3/231/789342" />
+          <attvalue for="1" value="Dose—concentration relationships in hair from subjects in a controlled heroin-maintenance program" />
+          <attvalue for="2" value="P Kintz, P Bundeli, R Brenneisen…" />
+          <attvalue for="3" value="1998" />
+          <attvalue for="4" value="73" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12887805790666309&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9374091059884041832" label="Dose-related distribution of codeine, cocaine, and metabolites into human hair following controlled oral codeine and subcutaneous cocaine administration">
+        <attvalues>
+          <attvalue for="0" value="http://jpet.aspetjournals.org/content/313/2/909.short" />
+          <attvalue for="1" value="Dose-related distribution of codeine, cocaine, and metabolites into human hair following controlled oral codeine and subcutaneous cocaine administration" />
+          <attvalue for="2" value="KB Scheidweiler, EJ Cone, ET Moolchan…" />
+          <attvalue for="3" value="2005" />
+          <attvalue for="4" value="65" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9374091059884041832&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5921970468688242762" label="Human placental lactogen: studies of its acute metabolic effects and disposition in normal man">
+        <attvalues>
+          <attvalue for="0" value="https://www.jci.org/articles/view/105503" />
+          <attvalue for="1" value="Human placental lactogen: studies of its acute metabolic effects and disposition in normal man" />
+          <attvalue for="2" value="P Beck, WH Daughaday" />
+          <attvalue for="3" value="1967" />
+          <attvalue for="4" value="257" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5921970468688242762&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10428250334141509184" label="Genetic conflicts in human pregnancy">
+        <attvalues>
+          <attvalue for="0" value="http://www.journals.uchicago.edu/doi/abs/10.1086/418300" />
+          <attvalue for="1" value="Genetic conflicts in human pregnancy" />
+          <attvalue for="2" value="D Haig" />
+          <attvalue for="3" value="1993" />
+          <attvalue for="4" value="1153" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10428250334141509184&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7843932343635619984" label="Banting Lecture 1980: Of pregnancy and progeny">
+        <attvalues>
+          <attvalue for="0" value="http://diabetes.diabetesjournals.org/content/29/12/1023.short" />
+          <attvalue for="1" value="Banting Lecture 1980: Of pregnancy and progeny" />
+          <attvalue for="2" value="N Freinkel" />
+          <attvalue for="3" value="1980" />
+          <attvalue for="4" value="1014" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7843932343635619984&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5985443219542944097" label="Disappearance rates of endogenous luteinizing hormone and chorionic gonadotropin in man">
+        <attvalues>
+          <attvalue for="0" value="https://academic.oup.com/jcem/article-abstract/28/12/1763/2715567" />
+          <attvalue for="1" value="Disappearance rates of endogenous luteinizing hormone and chorionic gonadotropin in man" />
+          <attvalue for="2" value="SSC Yen, O Llerena, B Little…" />
+          <attvalue for="3" value="1968" />
+          <attvalue for="4" value="398" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5985443219542944097&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8332409018479765682" label="Cellular mechanisms for insulin resistance in normal pregnancy and gestational diabetes">
+        <attvalues>
+          <attvalue for="0" value="http://care.diabetesjournals.org/content/30/Supplement_2/S112.short" />
+          <attvalue for="1" value="Cellular mechanisms for insulin resistance in normal pregnancy and gestational diabetes" />
+          <attvalue for="2" value="LA Barbour, CE McCurdy, TL Hernandez…" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="403" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8332409018479765682&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="437725065527904454" label="Role of gestational hormones in the induction of insulin resistance">
+        <attvalues>
+          <attvalue for="0" value="https://academic.oup.com/jcem/article-abstract/67/2/341/2651959" />
+          <attvalue for="1" value="Role of gestational hormones in the induction of insulin resistance" />
+          <attvalue for="2" value="EA RYAN, L ENNS" />
+          <attvalue for="3" value="1988" />
+          <attvalue for="4" value="346" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=437725065527904454&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15350269223735596002" label="Relative effects of pregnancy, estradiol, and progesterone on plasma insulin and pancreatic islet insulin secretion">
+        <attvalues>
+          <attvalue for="0" value="https://www.jci.org/articles/view/106593" />
+          <attvalue for="1" value="Relative effects of pregnancy, estradiol, and progesterone on plasma insulin and pancreatic islet insulin secretion" />
+          <attvalue for="2" value="NV Costrini, RK Kalkhoff" />
+          <attvalue for="3" value="1971" />
+          <attvalue for="4" value="296" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15350269223735596002&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="827661212640553183" label="Carbohydrate metabolism in pregnancy: VI. Plasma fuels, insulin, liver composition, gluconeogenesis, and nitrogen metabolism during late gestation in the fed and …">
+        <attvalues>
+          <attvalue for="0" value="https://www.jci.org/articles/view/106192" />
+          <attvalue for="1" value="Carbohydrate metabolism in pregnancy: VI. Plasma fuels, insulin, liver composition, gluconeogenesis, and nitrogen metabolism during late gestation in the fed and …" />
+          <attvalue for="2" value="E Herrera, RH Knopp…" />
+          <attvalue for="3" value="1969" />
+          <attvalue for="4" value="268" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=827661212640553183&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1588436861565162544" label="Endocrine physiology of the placenta">
+        <attvalues>
+          <attvalue for="0" value="http://www.annualreviews.org/doi/pdf/10.1146/annurev.ph.43.030181.001115" />
+          <attvalue for="1" value="Endocrine physiology of the placenta" />
+          <attvalue for="2" value="ER Simpson, PC MacDonald" />
+          <attvalue for="3" value="1981" />
+          <attvalue for="4" value="229" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1588436861565162544&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13730670823633641108" label="[CITATION][C] Type 2 diabetes mellitus">
+        <attvalues>
+          <attvalue for="1" value="[CITATION][C] Type 2 diabetes mellitus" />
+          <attvalue for="2" value="JB Buse, KS Polonsky, CF Burant" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="225" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13730670823633641108&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15975869612911754694" label="Evolution of the mammalian placenta revealed by phylogenetic analysis">
+        <attvalues>
+          <attvalue for="0" value="http://www.pnas.org/content/103/9/3203.short" />
+          <attvalue for="1" value="Evolution of the mammalian placenta revealed by phylogenetic analysis" />
+          <attvalue for="2" value="DE Wildman, C Chen, O Erez…" />
+          <attvalue for="3" value="2006" />
+          <attvalue for="4" value="216" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15975869612911754694&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15251948508490504760" label="Native American Graves Protection and Repatriation Act at the Margin: Does NAGPRA Govern...">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/walee15&amp;section=11" />
+          <attvalue for="1" value="Native American Graves Protection and Repatriation Act at the Margin: Does NAGPRA Govern..." />
+          <attvalue for="2" value="R Van Horn" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15251948508490504760&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3322700976102201518" label="NAGPRA and the Problem of Culturally Unidentifiable Remains: The Argument for a Human Rights Framework">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/arzjl44&amp;section=37" />
+          <attvalue for="1" value="NAGPRA and the Problem of Culturally Unidentifiable Remains: The Argument for a Human Rights Framework" />
+          <attvalue for="2" value="R Tsosie" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3322700976102201518&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5739872194105744485" label="Tipping NAGPRA's Balancing Act: The Inequitable Disposition of Culturally Unidentified Human...">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wmitch37&amp;section=67" />
+          <attvalue for="1" value="Tipping NAGPRA's Balancing Act: The Inequitable Disposition of Culturally Unidentified Human..." />
+          <attvalue for="2" value="MH Birkhold" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5739872194105744485&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15827467639649894355" label="Yearbook of Cultural Property Law 2008">
+        <attvalues>
+          <attvalue for="0" value="https://www.taylorfrancis.com/books/9781315415406" />
+          <attvalue for="1" value="Yearbook of Cultural Property Law 2008" />
+          <attvalue for="2" value="S Hutt, D Tarler" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15827467639649894355&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12721276206224663352" label="The archaeology of death: mortuary archaeology in the United States and Europe 1990–2013">
+        <attvalues>
+          <attvalue for="0" value="http://www.annualreviews.org/doi/abs/10.1146/annurev-anthro-102313-025851" />
+          <attvalue for="1" value="The archaeology of death: mortuary archaeology in the United States and Europe 1990–2013" />
+          <attvalue for="2" value="B Arnold, RJ Jeske" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12721276206224663352&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13131386537434628736" label="The Spirit of NAGPRA: The Native American Graves Protection and Repatriation Act and the Regulation of Culturally Unidentifiable Remains">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/chknt86&amp;section=51" />
+          <attvalue for="1" value="The Spirit of NAGPRA: The Native American Graves Protection and Repatriation Act and the Regulation of Culturally Unidentifiable Remains" />
+          <attvalue for="2" value="AH Midler" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13131386537434628736&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1355716055126163854" label="Note: Tipping Nagpra's Balancing Act: The Inequitable Disposition of&quot; Culturally Unidentified&quot; Human Remains Under Nagpra's New Provision">
+        <attvalues>
+          <attvalue for="0" value="https://open.mitchellhamline.edu/cgi/viewcontent.cgi?article=1422&amp;context=wmlr" />
+          <attvalue for="1" value="Note: Tipping Nagpra's Balancing Act: The Inequitable Disposition of&quot; Culturally Unidentified&quot; Human Remains Under Nagpra's New Provision" />
+          <attvalue for="2" value="MH Birkhold" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1355716055126163854&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7203238844428372752" label="Oral tradition and the Kennewick man">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/yljfor126&amp;section=20" />
+          <attvalue for="1" value="Oral tradition and the Kennewick man" />
+          <attvalue for="2" value="CYN Smith" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7203238844428372752&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10196178540538284387" label="A model-based approach to predicting the human pharmacokinetics of a monoclonal antibody...">
+        <attvalues>
+          <attvalue for="0" value="http://jpet.aspetjournals.org/user/logout?current=node/47956" />
+          <attvalue for="1" value="A model-based approach to predicting the human pharmacokinetics of a monoclonal antibody..." />
+          <attvalue for="2" value="KT Luu, S Bergqvist, E Chen, D Hu-Lowe…" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="48" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10196178540538284387&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10615239920685797498" label="Pharmacokinetics, pharmacodynamics and physiologically-based pharmacokinetic modelling of monoclonal antibodies">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s40262-012-0027-4" />
+          <attvalue for="1" value="Pharmacokinetics, pharmacodynamics and physiologically-based pharmacokinetic modelling of monoclonal antibodies" />
+          <attvalue for="2" value="M Dostalek, I Gardner, BM Gurbaxani, RH Rose…" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="118" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10615239920685797498&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6025095691374359196" label="Biologics: an update and challenge of their pharmacokinetics">
+        <attvalues>
+          <attvalue for="0" value="http://www.ingentaconnect.com/content/ben/cdm/2014/00000015/00000003/art00003" />
+          <attvalue for="1" value="Biologics: an update and challenge of their pharmacokinetics" />
+          <attvalue for="2" value="S Shi" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="40" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6025095691374359196&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8663156995271022222" label="Pharmacokinetic studies of protein drugs: past, present and future">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0169409X13000525" />
+          <attvalue for="1" value="Pharmacokinetic studies of protein drugs: past, present and future" />
+          <attvalue for="2" value="E Ezan" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="34" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8663156995271022222&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="343607547973197631" label="Incorporating target-mediated drug disposition in a minimal physiologically-based pharmacokinetic model for monoclonal antibodies">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s10928-014-9372-2" />
+          <attvalue for="1" value="Incorporating target-mediated drug disposition in a minimal physiologically-based pharmacokinetic model for monoclonal antibodies" />
+          <attvalue for="2" value="Y Cao, WJ Jusko" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="33" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=343607547973197631&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13794415118584442475" label="A tutorial on target‐mediated drug disposition (TMDD) models">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/psp4.41/full" />
+          <attvalue for="1" value="A tutorial on target‐mediated drug disposition (TMDD) models" />
+          <attvalue for="2" value="P Dua, E Hawkins…" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="33" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13794415118584442475&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6339003399203852297" label="A first-in-human study of the anti-α5β1 integrin monoclonal antibody PF-04605412 administered intravenously to patients with advanced solid tumors">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s00280-014-2576-8" />
+          <attvalue for="1" value="A first-in-human study of the anti-α5β1 integrin monoclonal antibody PF-04605412 administered intravenously to patients with advanced solid tumors" />
+          <attvalue for="2" value="J Mateo, J Berlin, JS De Bono, RB Cohen…" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6339003399203852297&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="946813516569675512" label="Projecting human pharmacokinetics of monoclonal antibodies from nonclinical data: comparative evaluation of prediction approaches in early drug development">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/bdd.1952/full" />
+          <attvalue for="1" value="Projecting human pharmacokinetics of monoclonal antibodies from nonclinical data: comparative evaluation of prediction approaches in early drug development" />
+          <attvalue for="2" value="J Wang, S Iyer, PJ Fielder, JD Davis…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=946813516569675512&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2237652272728350782" label="Simulation of Monoclonal Antibody Pharmacokinetics in HumansUsing a Minimal Physiologically Based Model">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1208/s12248-014-9640-5" />
+          <attvalue for="1" value="Simulation of Monoclonal Antibody Pharmacokinetics in HumansUsing a Minimal Physiologically Based Model" />
+          <attvalue for="2" value="L Li, I Gardner, M Dostalek, M Jamei" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="20" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2237652272728350782&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9245151949598677441" label="Sweeping antibody as a novel therapeutic antibody modality capable of eliminating soluble antigens from circulation">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/imr.12392/full" />
+          <attvalue for="1" value="Sweeping antibody as a novel therapeutic antibody modality capable of eliminating soluble antigens from circulation" />
+          <attvalue for="2" value="T Igawa, K Haraya, K Hattori" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9245151949598677441&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6470127623893261586" label="Application of human FcRn transgenic mice as a pharmacokinetic screening tool of monoclonal antibody">
+        <attvalues>
+          <attvalue for="0" value="http://www.tandfonline.com/doi/abs/10.3109/00498254.2014.941963" />
+          <attvalue for="1" value="Application of human FcRn transgenic mice as a pharmacokinetic screening tool of monoclonal antibody" />
+          <attvalue for="2" value="K Haraya, T Tachibana, M Nanami, M Ishigai" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6470127623893261586&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9673865814718741327" label="Repatriation in practice: The process of returning human remains in the United States, Norway, and New Zealand">
+        <attvalues>
+          <attvalue for="0" value="http://search.proquest.com/openview/9406b31243bcb868cb0e7bf21f652183/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" />
+          <attvalue for="1" value="Repatriation in practice: The process of returning human remains in the United States, Norway, and New Zealand" />
+          <attvalue for="2" value="AE Edwards" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9673865814718741327&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11176899677694586475" label="The Creation of Tribal Cultural Hegemony under the Indian Arts and Crafts Act and Native American Graves Protection and Repatriation Act">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/nordak92&amp;section=22" />
+          <attvalue for="1" value="The Creation of Tribal Cultural Hegemony under the Indian Arts and Crafts Act and Native American Graves Protection and Repatriation Act" />
+          <attvalue for="2" value="AW Minikowski" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="8UbSKO-skZYJ" label="Archaeology and identity: The Native American Graves Protection and Repatriation Act and the cultural affiliation process">
+        <attvalues>
+          <attvalue for="0" value="http://search.proquest.com/openview/f2020de3ca609235eada73230071a108/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" />
+          <attvalue for="1" value="Archaeology and identity: The Native American Graves Protection and Repatriation Act and the cultural affiliation process" />
+          <attvalue for="2" value="J Normoyle" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="93sETBvsFVoJ" label="A, Chahta sia: Reevaluating the Native American Graves Protection and Repatriation Act">
+        <attvalues>
+          <attvalue for="0" value="http://scholarsbank.uoregon.edu/xmlui/handle/1794/18631" />
+          <attvalue for="1" value="A, Chahta sia: Reevaluating the Native American Graves Protection and Repatriation Act" />
+          <attvalue for="2" value="M Reynolds" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="722969612872206408" label="Make No Bones about It: The Need to Reform the Native American Graves Protection and Repatriation Act">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/qplj30&amp;section=20" />
+          <attvalue for="1" value="Make No Bones about It: The Need to Reform the Native American Graves Protection and Repatriation Act" />
+          <attvalue for="2" value="ED Melillo" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="5624372166291434354" label="THE CREATION OF TRIBAL CULTURAL HEGEMONY UNDER THE INDIAN ARTS AND CRAFTS ACT AND NATIVE AMERICAN GRAVES PROTECTION AND …">
+        <attvalues>
+          <attvalue for="0" value="http://law.und.edu/_files/docs/ndlr/pdf/issues/92/2/92ndlr397.pdf" />
+          <attvalue for="1" value="THE CREATION OF TRIBAL CULTURAL HEGEMONY UNDER THE INDIAN ARTS AND CRAFTS ACT AND NATIVE AMERICAN GRAVES PROTECTION AND …" />
+          <attvalue for="2" value="W STEVENS" />
+          <attvalue for="3" value="NORTH DAKOTA LAW REVIEW" />
+        </attvalues>
+      </node>
+      <node id="3056560230291582747" label="Statement on the excavation, treatment, analysis and disposition of human skeletal remains...">
+        <attvalues>
+          <attvalue for="1" value="Statement on the excavation, treatment, analysis and disposition of human skeletal remains..." />
+          <attvalue for="2" value="JS Cybulski, NS Ossenberg, WD Wade" />
+          <attvalue for="3" value="1979" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3056560230291582747&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16083139259867647804" label="Bioarchaeology: the contextual analysis of human remains">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=S9ZADgAAQBAJ&amp;oi=fnd&amp;pg=PT9&amp;ots=jeFTa54A47&amp;sig=2LMe3LsA2kzyvAKGHW_gIve_4iE" />
+          <attvalue for="1" value="Bioarchaeology: the contextual analysis of human remains" />
+          <attvalue for="2" value="JE Buikstra, LA Beck" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="188" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16083139259867647804&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3152508746406318074" label="Collections and objections: aboriginal material culture in southern Ontario">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=H90JE18jrZ0C&amp;oi=fnd&amp;pg=PR7&amp;ots=qyD9XtRiGN&amp;sig=D9u1K2vAxZTGLgQ6zxtR_hzUZHk" />
+          <attvalue for="1" value="Collections and objections: aboriginal material culture in southern Ontario" />
+          <attvalue for="2" value="M Hamilton" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="32" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3152508746406318074&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14394651384165021367" label="Skeletal Analysis in Southeastern Archaeology">
+        <attvalues>
+          <attvalue for="0" value="http://rla.unc.edu/NCAC/Publications/NCAC_24.pdf" />
+          <attvalue for="1" value="Skeletal Analysis in Southeastern Archaeology" />
+          <attvalue for="2" value="JE Levy" />
+          <attvalue for="3" value="1986" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14394651384165021367&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14547843655187095390" label="Bioarchaeology in Canada: Origins and Contemporary Issues">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-3-319-06370-6_7" />
+          <attvalue for="1" value="Bioarchaeology in Canada: Origins and Contemporary Issues" />
+          <attvalue for="2" value="JS Cybulski, MA Katzenberg" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="lIA4Z1ET9BEJ" label="Collection, Curation, Repatriation: Exploring the Concept of Museum Skeletal Populations as Missing Persons">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=RGqzDAAAQBAJ&amp;oi=fnd&amp;pg=PA119&amp;ots=w4vwwFxnTd&amp;sig=VRc6WKfu4InL4kCBHgNaEpMWquc" />
+          <attvalue for="1" value="Collection, Curation, Repatriation: Exploring the Concept of Museum Skeletal Populations as Missing Persons" />
+          <attvalue for="2" value="J Young" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="wk3j-rZjTMIJ" label="History of Human Paleopathology in Canada">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=8V0ijRYk_2UC&amp;oi=fnd&amp;pg=PA245&amp;ots=wpYyAwquEw&amp;sig=qsfW4P65YjkUCbqSy5RYoK4L2So" />
+          <attvalue for="1" value="History of Human Paleopathology in Canada" />
+          <attvalue for="2" value="JS CYBULSKI" />
+          <attvalue for="3" value="2012" />
+        </attvalues>
+      </node>
+      <node id="77t4AF5EzY0J" label="Le rapatriement des ancêtres Wendat, 2013">
+        <attvalues>
+          <attvalue for="0" value="http://www.jstor.org/stable/43967076" />
+          <attvalue for="1" value="Le rapatriement des ancêtres Wendat, 2013" />
+          <attvalue for="2" value="S Pfeiffer, L Lesage" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="14296572490016015640" label="Letter from Secretary of the Interior Bruce Babbitt to Secretary of the Army Louis Caldera...">
+        <attvalues>
+          <attvalue for="1" value="Letter from Secretary of the Interior Bruce Babbitt to Secretary of the Army Louis Caldera..." />
+          <attvalue for="2" value="B Babbit" />
+          <attvalue for="3" value="http://www. cr. nps. gov/aad …" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14296572490016015640&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18375538332098203800" label="The ethics of bioarchaeology">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=30xVqlqyONAC&amp;oi=fnd&amp;pg=PA111&amp;ots=J2ODmR3HaK&amp;sig=aoXElh24-xGmrR0dQa_JDvVYDY4" />
+          <attvalue for="1" value="The ethics of bioarchaeology" />
+          <attvalue for="2" value="CS Larsen, PL Walker" />
+          <attvalue for="3" value="2005" />
+          <attvalue for="4" value="47" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18375538332098203800&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14235337207444317007" label="Respect for the ancestors: American Indian cultural affiliation in the American West">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=EHHe3W_zCc4C&amp;oi=fnd&amp;pg=PA5&amp;ots=FcOoXWJB7p&amp;sig=OkmX5Te3hoYlt4xQyA7GPnuli4g" />
+          <attvalue for="1" value="Respect for the ancestors: American Indian cultural affiliation in the American West" />
+          <attvalue for="2" value="PN Jones" />
+          <attvalue for="3" value="2005" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14235337207444317007&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9527963908596689122" label="The good, the bad, and the ugly">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=pQ1HZpXrqSMC&amp;oi=fnd&amp;pg=PA278&amp;ots=kbc3TX677E&amp;sig=BRJdnsTbosKf_QD1WLpLph6wSGk" />
+          <attvalue for="1" value="The good, the bad, and the ugly" />
+          <attvalue for="2" value="FA Kaestle" />
+          <attvalue for="3" value="2003" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9527963908596689122&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4213530864871126812" label="Caring for the dead: Finding a common ground in disputes over Museum Collections of human remains">
+        <attvalues>
+          <attvalue for="0" value="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.655.3099&amp;rep=rep1&amp;type=pdf" />
+          <attvalue for="1" value="Caring for the dead: Finding a common ground in disputes over Museum Collections of human remains" />
+          <attvalue for="2" value="PL Walker" />
+          <attvalue for="3" value="2004" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4213530864871126812&amp;as_sdt=20000005&amp;sciodt=0,21&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10787203120900475161" label="The Ethics of Bioarchaeology Clark Spencer Larsen and Phillip L. Walker">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=g_ewk80euBQC&amp;oi=fnd&amp;pg=PA111&amp;ots=xcPEGwi87Q&amp;sig=kvQWWtysVewIJatxNI7FixZxopc" />
+          <attvalue for="1" value="The Ethics of Bioarchaeology Clark Spencer Larsen and Phillip L. Walker" />
+          <attvalue for="2" value="CS Larsen" />
+          <attvalue for="3" value="2005" />
+        </attvalues>
+      </node>
+      <node id="wGKk4Z2bFCAJ" label="Archaeology the Tribal Way: Reestablishing the Boundaries of Culture">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=n6gYDQAAQBAJ&amp;oi=fnd&amp;pg=PT335&amp;ots=BTgE9SZ2Fe&amp;sig=dYePHFhxdSjYeXlH3g4M9feU3es" />
+          <attvalue for="1" value="Archaeology the Tribal Way: Reestablishing the Boundaries of Culture" />
+          <attvalue for="2" value="O Marek-Martinez" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="17459526444552842673" target="11026343725763211753" />
+      <edge id="1" source="17459526444552842673" target="11769582669022344930" />
+      <edge id="2" source="17459526444552842673" target="8139987294272742286" />
+      <edge id="3" source="17459526444552842673" target="2903422134679591735" />
+      <edge id="4" source="17459526444552842673" target="13282788154598893154" />
+      <edge id="5" source="17459526444552842673" target="11038314520784899152" />
+      <edge id="6" source="17459526444552842673" target="1045751950962712256" />
+      <edge id="7" source="17459526444552842673" target="11204381944452711949" />
+      <edge id="8" source="17459526444552842673" target="14692078523421079383" />
+      <edge id="9" source="17459526444552842673" target="2739886401915390046" />
+      <edge id="10" source="11739996013510217385" target="4881580923203956045" />
+      <edge id="11" source="11739996013510217385" target="7934490092242261220" />
+      <edge id="12" source="11739996013510217385" target="16576458212667355509" />
+      <edge id="13" source="11739996013510217385" target="17057765114709777001" />
+      <edge id="14" source="11739996013510217385" target="5319195264761148410" />
+      <edge id="15" source="11739996013510217385" target="9057208030924582658" />
+      <edge id="16" source="11739996013510217385" target="17784909259016541617" />
+      <edge id="17" source="11739996013510217385" target="4913210848574757555" />
+      <edge id="18" source="11739996013510217385" target="4536182433089615348" />
+      <edge id="19" source="11739996013510217385" target="4692122987607651292" />
+      <edge id="20" source="17358803452393244181" target="5889843512418934402" />
+      <edge id="21" source="17358803452393244181" target="5129918602336596004" />
+      <edge id="22" source="17358803452393244181" target="12356773994561377854" />
+      <edge id="23" source="17358803452393244181" target="17362209681001861886" />
+      <edge id="24" source="17358803452393244181" target="10989458171452468689" />
+      <edge id="25" source="17358803452393244181" target="3488910630040972419" />
+      <edge id="26" source="17358803452393244181" target="5078974747507895525" />
+      <edge id="27" source="17358803452393244181" target="1800878730888470099" />
+      <edge id="28" source="17358803452393244181" target="17562568837704782305" />
+      <edge id="29" source="17358803452393244181" target="14785782626791987391" />
+      <edge id="30" source="9150014883505773863" target="5648744234272252653" />
+      <edge id="31" source="9150014883505773863" target="1300487769780795764" />
+      <edge id="32" source="9150014883505773863" target="18340784075127997319" />
+      <edge id="33" source="9150014883505773863" target="11422487062322369514" />
+      <edge id="34" source="9150014883505773863" target="5542809056682621416" />
+      <edge id="35" source="9150014883505773863" target="945316809774285821" />
+      <edge id="36" source="9150014883505773863" target="5340121564545550085" />
+      <edge id="37" source="9150014883505773863" target="12255048152072684990" />
+      <edge id="38" source="9150014883505773863" target="12887805790666309" />
+      <edge id="39" source="9150014883505773863" target="9374091059884041832" />
+      <edge id="40" source="5921970468688242762" target="10428250334141509184" />
+      <edge id="41" source="5921970468688242762" target="7843932343635619984" />
+      <edge id="42" source="5921970468688242762" target="5985443219542944097" />
+      <edge id="43" source="5921970468688242762" target="8332409018479765682" />
+      <edge id="44" source="5921970468688242762" target="437725065527904454" />
+      <edge id="45" source="5921970468688242762" target="15350269223735596002" />
+      <edge id="46" source="5921970468688242762" target="827661212640553183" />
+      <edge id="47" source="5921970468688242762" target="1588436861565162544" />
+      <edge id="48" source="5921970468688242762" target="13730670823633641108" />
+      <edge id="49" source="5921970468688242762" target="15975869612911754694" />
+      <edge id="50" source="15251948508490504760" target="3322700976102201518" />
+      <edge id="51" source="15251948508490504760" target="5739872194105744485" />
+      <edge id="52" source="15251948508490504760" target="15827467639649894355" />
+      <edge id="53" source="15251948508490504760" target="12721276206224663352" />
+      <edge id="54" source="15251948508490504760" target="13131386537434628736" />
+      <edge id="55" source="15251948508490504760" target="1355716055126163854" />
+      <edge id="56" source="15251948508490504760" target="7203238844428372752" />
+      <edge id="57" source="3322700976102201518" target="5739872194105744485" />
+      <edge id="58" source="5739872194105744485" target="9673865814718741327" />
+      <edge id="59" source="5739872194105744485" target="11176899677694586475" />
+      <edge id="60" source="5739872194105744485" target="8UbSKO-skZYJ" />
+      <edge id="61" source="5739872194105744485" target="93sETBvsFVoJ" />
+      <edge id="62" source="5739872194105744485" target="722969612872206408" />
+      <edge id="63" source="5739872194105744485" target="5624372166291434354" />
+      <edge id="64" source="10196178540538284387" target="10615239920685797498" />
+      <edge id="65" source="10196178540538284387" target="6025095691374359196" />
+      <edge id="66" source="10196178540538284387" target="8663156995271022222" />
+      <edge id="67" source="10196178540538284387" target="343607547973197631" />
+      <edge id="68" source="10196178540538284387" target="13794415118584442475" />
+      <edge id="69" source="10196178540538284387" target="6339003399203852297" />
+      <edge id="70" source="10196178540538284387" target="946813516569675512" />
+      <edge id="71" source="10196178540538284387" target="2237652272728350782" />
+      <edge id="72" source="10196178540538284387" target="9245151949598677441" />
+      <edge id="73" source="10196178540538284387" target="6470127623893261586" />
+      <edge id="74" source="3056560230291582747" target="16083139259867647804" />
+      <edge id="75" source="3056560230291582747" target="3152508746406318074" />
+      <edge id="76" source="3056560230291582747" target="14394651384165021367" />
+      <edge id="77" source="3056560230291582747" target="14547843655187095390" />
+      <edge id="78" source="3056560230291582747" target="lIA4Z1ET9BEJ" />
+      <edge id="79" source="3056560230291582747" target="wk3j-rZjTMIJ" />
+      <edge id="80" source="3056560230291582747" target="77t4AF5EzY0J" />
+      <edge id="81" source="16083139259867647804" target="14296572490016015640" />
+      <edge id="82" source="14296572490016015640" target="18375538332098203800" />
+      <edge id="83" source="14296572490016015640" target="14235337207444317007" />
+      <edge id="84" source="14296572490016015640" target="9527963908596689122" />
+      <edge id="85" source="14296572490016015640" target="4213530864871126812" />
+      <edge id="86" source="14296572490016015640" target="10787203120900475161" />
+      <edge id="87" source="14296572490016015640" target="wGKk4Z2bFCAJ" />
+    </edges>
+  </graph>
+</gexf>

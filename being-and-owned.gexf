@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="url" type="string" />
+      <attribute id="1" title="title" type="string" />
+      <attribute id="2" title="authors" type="string" />
+      <attribute id="3" title="year" type="string" />
+      <attribute id="4" title="cited_by" type="long" />
+      <attribute id="5" title="cited_by_url" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>10/05/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="GhY8AH7f45gJ" label="Legal personhood for animals in New Zealand">
+        <attvalues>
+          <attvalue for="0" value="http://www.otago.ac.nz/law/otago638163.pdf" />
+          <attvalue for="1" value="Legal personhood for animals in New Zealand" />
+          <attvalue for="2" value="GJ Fraser" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="17423801329278082391" label="Being and Owning: The Body, Bodily Material, and the Law">
+        <attvalues>
+          <attvalue for="1" value="Being and Owning: The Body, Bodily Material, and the Law" />
+        </attvalues>
+      </node>
+      <node id="FHF9E_v0lUkJ" label="Property Rights, Gametes, and Individual Autonomy">
+        <attvalues>
+          <attvalue for="0" value="https://www.otago.ac.nz/law/research/journals/otago672746.pdf" />
+          <attvalue for="1" value="Property Rights, Gametes, and Individual Autonomy" />
+          <attvalue for="2" value="EJ Smith" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="X_a5NYOWdPYJ" label="The functional–formal impasse in (trust) property">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/international-journal-of-law-in-context/article/functionalformal-impasse-in-trust-property/A352B12DBCCCB301AF4B03735CBFAB8C" />
+          <attvalue for="1" value="The functional–formal impasse in (trust) property" />
+          <attvalue for="2" value="J Wall" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="8024708208840943481" label="Later Iron Age Coinage in Britain: Reconstructing Insular Social Structures and Systems of Value">
+        <attvalues>
+          <attvalue for="0" value="https://lra.le.ac.uk/handle/2381/37981" />
+          <attvalue for="1" value="Later Iron Age Coinage in Britain: Reconstructing Insular Social Structures and Systems of Value" />
+          <attvalue for="2" value="M Fanello" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="1521489997737068088" label="[CITATION][C] Self-Ownership, Property Rights, and the Human Body: A Legal and Philosophical Analysis">
+        <attvalues>
+          <attvalue for="1" value="[CITATION][C] Self-Ownership, Property Rights, and the Human Body: A Legal and Philosophical Analysis" />
+          <attvalue for="2" value="M Quigley" />
+          <attvalue for="3" value="2018" />
+        </attvalues>
+      </node>
+      <node id="15164753329509644737" label="THE NATURE AND SIGNIFICANCE OF THE RIGHT TO BODILY INTEGRITY">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/cambridge-law-journal/article/nature-and-significance-of-the-right-to-bodily-integrity/79703F3BE9C5C21BB76338C050E951BC" />
+          <attvalue for="1" value="THE NATURE AND SIGNIFICANCE OF THE RIGHT TO BODILY INTEGRITY" />
+          <attvalue for="2" value="J Herring, J Wall" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15164753329509644737&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9948490488053570122" label="Körperstrafen als moralisches Übel">
+        <attvalues>
+          <attvalue for="0" value="http://budrich-journals.de/index.php/diskurs/article/view/30904" />
+          <attvalue for="1" value="Körperstrafen als moralisches Übel" />
+          <attvalue for="2" value="G Schweiger, G Graf" />
+          <attvalue for="3" value="2018" />
+        </attvalues>
+      </node>
+      <node id="6NE0-qU5EbwJ" label="MY BODY &amp; I: A NOVEL JUSTIFICATION FOR A NO-FAULT COMPENSATION SCHEME">
+        <attvalues>
+          <attvalue for="0" value="https://www.otago.ac.nz/law/research/journals/otago672734.pdf" />
+          <attvalue for="1" value="MY BODY &amp; I: A NOVEL JUSTIFICATION FOR A NO-FAULT COMPENSATION SCHEME" />
+          <attvalue for="2" value="P CLIFFORD" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="GhY8AH7f45gJ" target="17423801329278082391" />
+      <edge id="1" source="17423801329278082391" target="FHF9E_v0lUkJ" />
+      <edge id="2" source="17423801329278082391" target="X_a5NYOWdPYJ" />
+      <edge id="3" source="17423801329278082391" target="8024708208840943481" />
+      <edge id="4" source="17423801329278082391" target="1521489997737068088" />
+      <edge id="5" source="17423801329278082391" target="15164753329509644737" />
+      <edge id="6" source="17423801329278082391" target="6NE0-qU5EbwJ" />
+      <edge id="7" source="15164753329509644737" target="9948490488053570122" />
+    </edges>
+  </graph>
+</gexf>

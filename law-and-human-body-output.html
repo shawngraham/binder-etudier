@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<style>
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.8;
+  stroke-width: 2px;
+}
+
+.nodes circle {
+  stroke: black;
+  fill: white;
+  stroke-width: 1.5px;
+}
+
+#graph {
+  width: 99vw;
+  height: 99vh;
+}
+
+</style>
+<svg id="graph"></svg>
+<script>
+
+var width = $(window).width();
+var height = $(window).height();
+
+var svg = d3.select("svg")
+    .attr("height", height)
+    .attr("width", width);
+
+var color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+var simulation = d3.forceSimulation()
+    .velocityDecay(0.6)
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+var graph = {
+  "nodes": [
+    {
+      "label": "Body shopping: The economy fueled by flesh and blood",
+      "id": "7556527499680598700",
+      "url": "https://repository.library.georgetown.edu/handle/10822/548337",
+      "title": "Body shopping: The economy fueled by flesh and blood",
+      "authors": "D Dickenson",
+      "year": "2008",
+      "cited_by": 63,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7556527499680598700&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Law and the human body: property rights, ownership and control",
+      "id": "1971084081186387568",
+      "title": "Law and the human body: property rights, ownership and control"
+    },
+    {
+      "label": "Intellectual property rights and the life science industries: a twentieth century history",
+      "id": "13428854610867163914",
+      "url": "https://www.taylorfrancis.com/books/9781351927147",
+      "title": "Intellectual property rights and the life science industries: a twentieth century history",
+      "authors": "G Dutfield",
+      "year": "2017",
+      "cited_by": 304,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13428854610867163914&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Our bodies, whose property?",
+      "id": "7808630135051906131",
+      "url": "https://books.google.com/books?hl=en&lr=&id=iofSMrpBgZEC&oi=fnd&pg=PP1&ots=MS0QoIUUYx&sig=tfLuWibZaMebGp2xsEdaFvSgYzk",
+      "title": "Our bodies, whose property?",
+      "authors": "A Phillips",
+      "year": "2013",
+      "cited_by": 67,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7808630135051906131&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Me medicine vs. we medicine: Reclaiming biotechnology for the common good",
+      "id": "3033523631393697915",
+      "url": "https://books.google.com/books?hl=en&lr=&id=UVqrAgAAQBAJ&oi=fnd&pg=PR7&ots=C-zrgCYjkV&sig=W4ZjlRQzObl0y89I9igpim785Pg",
+      "title": "Me medicine vs. we medicine: Reclaiming biotechnology for the common good",
+      "authors": "D Dickenson",
+      "year": "2013",
+      "cited_by": 57,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3033523631393697915&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The sociology of the body",
+      "id": "7095272042712320853",
+      "url": "https://books.google.com/books?hl=en&lr=&id=VJxw1loC-MkC&oi=fnd&pg=PA47&ots=2Bbt8uisWi&sig=2ZW3OXbgQ0KxvJIPJsh6ZhjiTfg",
+      "title": "The sociology of the body",
+      "authors": "S Nettleton",
+      "year": "2010",
+      "cited_by": 50,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7095272042712320853&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Should we display the dead?",
+      "id": "13636996700787081111",
+      "url": "https://www108.lamp.le.ac.uk/ojs1/index.php/mas/article/view/144",
+      "title": "Should we display the dead?",
+      "authors": "SJMM Alberti, P Bienkowski, MJ Chapman\u2026",
+      "year": "2009",
+      "cited_by": 39,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13636996700787081111&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Global ethics: An introduction",
+      "id": "9254746649961730462",
+      "url": "https://books.google.com/books?hl=en&lr=&id=gKDCBQAAQBAJ&oi=fnd&pg=PP1&ots=ga2a1qNElj&sig=lSiI3EIdDCGiUc2XHtSpazqWM2g",
+      "title": "Global ethics: An introduction",
+      "authors": "H Widdows",
+      "year": "2014",
+      "cited_by": 40,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9254746649961730462&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Border disputes across bodies: Exploitation in trafficking for prostitution and egg sale for stem cell research",
+      "id": "9198222430491730086",
+      "url": "http://www.utpjournals.press/doi/abs/10.3138/ijfab.2.1.5",
+      "title": "Border disputes across bodies: Exploitation in trafficking for prostitution and egg sale for stem cell research",
+      "authors": "H Widdows",
+      "year": "2009",
+      "cited_by": 38,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9198222430491730086&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Ova donation for stem cell research: an international perspective",
+      "id": "14864580230541288113",
+      "url": "http://www.utpjournals.press/doi/abs/10.3138/ijfab.1.2.125",
+      "title": "Ova donation for stem cell research: an international perspective",
+      "authors": "D Dickenson, IA Idiakez",
+      "year": "2008",
+      "cited_by": 34,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14864580230541288113&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The genome incorporated: Constructing biodigital identity",
+      "id": "3240585032961970202",
+      "url": "https://books.google.com/books?hl=en&lr=&id=JIe1CwAAQBAJ&oi=fnd&pg=PP1&ots=_kFA3jrsGW&sig=KobxrBGU-IkGokoaFxUmyZoISoc",
+      "title": "The genome incorporated: Constructing biodigital identity",
+      "authors": "K O'Riordan",
+      "year": "2016",
+      "cited_by": 26,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3240585032961970202&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Bioequity\u2013property and the human body",
+      "id": "13599249941591853318",
+      "url": "https://books.google.com/books?hl=en&lr=&id=K5IGDAAAQBAJ&oi=fnd&pg=PP1&ots=nfBjzbC2EV&sig=cKOC89NHcGePrcIR_T16cS1e3Z8",
+      "title": "Bioequity\u2013property and the human body",
+      "authors": "N Hoppe",
+      "year": "2016",
+      "cited_by": 24,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13599249941591853318&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Privacy, confidentiality, and health research",
+      "id": "386723840638153978",
+      "url": "https://books.google.ca/books?hl=en&lr=&id=rrMhAwAAQBAJ&oi=fnd&pg=PR13&ots=M8-oQMDV3v&sig=v5m7MUXOAfn94sXopr4Npbqxjo0",
+      "title": "Privacy, confidentiality, and health research",
+      "authors": "WW Lowrance",
+      "year": "2012",
+      "cited_by": 35,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=386723840638153978&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "From the principles of genomic data sharing to the practices of data access committees",
+      "id": "9910138931836225244",
+      "url": "http://embomolmed.embopress.org/content/7/5/507.abstract",
+      "title": "From the principles of genomic data sharing to the practices of data access committees",
+      "authors": "M Shabani, BM Knoppers\u2026",
+      "year": "2015",
+      "cited_by": 24,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9910138931836225244&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Towards Principles\u2013Based Approaches to Governance of Health\u2013Related Research Using Personal Data",
+      "id": "192763985016504527",
+      "url": "https://www.cambridge.org/core/journals/european-journal-of-risk-regulation/article/div-classtitletowards-principlesbased-approaches-to-governance-of-healthrelated-research-using-personal-datadiv/DD65426D5E18432590A03C158BD35BB3",
+      "title": "Towards Principles\u2013Based Approaches to Governance of Health\u2013Related Research Using Personal Data",
+      "authors": "G Laurie, N Sethi",
+      "year": "2013",
+      "cited_by": 18,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=192763985016504527&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Big Data in medical research and EU data protection law: challenges to the consent or anonymise approach",
+      "id": "4003080078466903751",
+      "url": "https://www.nature.com/articles/ejhg2015239",
+      "title": "Big Data in medical research and EU data protection law: challenges to the consent or anonymise approach",
+      "authors": "M Mostert, AL Bredenoord, MCIH Biesaart\u2026",
+      "year": "2016",
+      "cited_by": 19,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4003080078466903751&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "\u201cYou hoped we would sleep walk into accepting the collection of our data\u201d: controversies surrounding the UK care. data scheme and their wider relevance for\u00a0\u2026",
+      "id": "447342903296504236",
+      "url": "https://link.springer.com/article/10.1007/s11019-015-9661-6",
+      "title": "\u201cYou hoped we would sleep walk into accepting the collection of our data\u201d: controversies surrounding the UK care. data scheme and their wider relevance for\u00a0\u2026",
+      "authors": "S Sterckx, V Rakic, J Cockbain, P Borry",
+      "year": "health care and\u00a0\u2026",
+      "cited_by": 14,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=447342903296504236&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "International guidelines for privacy in genomic biobanking (or the unexpected virtue of pluralism)",
+      "id": "4885694588010730607",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/jlme.12312/full",
+      "title": "International guidelines for privacy in genomic biobanking (or the unexpected virtue of pluralism)",
+      "authors": "A Thorogood, MH Zawati",
+      "year": "Medicine &\u00a0\u2026",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4885694588010730607&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Biobanks in oral health: Promises and implications of post-neoliberal science and innovation",
+      "id": "2655971133650071082",
+      "url": "http://online.liebertpub.com/doi/abs/10.1089/omi.2015.0123",
+      "title": "Biobanks in oral health: Promises and implications of post-neoliberal science and innovation",
+      "authors": "K Birch, ES Dove, M Chiappetta\u2026",
+      "year": "2016",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2655971133650071082&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Medical law: a very short introduction",
+      "id": "13420647880156531501",
+      "url": "https://books.google.com/books?hl=en&lr=&id=dz5oAgAAQBAJ&oi=fnd&pg=PP1&ots=7GuigCN0og&sig=Oai8yaggFC-nXIolysO3nh0VYS0",
+      "title": "Medical law: a very short introduction",
+      "authors": "C Foster",
+      "year": "2013",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13420647880156531501&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Privacy law, data sharing policies, and medical data: a comparative perspective",
+      "id": "17089023999631552930",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-23633-9_24",
+      "title": "Privacy law, data sharing policies, and medical data: a comparative perspective",
+      "authors": "ES Dove, M Phillips",
+      "year": "2015",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17089023999631552930&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Facilitating the ethical use of health data for the benefit of society: electronic health records, consent and the duty of easy rescue",
+      "id": "988395465080786080",
+      "url": "http://rsta.royalsocietypublishing.org/content/374/2083/20160130.abstract",
+      "title": "Facilitating the ethical use of health data for the benefit of society: electronic health records, consent and the duty of easy rescue",
+      "authors": "SP Mann, J Savulescu\u2026",
+      "year": "2016",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=988395465080786080&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "BIOMEDICAL RESEARCH ETHICS",
+      "id": "6820051766763973572",
+      "url": "https://www.researchgate.net/profile/Daniela_Diaconescu/publication/286991435_Bioethical_dilemmas_in_using_animal_in_medical_research_Challenges_and_opportunities/links/567506f108ae125516e203df.pdf",
+      "title": "BIOMEDICAL RESEARCH ETHICS",
+      "authors": "L Rogozea, DE DIACONESCU, EA DINU\u2026",
+      "year": "2014",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6820051766763973572&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Persons, property, and community",
+      "id": "10147228918361759042",
+      "url": "https://journals.kent.ac.uk/kent/index.php/feministsatlaw/article/view/37",
+      "title": "Persons, property, and community",
+      "authors": "M Davies",
+      "year": "2012",
+      "cited_by": 34,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10147228918361759042&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The changing nature of public science",
+      "id": "5001935081305454455",
+      "url": "https://link.springer.com/content/pdf/10.1007/3-540-28886-4_1.pdf",
+      "title": "The changing nature of public science",
+      "authors": "H Nowotny",
+      "year": "2005",
+      "cited_by": 52,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5001935081305454455&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Opening up ownership: Community belonging, belongings, and the productive life of property",
+      "id": "6650990543683806344",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1747-4469.2007.00072.x/full",
+      "title": "Opening up ownership: Community belonging, belongings, and the productive life of property",
+      "authors": "D Cooper",
+      "year": "2007",
+      "cited_by": 49,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6650990543683806344&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Law, policy and reproductive autonomy",
+      "id": "9731887324644440594",
+      "url": "https://books.google.com/books?hl=en&lr=&id=bovbBAAAQBAJ&oi=fnd&pg=PR1&ots=KfHHpsb1o4&sig=veWefa8gnqz3DzObodYlC-KgMok",
+      "title": "Law, policy and reproductive autonomy",
+      "authors": "E Nelson",
+      "year": "2013",
+      "cited_by": 44,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9731887324644440594&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The Dead, the Law, and the Politics of the Past",
+      "id": "9303979080695346896",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/j.1467-6478.2004.00302.x/full",
+      "title": "The Dead, the Law, and the Politics of the Past",
+      "authors": "K McEvoy, H Conway",
+      "year": "2004",
+      "cited_by": 38,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=9303979080695346896&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Android science and animal rights, does an analogy exist?",
+      "id": "10096472572938085523",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/09540090600879711",
+      "title": "Android science and animal rights, does an analogy exist?",
+      "authors": "DJ Calverley",
+      "year": "2006",
+      "cited_by": 27,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10096472572938085523&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Political economy, capitalism, and popular culture",
+      "id": "14032267165727104285",
+      "url": "https://books.google.com/books?hl=en&lr=&id=Sca-AAAAQBAJ&oi=fnd&pg=PR7&ots=XxxO9hHacD&sig=mxjHosS2ByVyvE1taX1Y9FJZP6Q",
+      "title": "Political economy, capitalism, and popular culture",
+      "authors": "RD Lipschutz",
+      "year": "2010",
+      "cited_by": 24,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14032267165727104285&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Impersonations: Troubling the person in law and culture",
+      "id": "7833127983146185326",
+      "url": "https://books.google.com/books?hl=en&lr=&id=Cedb9BtmXysC&oi=fnd&pg=PR9&ots=m-ZBezNvwO&sig=ALa-aC-NeORupno8lInuLF3jp7w",
+      "title": "Impersonations: Troubling the person in law and culture",
+      "authors": "SN Hamilton",
+      "year": "2008",
+      "cited_by": 24,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7833127983146185326&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Personal stem cell banking and the problem with property",
+      "id": "7553942180809764680",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/14649365.2011.574795",
+      "title": "Personal stem cell banking and the problem with property",
+      "authors": "M Fannin",
+      "year": "2011",
+      "cited_by": 13,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7553942180809764680&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Digital identity\u2013The legal person?",
+      "id": "17206374127293316399",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0267364909000624",
+      "title": "Digital identity\u2013The legal person?",
+      "authors": "C Sullivan",
+      "year": "2009",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17206374127293316399&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Autonomic computing, genomic data and human agency: the case for embodiment",
+      "id": "12029715825047962897",
+      "url": "https://www.taylorfrancis.com/books/e/9781136807671/chapters/10.4324%2F9780203828342-12",
+      "title": "Autonomic computing, genomic data and human agency: the case for embodiment",
+      "authors": "HY Kang",
+      "year": "Human Agency and Autonomic Computing",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12029715825047962897&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Yearworth v. North Bristol NHS Trust: property, principles, precedents and paradigms",
+      "id": "3531298846210677032",
+      "url": "https://www.cambridge.org/core/journals/cambridge-law-journal/article/yearworthv-north-bristol-nhs-trust-property-principles-precedents-and-paradigms/9A63C865243FF37B6161144A290664C9",
+      "title": "Yearworth v. North Bristol NHS Trust: property, principles, precedents and paradigms",
+      "authors": "SHE Harmon, GT Laurie",
+      "year": "2010",
+      "cited_by": 21,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3531298846210677032&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The connected self: The ethics and governance of the genetic individual",
+      "id": "14647610264440258720",
+      "url": "https://books.google.com/books?hl=en&lr=&id=W_cgAwAAQBAJ&oi=fnd&pg=PR9&ots=I1MkqLT3Sx&sig=P1o7wIPwIOemJsB1CVg9A-ZmvFc",
+      "title": "The connected self: The ethics and governance of the genetic individual",
+      "authors": "H Widdows",
+      "year": "2013",
+      "cited_by": 26,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14647610264440258720&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The ethics of biobanking: key issues and controversies",
+      "id": "5194733928315874265",
+      "url": "https://link.springer.com/article/10.1007/s10728-011-0184-x",
+      "title": "The ethics of biobanking: key issues and controversies",
+      "authors": "H Widdows, S Cordell",
+      "year": "2011",
+      "cited_by": 20,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5194733928315874265&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Is the commercialisation of human tissue and body material forbidden in the countries of the European Union?",
+      "id": "3324877372193757049",
+      "url": "http://jme.bmj.com/content/early/2011/06/22/jme.2010.038760.short",
+      "title": "Is the commercialisation of human tissue and body material forbidden in the countries of the European Union?",
+      "authors": "C Lenk, K Beier",
+      "year": "2011",
+      "cited_by": 20,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3324877372193757049&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "What Is It? Whose It? Re-Positioning the Fetus in the Context of Research?",
+      "id": "1983580798706716962",
+      "url": "https://www.cambridge.org/core/journals/cambridge-law-journal/article/what-is-it-whose-it-repositioning-the-fetus-in-the-context-of-research/4B37A32C56920BAA4B709394FADC9BDC",
+      "title": "What Is It? Whose It? Re-Positioning the Fetus in the Context of Research?",
+      "authors": "A Alghrani, M Brazier",
+      "year": "2011",
+      "cited_by": 14,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1983580798706716962&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Stem cell research and the collaborative regulation of innovation",
+      "id": "17709238489087013081",
+      "url": "https://books.google.com/books?hl=en&lr=&id=aE1WAgAAQBAJ&oi=fnd&pg=PP1&ots=nORIT8ryG4&sig=TEhGmp48QTgjXoEVyuY_APKIcIM",
+      "title": "Stem cell research and the collaborative regulation of innovation",
+      "authors": "S Devaney",
+      "year": "2013",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17709238489087013081&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Persons, Parts and Property: How Should We Regulate Human Tissue in the 21st Century?",
+      "id": "15681824224355738746",
+      "url": "https://books.google.com/books?hl=en&lr=&id=f9GdBQAAQBAJ&oi=fnd&pg=PP1&ots=eSUSe1qecH&sig=1NhilG6GHERJ_p0ZHWLnBnbtWfk",
+      "title": "Persons, Parts and Property: How Should We Regulate Human Tissue in the 21st Century?",
+      "authors": "I Goold, K Greasley, J Herring, L Skene",
+      "year": "2014",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15681824224355738746&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Dignity and the use of body parts",
+      "id": "12807484792526645635",
+      "url": "http://jme.bmj.com/content/early/2012/08/13/medethics-2012-100763.short",
+      "title": "Dignity and the use of body parts",
+      "authors": "C Foster",
+      "year": "2012",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12807484792526645635&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Being and Owning: The Body, Bodily Material, and the Law",
+      "id": "17423801329278082391",
+      "url": "https://books.google.com/books?hl=en&lr=&id=9BSCCQAAQBAJ&oi=fnd&pg=PP1&ots=F44QDIiMV_&sig=JzcBk1dTzECF3KejV4aSUwjmzDU",
+      "title": "Being and Owning: The Body, Bodily Material, and the Law",
+      "authors": "J Wall",
+      "year": "2015",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17423801329278082391&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Propertisation and Commercialisation: On Controlling the Uses of Human Biomaterials",
+      "id": "10788932619595700330",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/1468-2230.12086/full",
+      "title": "Propertisation and Commercialisation: On Controlling the Uses of Human Biomaterials",
+      "authors": "M Quigley",
+      "year": "2014",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10788932619595700330&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The Law of the Body",
+      "id": "839050694358475277",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/emlj62&section=17",
+      "title": "The Law of the Body",
+      "authors": "MM Render",
+      "year": "2012",
+      "cited_by": 19,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=839050694358475277&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Indescendibility",
+      "id": "5713801732799407434",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/calr102&section=21",
+      "title": "Indescendibility",
+      "authors": "D Horton",
+      "year": "2014",
+      "cited_by": 28,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5713801732799407434&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Do Tell-The Rights of Donor-Conceived Offspring",
+      "id": "17942983029150337910",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/hoflr42&section=42",
+      "title": "Do Tell-The Rights of Donor-Conceived Offspring",
+      "authors": "N Cahn",
+      "year": "2013",
+      "cited_by": 17,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17942983029150337910&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Modern Prostitution Legal Reform & the Return of Violational Consent",
+      "id": "2351645677270264313",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/virjcr3&section=4",
+      "title": "Modern Prostitution Legal Reform & the Return of Violational Consent",
+      "authors": "A Peters",
+      "year": "2015",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2351645677270264313&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Reproduction Reconceived",
+      "id": "8892390036551226133",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/mnlr101&section=17",
+      "title": "Reproduction Reconceived",
+      "authors": "CM Cahill",
+      "year": "2016",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8892390036551226133&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Securing Sequences: Ensuring Adequate Protections for Genetic Samples in the Age of Big Data",
+      "id": "14264123579377189866",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/cdozo37&section=61",
+      "title": "Securing Sequences: Ensuring Adequate Protections for Genetic Samples in the Age of Big Data",
+      "authors": "ER Pike",
+      "year": "2015",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14264123579377189866&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Reconstructing Pregnancy",
+      "id": "12027238464712618667",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/smulr69&section=8",
+      "title": "Reconstructing Pregnancy",
+      "authors": "SM Matambanadzo",
+      "year": "2016",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12027238464712618667&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Knowing the Suffering of Others: Legal Perspectives on Pain and Its Meanings",
+      "id": "10484049060056044840",
+      "url": "https://books.google.com/books?hl=en&lr=&id=7BzzAwAAQBAJ&oi=fnd&pg=PR7&ots=wUxp_TmQJo&sig=wwTK-eiZSRYX4iLRUF2Jj35ZuMM",
+      "title": "Knowing the Suffering of Others: Legal Perspectives on Pain and Its Meanings",
+      "authors": "MD Carodine",
+      "year": "2014",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10484049060056044840&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Damaged Bodies, Damaged Lives: Immigrant Worker Injuries as Dignity Takings",
+      "id": "16627868433978875733",
+      "url": "https://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/chknt92&section=50",
+      "title": "Damaged Bodies, Damaged Lives: Immigrant Worker Injuries as Dignity Takings",
+      "authors": "R Nadas, J Rathod",
+      "year": "2017"
+    },
+    {
+      "label": "Spacing (in) Diaspora: Law, Literature and the Roma",
+      "id": "A5miHMrCTbgJ",
+      "url": "https://books.google.com/books?hl=en&lr=&id=M3kqDwAAQBAJ&oi=fnd&pg=PP5&ots=DIFp26KBnn&sig=cT_6LEYMad9ZsoqFULQqaXOGzvk",
+      "title": "Spacing (in) Diaspora: Law, Literature and the Roma",
+      "authors": "E Patchett",
+      "year": "2017"
+    },
+    {
+      "label": "RESPONSE TO THE LAW OF THE BODY BY MEREDITH M. RENDER",
+      "id": "XXu_N0tqPAIJ",
+      "url": "http://law.emory.edu/elj/_documents/volumes/63/6/online/gold.pdf",
+      "title": "RESPONSE TO THE LAW OF THE BODY BY MEREDITH M. RENDER",
+      "authors": "ER Gold",
+      "year": "law.emory.edu"
+    },
+    {
+      "label": "The international legal governance of the human genome",
+      "id": "7589182030691366643",
+      "url": "https://books.google.ca/books?hl=en&lr=&id=C3t8AgAAQBAJ&oi=fnd&pg=PP1&ots=GGESENHl9q&sig=9Ev3vWlEzzw5XymJMVsHvoBm804",
+      "title": "The international legal governance of the human genome",
+      "authors": "C Kuppuswamy",
+      "year": "2009",
+      "cited_by": 17,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7589182030691366643&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "A human rights approach to an international code of conduct for genomic and clinical data sharing",
+      "id": "3949944803448691697",
+      "url": "https://link.springer.com/article/10.1007/s00439-014-1432-6",
+      "title": "A human rights approach to an international code of conduct for genomic and clinical data sharing",
+      "authors": "BM Knoppers, JR Harris, I Budin-Lj\u00f8sne, ES Dove",
+      "year": "2014",
+      "cited_by": 46,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3949944803448691697&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Negotiating bioethics: the governance of UNESCO's Bioethics Programme",
+      "id": "11779770240469129020",
+      "url": "http://www.oapen.org/search?identifier=478071",
+      "title": "Negotiating bioethics: the governance of UNESCO's Bioethics Programme",
+      "authors": "A Langlois",
+      "year": "2014",
+      "cited_by": 30,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11779770240469129020&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Open Bioinformation in the Life Sciences as a Gatekeeper for Innovation and Development",
+      "id": "10261984444471489982",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-13311-9_7",
+      "title": "Open Bioinformation in the Life Sciences as a Gatekeeper for Innovation and Development",
+      "authors": "R Caso, R Ducato",
+      "year": "Development and Innovation",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10261984444471489982&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Group rights in biolaw: a model approach",
+      "id": "8174930007500216859",
+      "url": "https://www.era.lib.ed.ac.uk/handle/1842/5951",
+      "title": "Group rights in biolaw: a model approach",
+      "authors": "KN Kanellopoulou",
+      "year": "2009",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8174930007500216859&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Ensayos sobre bio\u00e9tica",
+      "id": "10795560021638764112",
+      "url": "https://books.google.com/books?hl=en&lr=&id=6miN77QhAZkC&oi=fnd&pg=PA9&ots=U_ARap5E0B&sig=aBzKfES3iZOOgtUBBuzR38WZFWU",
+      "title": "Ensayos sobre bio\u00e9tica",
+      "authors": "MTL de la Vieja",
+      "year": "2009",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10795560021638764112&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Synthetic biology, concerns and risks: looking for a (constitutionally oriented) regulatory framework and a system of governance for a new emerging technology",
+      "id": "13357069337126690288",
+      "url": "http://eprints-phd.biblio.unitn.it/966/",
+      "title": "Synthetic biology, concerns and risks: looking for a (constitutionally oriented) regulatory framework and a system of governance for a new emerging technology",
+      "authors": "IA Colussi",
+      "year": "2013",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13357069337126690288&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Pawe\u0142 Kwiatkowski",
+      "id": "4998650744317865745",
+      "url": "https://www.ceeol.com/content-files/document-497788.pdf",
+      "title": "Pawe\u0142 Kwiatkowski",
+      "authors": "U Declaration",
+      "year": "PRZEGLAD PRAWNICZY UNIWERSYTETU IM\u00a0\u2026"
+    },
+    {
+      "label": "Human dignity mediated",
+      "id": "13528065407709143956",
+      "url": "https://books.google.com/books?hl=en&lr=&id=BC0lDwAAQBAJ&oi=fnd&pg=PA253&ots=Mt4wPq4Wyt&sig=aTgUHi8grO-4sOrvDo_aV-UA6w0",
+      "title": "Human dignity mediated",
+      "authors": "U Soirila",
+      "year": "Citizenship and Belonging in Law\u00a0\u2026"
+    },
+    {
+      "label": "Genomics & Patents: Human Heritage and the Cost of Innovation",
+      "id": "2009257450775023451",
+      "url": "https://cmgm.stanford.edu/biochem/biochem118/Projects/2011%20Winter/Kima-2011.pdf",
+      "title": "Genomics & Patents: Human Heritage and the Cost of Innovation",
+      "authors": "K Uche, D Brutlag",
+      "year": "Biochemistry 118Q: Genomics & Medicine"
+    },
+    {
+      "label": "Public international law with regard to the social consequences of the development of genetics",
+      "id": "1985220309834059913",
+      "url": "http://pressto.amu.edu.pl/index.php/ppuam/article/view/7287",
+      "title": "Public international law with regard to the social consequences of the development of genetics",
+      "authors": "P Kwiatkowski",
+      "year": "2016"
+    },
+    {
+      "label": "Embedding biobanks as tools for personalised medicine",
+      "id": "8617549629918097176",
+      "url": "http://www.ntnu.no/ojs/index.php/norepid/article/view/1490",
+      "title": "Embedding biobanks as tools for personalised medicine",
+      "authors": "J Kaye",
+      "year": "2012",
+      "cited_by": 18,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8617549629918097176&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Broad consent versus dynamic consent in biobank research: Is passive participation an ethical problem?",
+      "id": "17777989010486374406",
+      "url": "https://www.nature.com/articles/ejhg2012282",
+      "title": "Broad consent versus dynamic consent in biobank research: Is passive participation an ethical problem?",
+      "authors": "KS Steinsbekk, BK Myskja, B Solberg",
+      "year": "2013",
+      "cited_by": 120,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=17777989010486374406&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Reforming biobank consent policy: a necessary move away from broad consent toward dynamic consent",
+      "id": "10604974686868814948",
+      "url": "http://online.liebertpub.com/doi/full/10.1089/gtmb.2013.1550",
+      "title": "Reforming biobank consent policy: a necessary move away from broad consent toward dynamic consent",
+      "authors": "DT Stein, SF Terry",
+      "year": "2013",
+      "cited_by": 27,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10604974686868814948&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Introducing research initiatives into healthcare: what do doctors think?",
+      "id": "4668529521674275279",
+      "url": "http://online.liebertpub.com/doi/abs/10.1089/bio.2013.0069",
+      "title": "Introducing research initiatives into healthcare: what do doctors think?",
+      "authors": "L Wyld, S Smith, NJ Hawkins, J Long\u2026",
+      "year": "2014",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4668529521674275279&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Biobanking: from vision to reality",
+      "id": "5930700012305769056",
+      "url": "http://www.ntnu.no/ojs/index.php/norepid/article/download/1482/1327",
+      "title": "Biobanking: from vision to reality",
+      "authors": "JR Harris, A Haugan, I Budin-Lj\u00f8sne",
+      "year": "2012",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5930700012305769056&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "An Overview of Biorepositories\u2014Past, Present, and Future",
+      "id": "6903684753040741593",
+      "url": "https://academic.oup.com/milmed/article-abstract/180/suppl_10/57/4259733",
+      "title": "An Overview of Biorepositories\u2014Past, Present, and Future",
+      "authors": "M Siwek",
+      "year": "2015",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6903684753040741593&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Croatian National Centre for Biobanking\u2013a new perspective in biobanks governance?",
+      "id": "5394901585869199611",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4157382/",
+      "title": "Croatian National Centre for Biobanking\u2013a new perspective in biobanks governance?",
+      "authors": "A Borove\u010dki, L Caenazzo, D Je\u017eek\u2026",
+      "year": "2014",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5394901585869199611&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "[CITATION][C] Best practices for human biorepositories. Biobanks",
+      "id": "4586047875804681496",
+      "title": "[CITATION][C] Best practices for human biorepositories. Biobanks",
+      "authors": "RAM El-Desouki",
+      "year": "2014",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4586047875804681496&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Hukuki ve Etik Y\u00f6nleri \u0130le Biyot\u0131p Ara\u015ft\u0131rmalar\u0131nda Biyobankalar",
+      "id": "11596190718597949730",
+      "url": "http://www.openaccess.hacettepe.edu.tr:8080/xmlui/handle/11655/1037",
+      "title": "Hukuki ve Etik Y\u00f6nleri \u0130le Biyot\u0131p Ara\u015ft\u0131rmalar\u0131nda Biyobankalar",
+      "authors": "M Emir",
+      "year": "2013",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11596190718597949730&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Patients' attitudes towards the return of incidental findings after research with residual tissue: a mixed methods study",
+      "id": "15423533966809575089",
+      "url": "https://www.liebertpub.com/doi/abs/10.1089/gtmb.2017.0222",
+      "title": "Patients' attitudes towards the return of incidental findings after research with residual tissue: a mixed methods study",
+      "authors": "E Vermeulen, S Rebers, NK Aaronson\u2026",
+      "year": "2018",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15423533966809575089&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Consentimiento Informado para Biobancos: Un debate \u00e9tico abierto",
+      "id": "14627380957032179720",
+      "url": "http://www.redalyc.org/html/3438/343845607012/",
+      "title": "Consentimiento Informado para Biobancos: Un debate \u00e9tico abierto",
+      "authors": "N Serrano-D\u00edaz, E Gu\u00edo-Mahecha\u2026",
+      "year": "2016",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14627380957032179720&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Singing the Body electric: the human Voice and Sound technology",
+      "id": "6730577843891611166",
+      "url": "https://www.taylorfrancis.com/books/9781317054856",
+      "title": "Singing the Body electric: the human Voice and Sound technology",
+      "authors": "M Young",
+      "year": "2016",
+      "cited_by": 16,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6730577843891611166&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "A java-based remote live coding system for controlling multiple raspberry pi units",
+      "id": "5979963996459397078",
+      "url": "http://www.olliebown.com/files/papers/bown-young-johnson-FINAL-icmc2013.pdf",
+      "title": "A java-based remote live coding system for controlling multiple raspberry pi units",
+      "authors": "O Bown, M Young, S Johnson",
+      "year": "2013",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5979963996459397078&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Voice in devising/devising through voice: A conversation with Mikhail Karikis, Elaine Mitchener and Jessica Walker",
+      "id": "6026989829782924733",
+      "url": "http://www.ingentaconnect.com/content/intellect/jivs/2016/00000001/00000002/art00006",
+      "title": "Voice in devising/devising through voice: A conversation with Mikhail Karikis, Elaine Mitchener and Jessica Walker",
+      "authors": "M Karikis, E Mitchener, J Walker\u2026",
+      "year": "2016",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6026989829782924733&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Voicing the Technological Body: Some Musicological Reflections on Combinations of Voice and Technology in Popular Music",
+      "id": "6836757119334246269",
+      "url": "http://jrfm.eu/index.php/ojs_jrfm/article/view/52",
+      "title": "Voicing the Technological Body: Some Musicological Reflections on Combinations of Voice and Technology in Popular Music",
+      "authors": "F Heesch",
+      "year": "Film and Media (JRFM)",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6836757119334246269&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Let Me Whisper in Your Earbud: Curating Sound for Ubiquitous Tiny Speakers",
+      "id": "13392545375984736408",
+      "url": "https://www.mitpressjournals.org/doi/abs/10.1162/LMJ_a_00959",
+      "title": "Let Me Whisper in Your Earbud: Curating Sound for Ubiquitous Tiny Speakers",
+      "authors": "M Young",
+      "year": "2016"
+    },
+    {
+      "label": "An experiment in educational research-creation using music as diagram",
+      "id": "1146060599605003974",
+      "url": "http://journals.sagepub.com/doi/abs/10.1177/1077800417725352",
+      "title": "An experiment in educational research-creation using music as diagram",
+      "authors": "S Riddle",
+      "year": "2017"
+    },
+    {
+      "label": "Weaving \u201cEroticism, Cosmology, and Politics\u201d in Early Female Technopop: Three Discourses with the Informatics of Domination",
+      "id": "eLVgH0GMFM4J",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/03007766.2016.1169646",
+      "title": "Weaving \u201cEroticism, Cosmology, and Politics\u201d in Early Female Technopop: Three Discourses with the Informatics of Domination",
+      "authors": "A Liu-Rosenbaum",
+      "year": "2018"
+    },
+    {
+      "label": "Classical voice and the microphone: A work in progress",
+      "id": "2557509032222559428",
+      "url": "https://search.informit.com.au/documentSummary;dn=237512928853872;res=IELHSS",
+      "title": "Classical voice and the microphone: A work in progress",
+      "authors": "K Cummings",
+      "year": "2015"
+    },
+    {
+      "label": "Shaping the pancad\u00e3o: Improvisation and Studio Creativity on Rio Funk Independent Recordings from the Early 1990s",
+      "id": "7876321752150340169",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-658-17740-9_21",
+      "title": "Shaping the pancad\u00e3o: Improvisation and Studio Creativity on Rio Funk Independent Recordings from the Early 1990s",
+      "authors": "A Michailowsky",
+      "year": "2017"
+    },
+    {
+      "label": "[CITATION][C] Using and Performing with Words and Things",
+      "id": "IDlquwtadDIJ",
+      "title": "[CITATION][C] Using and Performing with Words and Things",
+      "authors": "M Coeckelbergh, M Coeckelbergh",
+      "year": "2017"
+    },
+    {
+      "label": "Designing and Playing the Strophonion",
+      "id": "N9YWw5LPNDEJ",
+      "url": "https://www.econtact.ca/18_3/nowitz_strophonion.html",
+      "title": "Designing and Playing the Strophonion",
+      "authors": "A Nowitz",
+      "year": "econtact.ca"
+    },
+    {
+      "label": "Clinical labor: Tissue donors and research subjects in the global bioeconomy",
+      "id": "5107715048930069569",
+      "url": "https://books.google.com/books?hl=en&lr=&id=UMsjAwAAQBAJ&oi=fnd&pg=PP6&ots=ONfWza7ciQ&sig=4cARP2BaGEWWV8uNzNO5ZUOF_-4",
+      "title": "Clinical labor: Tissue donors and research subjects in the global bioeconomy",
+      "authors": "M Cooper, C Waldby",
+      "year": "2014",
+      "cited_by": 226,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5107715048930069569&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Placental surfaces and the geographies of bodily interiors",
+      "id": "1496098308455888683",
+      "url": "http://journals.sagepub.com/doi/abs/10.1068/a44698",
+      "title": "Placental surfaces and the geographies of bodily interiors",
+      "authors": "R Colls, M Fannin",
+      "year": "2013",
+      "cited_by": 20,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1496098308455888683&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Knowledge and attitude of maternity nurses regarding cord blood collection and stem cells: An educational intervention",
+      "id": "13559264618187656961",
+      "url": "http://www.sciedu.ca/journal/index.php/jnep/article/view/5834",
+      "title": "Knowledge and attitude of maternity nurses regarding cord blood collection and stem cells: An educational intervention",
+      "authors": "HS Mohammed, HAEL Sayed",
+      "year": "2015",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13559264618187656961&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Cord Blood and Tissue Banking: Supporting Expectant Parent's Decision Making.",
+      "id": "7856274636500839381",
+      "url": "http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=08878625&AN=87666689&h=Sg9H4H0%2FLcmZgm8lNiOaE9jjBjvr%2FXx5JPGxvgyywY%2BicHdAnTmnUC6G7cu%2Bk5Ng2zeuCj9UJ2Pw71nFWZ8jZQ%3D%3D&crl=c",
+      "title": "Cord Blood and Tissue Banking: Supporting Expectant Parent's Decision Making.",
+      "authors": "CA Cooper, M Severson",
+      "year": "2013",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7856274636500839381&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Origin stories from a regional placenta tissue collection",
+      "id": "8287817792625816234",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/14636778.2014.999153",
+      "title": "Origin stories from a regional placenta tissue collection",
+      "authors": "M Fannin, J Kent",
+      "year": "2015",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8287817792625816234&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "\u8eab\u4f53, \u8eab\u4f53\u89c2\u4ee5\u53ca\u4eba\u6587\u5730\u7406\u5b66\u5bf9\u8eab\u4f53\u7684\u7814\u7a76",
+      "id": "7058840971522897929",
+      "url": "http://www.dlyj.ac.cn/article/2015/1000-0585/36611",
+      "title": "\u8eab\u4f53, \u8eab\u4f53\u89c2\u4ee5\u53ca\u4eba\u6587\u5730\u7406\u5b66\u5bf9\u8eab\u4f53\u7684\u7814\u7a76",
+      "authors": "\u9676\u4f1f\uff0c \u738b\u7ecd\u7eed\uff0c \u6731\u7ad1",
+      "year": "2015",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7058840971522897929&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "From the Incinerator to the Bank: A Feminist Qualitative Study of Private Cord Blood Banking in Canada",
+      "id": "426897983099235587",
+      "url": "http://yorkspace.library.yorku.ca/xmlui/handle/10315/29885",
+      "title": "From the Incinerator to the Bank: A Feminist Qualitative Study of Private Cord Blood Banking in Canada",
+      "authors": "JYJ Haw",
+      "year": "2014",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=426897983099235587&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Health care professionals' knowledge, attitudes and practices relating to umbilical cord blood banking and donation: an integrative review",
+      "id": "14197841523952537487",
+      "url": "https://bmcpregnancychildbirth.biomedcentral.com/articles/10.1186/s12884-016-0863-6",
+      "title": "Health care professionals' knowledge, attitudes and practices relating to umbilical cord blood banking and donation: an integrative review",
+      "authors": "L Peberdy, J Young, L Kearney",
+      "year": "2016",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14197841523952537487&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "(Re) collections: Engaging Feminist Geography with Embodied and Relational Experiences of Pregnancy Losses",
+      "id": "18302930588592989635",
+      "url": "http://etheses.dur.ac.uk/10786",
+      "title": "(Re) collections: Engaging Feminist Geography with Embodied and Relational Experiences of Pregnancy Losses",
+      "authors": "A McNiven",
+      "year": "2014",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18302930588592989635&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Spacing the subject: Thinking subjectivity after non\u2010representational theory",
+      "id": "8542182399420540674",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/gec3.12347/full",
+      "title": "Spacing the subject: Thinking subjectivity after non\u2010representational theory",
+      "authors": "P Simpson",
+      "year": "2017",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8542182399420540674&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Managing access to biobanks: How can we reconcile individual privacy and public interests...",
+      "id": "12616480293456491208",
+      "url": "http://journals.sagepub.com/doi/abs/10.1177/096853321001000404",
+      "title": "Managing access to biobanks: How can we reconcile individual privacy and public interests...",
+      "authors": "G Laurie, P Mallia, DA Frenkel\u2026",
+      "year": "2010",
+      "cited_by": 11,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12616480293456491208&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The tension between data sharing and the protection of privacy in genomics research",
+      "id": "7422765167167830374",
+      "url": "http://www.annualreviews.org/doi/abs/10.1146/annurev-genom-082410-101454",
+      "title": "The tension between data sharing and the protection of privacy in genomics research",
+      "authors": "J Kaye",
+      "year": "2012",
+      "cited_by": 116,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7422765167167830374&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Towards a data sharing Code of Conduct for international genomic research",
+      "id": "16759694415018945500",
+      "url": "https://genomemedicine.biomedcentral.com/articles/10.1186/gm262",
+      "title": "Towards a data sharing Code of Conduct for international genomic research",
+      "authors": "BM Knoppers, JR Harris\u2026",
+      "year": "2011",
+      "cited_by": 88,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16759694415018945500&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Sampling populations of humans across the world: ELSI issues",
+      "id": "3308394174370673107",
+      "url": "http://www.annualreviews.org/doi/abs/10.1146/annurev-genom-090711-163834",
+      "title": "Sampling populations of humans across the world: ELSI issues",
+      "authors": "BM Knoppers, MH Zawati\u2026",
+      "year": "2012",
+      "cited_by": 49,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3308394174370673107&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Reflexive governance in biobanking: on the value of policy led approaches and the need to recognise the limits of law",
+      "id": "5257462345969431933",
+      "url": "https://link.springer.com/article/10.1007/s00439-011-1066-x",
+      "title": "Reflexive governance in biobanking: on the value of policy led approaches and the need to recognise the limits of law",
+      "authors": "G Laurie",
+      "year": "2011",
+      "cited_by": 33,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5257462345969431933&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Biobanks, data sharing, and the drive for a global privacy governance framework",
+      "id": "1077432864692951006",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1111/jlme.12311/full",
+      "title": "Biobanks, data sharing, and the drive for a global privacy governance framework",
+      "authors": "ES Dove",
+      "year": "Medicine & Ethics",
+      "cited_by": 16,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1077432864692951006&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The tension between data sharing and the protection of privacy in genomics research",
+      "id": "4519340978406569450",
+      "url": "https://link.springer.com/chapter/10.1007/978-94-017-9573-9_8",
+      "title": "The tension between data sharing and the protection of privacy in genomics research",
+      "authors": "J Kaye",
+      "year": "law and governance of biobanking",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4519340978406569450&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Biobank Report: United Kingdom",
+      "id": "2683891492185694255",
+      "url": "http://journals.sagepub.com/doi/abs/10.1177/1073110516644202",
+      "title": "Biobank Report: United Kingdom",
+      "authors": "J Kaye, J Bell, L Briceno\u2026",
+      "year": "2016",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2683891492185694255&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "THE POTENTIAL IMPACT OF THE EU GENERAL DATA PROTECTION REGULATION ON PHARMACOGENOMICS RESEARCH",
+      "id": "2598305449794892878",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/mlv36&section=19",
+      "title": "THE POTENTIAL IMPACT OF THE EU GENERAL DATA PROTECTION REGULATION ON PHARMACOGENOMICS RESEARCH",
+      "authors": "RDMA Dias",
+      "year": "Genetics"
+    },
+    {
+      "label": "The Right to Know and the Right Not to Know Revisited: Part One",
+      "id": "6223898086696357613",
+      "url": "https://link.springer.com/article/10.1007/s41649-017-0012-1",
+      "title": "The Right to Know and the Right Not to Know Revisited: Part One",
+      "authors": "R Brownsword, J Wale",
+      "year": "2017",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6223898086696357613&as_sdt=2005&sciodt=0,5&hl=en"
+    }
+  ],
+  "links": [
+    {
+      "source": "7556527499680598700",
+      "target": "1971084081186387568"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "13428854610867163914"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "7808630135051906131"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "3033523631393697915"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "7095272042712320853"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "13636996700787081111"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "9254746649961730462"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "9198222430491730086"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "14864580230541288113"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "3240585032961970202"
+    },
+    {
+      "source": "7556527499680598700",
+      "target": "13599249941591853318"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "386723840638153978"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "10147228918361759042"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "3531298846210677032"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "839050694358475277"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "7589182030691366643"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "8617549629918097176"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "6730577843891611166"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "7553942180809764680"
+    },
+    {
+      "source": "1971084081186387568",
+      "target": "12616480293456491208"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "9910138931836225244"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "192763985016504527"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "4003080078466903751"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "447342903296504236"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "4885694588010730607"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "2655971133650071082"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "13420647880156531501"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "17089023999631552930"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "988395465080786080"
+    },
+    {
+      "source": "386723840638153978",
+      "target": "6820051766763973572"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "5001935081305454455"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "6650990543683806344"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "9731887324644440594"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "9303979080695346896"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "10096472572938085523"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "14032267165727104285"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "7833127983146185326"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "7553942180809764680"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "17206374127293316399"
+    },
+    {
+      "source": "10147228918361759042",
+      "target": "12029715825047962897"
+    },
+    {
+      "source": "9731887324644440594",
+      "target": "3531298846210677032"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "5107715048930069569"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "1496098308455888683"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "13559264618187656961"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "7856274636500839381"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "8287817792625816234"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "7058840971522897929"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "426897983099235587"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "14197841523952537487"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "18302930588592989635"
+    },
+    {
+      "source": "7553942180809764680",
+      "target": "8542182399420540674"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "14647610264440258720"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "5194733928315874265"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "3324877372193757049"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "1983580798706716962"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "17709238489087013081"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "15681824224355738746"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "12807484792526645635"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "17423801329278082391"
+    },
+    {
+      "source": "3531298846210677032",
+      "target": "10788932619595700330"
+    },
+    {
+      "source": "14647610264440258720",
+      "target": "12616480293456491208"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "5713801732799407434"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "17942983029150337910"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "2351645677270264313"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "8892390036551226133"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "14264123579377189866"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "12027238464712618667"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "10484049060056044840"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "16627868433978875733"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "A5miHMrCTbgJ"
+    },
+    {
+      "source": "839050694358475277",
+      "target": "XXu_N0tqPAIJ"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "3949944803448691697"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "11779770240469129020"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "10261984444471489982"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "8174930007500216859"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "10795560021638764112"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "13357069337126690288"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "4998650744317865745"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "13528065407709143956"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "2009257450775023451"
+    },
+    {
+      "source": "7589182030691366643",
+      "target": "1985220309834059913"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "17777989010486374406"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "10604974686868814948"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "4668529521674275279"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "5930700012305769056"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "6903684753040741593"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "5394901585869199611"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "4586047875804681496"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "11596190718597949730"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "15423533966809575089"
+    },
+    {
+      "source": "8617549629918097176",
+      "target": "14627380957032179720"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "5979963996459397078"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "6026989829782924733"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "6836757119334246269"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "13392545375984736408"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "1146060599605003974"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "eLVgH0GMFM4J"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "2557509032222559428"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "7876321752150340169"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "IDlquwtadDIJ"
+    },
+    {
+      "source": "6730577843891611166",
+      "target": "N9YWw5LPNDEJ"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "7422765167167830374"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "16759694415018945500"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "3308394174370673107"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "5257462345969431933"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "1077432864692951006"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "4519340978406569450"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "2683891492185694255"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "2598305449794892878"
+    },
+    {
+      "source": "12616480293456491208",
+      "target": "6223898086696357613"
+    }
+  ]
+};
+
+var link = svg.append("g")
+    .attr("class", "links")
+  .selectAll("line")
+  .data(graph.links)
+  .enter().append("line");
+
+var node = svg.append("g")
+    .attr("class", "nodes")
+  .selectAll("circle")
+  .data(graph.nodes)
+  .enter().append("circle")
+    .attr("r", 5)
+    .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+node.append("title")
+    .text(function(d) {
+        return d.authors ? d.title + ' - ' + d.authors : d.title
+    });
+
+node.on("click", function(d) {
+  window.open(d.url, '_blank');
+  d3.event.stopPropagation();
+});
+
+simulation
+    .nodes(graph.nodes)
+    .on("tick", ticked);
+
+simulation.force("link")
+    .links(graph.links);
+
+function ticked() {
+  link
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+}
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+</script>

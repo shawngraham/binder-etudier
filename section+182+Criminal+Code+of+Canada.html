@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<style>
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.8;
+  stroke-width: 2px;
+}
+
+.nodes circle {
+  stroke: black;
+  fill: white;
+  stroke-width: 1.5px;
+}
+
+#graph {
+  width: 99vw;
+  height: 99vh;
+}
+
+</style>
+<svg id="graph"></svg>
+<script>
+
+var width = $(window).width();
+var height = $(window).height();
+
+var svg = d3.select("svg")
+    .attr("height", height)
+    .attr("width", width);
+
+var color = d3.scaleOrdinal(d3.schemeCategory20c);
+
+var simulation = d3.forceSimulation()
+    .velocityDecay(0.6)
+    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+var graph = {
+  "nodes": [
+    {
+      "label": "SEXUALITY & THE CRIMINAL LAW IN CANADA: ISSUES FOR SEX EDUCATORS AND THERAPISTS.",
+      "id": "2790147971522139411",
+      "url": "http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=11884517&AN=25150932&h=tveKNRV3IlS%2BS2YdJ5VggtGR4DtUE8ceLmDQ4ISxOGGn6e9h%2F182ZFoFuBb6DDDTZDF3b1HYibS9ybMIbEq%2BqA%3D%3D&crl=c",
+      "title": "SEXUALITY & THE CRIMINAL LAW IN CANADA: ISSUES FOR SEX EDUCATORS AND THERAPISTS.",
+      "authors": "MJ MacDonald",
+      "year": "1994",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2790147971522139411&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Teenage sexual and reproductive behavior in developed countries",
+      "id": "7072474857778591479",
+      "url": "https://pdfs.semanticscholar.org/849c/54dcd5188a775dce2a05c096c50c9b445e23.pdf",
+      "title": "Teenage sexual and reproductive behavior in developed countries",
+      "authors": "E Maticka-Tyndale, A McKay\u2026",
+      "year": "2001",
+      "cited_by": 28,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7072474857778591479&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Dealing with sexual abuse of adults with a developmental disability who also have impaired communication: Supportive procedures for detection, disclosure\u00a0\u2026",
+      "id": "15870344738835719000",
+      "url": "http://search.proquest.com/openview/6de393d718917b71e4258340b06437c0/1?pq-origsite=gscholar&cbl=33400",
+      "title": "Dealing with sexual abuse of adults with a developmental disability who also have impaired communication: Supportive procedures for detection, disclosure\u00a0\u2026",
+      "authors": "L Burke, C Bedard, S Ludwig",
+      "year": "1998",
+      "cited_by": 20,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15870344738835719000&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Rape acknowledgement and attributions of responsibility: The links between research, teaching and practice",
+      "id": "588192888366503813",
+      "url": "http://search.proquest.com/openview/11f437f6a6c3f31c0ef087a2aa381c0e/1?pq-origsite=gscholar&cbl=33400",
+      "title": "Rape acknowledgement and attributions of responsibility: The links between research, teaching and practice",
+      "authors": "HE Dunlap",
+      "year": "1997",
+      "cited_by": 3,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=588192888366503813&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Risk to self",
+      "id": "5349866036780099410",
+      "url": "https://books.google.com/books?hl=en&lr=&id=E3xQ2hHMceIC&oi=fnd&pg=PA143&ots=kbFRQVHqbu&sig=HgGKAy-aSK3udbK5yTXJ0nTknGs",
+      "title": "Risk to self",
+      "authors": "BL Murray, E Upshall",
+      "year": "2009",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5349866036780099410&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Policy development for museums: A First Nations perspective",
+      "id": "1129375404462025569",
+      "url": "http://ojs.library.ubc.ca/index.php/bcstudies/article/download/1387/1431",
+      "title": "Policy development for museums: A First Nations perspective",
+      "authors": "RE Atleo",
+      "year": "1991",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1129375404462025569&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Authentic science experiences as a vehicle to change students' orientations toward science and scientific career choices: Learning from the path followed by\u00a0\u2026",
+      "id": "232304611668383564",
+      "url": "https://link.springer.com/article/10.1007/s11422-009-9183-8",
+      "title": "Authentic science experiences as a vehicle to change students' orientations toward science and scientific career choices: Learning from the path followed by\u00a0\u2026",
+      "authors": "M van Eijck, WM Roth",
+      "year": "2009",
+      "cited_by": 43,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=232304611668383564&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Collections and objections: aboriginal material culture in southern Ontario",
+      "id": "3152508746406318074",
+      "url": "https://books.google.com/books?hl=en&lr=&id=H90JE18jrZ0C&oi=fnd&pg=PR7&ots=qyDaOoTbNP&sig=lmeCRPMRwZPlK6AtQ3sN-pndJwo",
+      "title": "Collections and objections: aboriginal material culture in southern Ontario",
+      "authors": "M Hamilton",
+      "year": "2010",
+      "cited_by": 32,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=3152508746406318074&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Imagination of science in education: From epics to novelization",
+      "id": "12377837878390017068",
+      "url": "https://books.google.com/books?hl=en&lr=&id=XBGIN5NHizMC&oi=fnd&pg=PR7&ots=FZzL187fHP&sig=AzCvbBkKcVtPrfpNHLOnXYHqByI",
+      "title": "Imagination of science in education: From epics to novelization",
+      "authors": "M Van Eijck, WM Roth",
+      "year": "2012",
+      "cited_by": 18,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12377837878390017068&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "The ancient Nuu-chah-nulth strategy of hahuulthi: Education for indigenous cultural survivance",
+      "id": "13047363846447469092",
+      "url": "http://www.academia.edu/download/7578188/MarleneAtleoHishukLearn2006.doc",
+      "title": "The ancient Nuu-chah-nulth strategy of hahuulthi: Education for indigenous cultural survivance",
+      "authors": "MR Atleo",
+      "year": "Cultural",
+      "cited_by": 10,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13047363846447469092&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Questioning locality: the UBC Museum of Anthropology and its hinterlands",
+      "id": "4262626384096824517",
+      "url": "https://journals.openedition.org/etnografica/2025",
+      "title": "Questioning locality: the UBC Museum of Anthropology and its hinterlands",
+      "authors": "A Shelton",
+      "year": "2007",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4262626384096824517&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Huupukwanum Tupaat: Out of the Mist: Treasures of the Nuu\u2010chah\u2010nulth Chiefs at the Denver Museum of Nature and Science, Denver, Colorado",
+      "id": "8056098852243755487",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1525/mua.2001.25.1.48/full",
+      "title": "Huupukwanum Tupaat: Out of the Mist: Treasures of the Nuu\u2010chah\u2010nulth Chiefs at the Denver Museum of Nature and Science, Denver, Colorado",
+      "authors": "J Sinclair",
+      "year": "2001",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8056098852243755487&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Novelizing Native and scientific discourse",
+      "id": "15660986835128825369",
+      "url": "https://link.springer.com/chapter/10.1007/978-94-007-5392-1_9",
+      "title": "Novelizing Native and scientific discourse",
+      "authors": "M van Eijck, WM Roth",
+      "year": "2013",
+      "cited_by": 1,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15660986835128825369&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Preserving Native Space",
+      "id": "10274644213518007284",
+      "url": "https://link.springer.com/chapter/10.1007/978-94-6209-632-5_6",
+      "title": "Preserving Native Space",
+      "authors": "J Clapperton",
+      "year": "2014"
+    },
+    {
+      "label": "5. PRESERVING NATIVE SPACE: THE X\u00c1: YTEM LONGHOUSE INTERPRETIVE CENTRE",
+      "id": "V5oSkGzFJxcJ",
+      "url": "https://books.google.com/books?hl=en&lr=&id=1eglBAAAQBAJ&oi=fnd&pg=PA69&ots=TU_8UZJNUP&sig=2O3jCSKuAlpwBicH_aJW4c2PxXI",
+      "title": "5. PRESERVING NATIVE SPACE: THE X\u00c1: YTEM LONGHOUSE INTERPRETIVE CENTRE",
+      "authors": "J CLAPPERTON",
+      "year": "2014"
+    },
+    {
+      "label": "Legislation for Animal welfare",
+      "id": "18010254703178680116",
+      "title": "Legislation for Animal welfare",
+      "authors": "TL Whiting",
+      "year": "organized by Alberta Farm\u00a0\u2026",
+      "cited_by": 2,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18010254703178680116&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Canadian consumer valuation of farm animal welfare and quality verification\u2013the case of pork",
+      "id": "5648957919626842877",
+      "url": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.830.9131&rep=rep1&type=pdf",
+      "title": "Canadian consumer valuation of farm animal welfare and quality verification\u2013the case of pork",
+      "authors": "AD Uzea",
+      "year": "2009",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=5648957919626842877&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "CONSUMER AND MARKET DEMAND AGRICULTURAL POLICY RESEARCH NETWORK",
+      "id": "12872345759804345080",
+      "url": "http://www.prairieswine.com/pdf/39392.pdf",
+      "title": "CONSUMER AND MARKET DEMAND AGRICULTURAL POLICY RESEARCH NETWORK",
+      "authors": "FA Welfare, A Uzea, JE Hobbs",
+      "year": "2008"
+    },
+    {
+      "label": "The Dead Body Offence in Canada: How Courts Interpret and Apply Section 182 of the Criminal Code",
+      "id": "TGkUsJ2V7yMJ",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/callb35&section=34",
+      "title": "The Dead Body Offence in Canada: How Courts Interpret and Apply Section 182 of the Criminal Code",
+      "authors": "A Bolieiro",
+      "year": "2010"
+    },
+    {
+      "label": "The Disposition of Human Remains and Organ Donation: Increasing Testamentary Freedom while Upholding the No Property Rule",
+      "id": "12430728799269814376",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wesjalals7&section=5",
+      "title": "The Disposition of Human Remains and Organ Donation: Increasing Testamentary Freedom while Upholding the No Property Rule",
+      "authors": "LM Mimnagh",
+      "year": "2017"
+    },
+    {
+      "label": "Sex Crimes, Prostitution and Pornography: A Posthumous Report of the Law Reform Commission of Canada",
+      "id": "fsv_9GjBbsIJ",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/canbarev73&section=29",
+      "title": "Sex Crimes, Prostitution and Pornography: A Posthumous Report of the Law Reform Commission of Canada",
+      "authors": "J Barnes",
+      "year": "HeinOnline"
+    },
+    {
+      "label": "Supreme and County Court Decisions",
+      "id": "REPV-L1CN8kJ",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/clwqrty7&section=34",
+      "title": "Supreme and County Court Decisions",
+      "authors": "MR Robertson",
+      "year": "HeinOnline"
+    },
+    {
+      "label": "The legal regulation of sexual activity and the protection of females",
+      "id": "8003355105190003647",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ohlj21&section=17",
+      "title": "The legal regulation of sexual activity and the protection of females",
+      "authors": "G Parker",
+      "year": "1983",
+      "cited_by": 12,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=8003355105190003647&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Reading Gaol Revisited: Admission of Uncharged Misconduct Evidence in Sex Offender Cases",
+      "id": "18076604855570094284",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ajcl21&section=11",
+      "title": "Reading Gaol Revisited: Admission of Uncharged Misconduct Evidence in Sex Offender Cases",
+      "authors": "TJ Reed",
+      "year": "1993",
+      "cited_by": 110,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=18076604855570094284&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Making good: Law and moral regulation in Canada, 1867-1939",
+      "id": "4676179966883593743",
+      "url": "https://books.google.com/books?hl=en&lr=&id=lnKrT6fay9AC&oi=fnd&pg=PR9&ots=hlBRNoh1vf&sig=rWx9A4rzFwx76vzg30oKhwrRqlk",
+      "title": "Making good: Law and moral regulation in Canada, 1867-1939",
+      "authors": "C Strange, TM Loo",
+      "year": "1997",
+      "cited_by": 109,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=4676179966883593743&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Chasing the social evil: Moral fervour and the evolution of Canada's prostitution laws, 1867-1917",
+      "id": "15577180451892604809",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-law-and-society-la-revue-canadienne-droit-et-societe/article/chasing-the-social-evil-moral-fervour-and-the-evolution-of-canadas-prostitution-laws-18671917/0FC9EFA13FCED6A45F7F85839FBE8457",
+      "title": "Chasing the social evil: Moral fervour and the evolution of Canada's prostitution laws, 1867-1917",
+      "authors": "JPS McLaren",
+      "year": "1986",
+      "cited_by": 56,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15577180451892604809&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Misconceptions: Unmarried Motherhood and the Ontario Children of Unmarried Parents Act, 1921 to 1969",
+      "id": "13419051798319541361",
+      "url": "https://books.google.com/books?hl=en&lr=&id=9mhtz6xc51UC&oi=fnd&pg=PR7&ots=wjQXF7Mw_s&sig=YX7RPgvFXcpkBtm95qrwuFPPGqg",
+      "title": "Misconceptions: Unmarried Motherhood and the Ontario Children of Unmarried Parents Act, 1921 to 1969",
+      "authors": "AL Chambers",
+      "year": "2007",
+      "cited_by": 21,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13419051798319541361&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Feminist perspectives on Law: Canadian theory and practice",
+      "id": "11051540732422846551",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/cajwol2&section=8",
+      "title": "Feminist perspectives on Law: Canadian theory and practice",
+      "authors": "SB Boyd, EA Sheehy",
+      "year": "1986",
+      "cited_by": 18,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=11051540732422846551&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Canadian Prostitution Control Between 1914 and 1970: An Exercise in Chauvinist Reasoning",
+      "id": "16752696036649808812",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-law-and-society-la-revue-canadienne-droit-et-societe/article/canadian-prostitution-control-between-1914-and-1970-an-exercise-in-chauvinist-reasoning/81EDA344F77DD51B7A7B1816931E8B3F",
+      "title": "Canadian Prostitution Control Between 1914 and 1970: An Exercise in Chauvinist Reasoning",
+      "authors": "EN Larsen",
+      "year": "1992",
+      "cited_by": 9,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16752696036649808812&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Masking and unmasking the sexual abuse of children: Perceptions of violence against children in \u201cThe Badlands\u201d of Ontario, 1916-1930",
+      "id": "10387987944130524411",
+      "url": "http://journals.sagepub.com/doi/abs/10.1177/036319900002500404",
+      "title": "Masking and unmasking the sexual abuse of children: Perceptions of violence against children in \u201cThe Badlands\u201d of Ontario, 1916-1930",
+      "authors": "J Sangster",
+      "year": "2000",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10387987944130524411&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "\u201cThe Other Woman: Lizzie Cyr and the Origins of the 'Persons Case'\u201d*",
+      "id": "1986560122871695617",
+      "url": "https://www.cambridge.org/core/journals/canadian-journal-of-law-and-society-la-revue-canadienne-droit-et-societe/article/other-woman-lizzie-cyr-and-the-origins-of-the-persons-case/187434128D1472823BD34F69C27E657C",
+      "title": "\u201cThe Other Woman: Lizzie Cyr and the Origins of the 'Persons Case'\u201d*",
+      "authors": "D Bright",
+      "year": "1998",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=1986560122871695617&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Le Code criminel canadien 1892-1927: \u00c9tude des acteurs sociaux",
+      "id": "2535539759875346882",
+      "url": "http://www.utpjournals.press/doi/pdf/10.3138/CHR.79.2.261",
+      "title": "Le Code criminel canadien 1892-1927: \u00c9tude des acteurs sociaux",
+      "authors": "A Cellard, G Pelletier",
+      "year": "1998",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=2535539759875346882&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Changing images of deviance: Nineteenth-century Canadian anti-prostitution movements",
+      "id": "14533247712599900118",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/01639625.2010.548273",
+      "title": "Changing images of deviance: Nineteenth-century Canadian anti-prostitution movements",
+      "authors": "RA Ball",
+      "year": "2012",
+      "cited_by": 4,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14533247712599900118&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Biotechnology and the challenge of property: property rights in dead bodies, body parts,...",
+      "id": "10044929425116867787",
+      "url": "https://books.google.ca/books?hl=en&lr=&id=LIkHDAAAQBAJ&oi=fnd&pg=PP1&dq=%22section+182%22+%22Criminal+Code+of+Canada%22&ots=Zo5WLRUhkn&sig=pY4W-xk7XY2wnRwySJHQiqeMq2A",
+      "title": "Biotechnology and the challenge of property: property rights in dead bodies, body parts,...",
+      "authors": "RN Nwabueze",
+      "year": "2016",
+      "cited_by": 39,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=10044929425116867787&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Our bodies, whose property?",
+      "id": "7808630135051906131",
+      "url": "https://books.google.com/books?hl=en&lr=&id=iofSMrpBgZEC&oi=fnd&pg=PP1&ots=MS0QoIVO5C&sig=t1hgcSSlZdE_PL1qZlDmAlhyB2s",
+      "title": "Our bodies, whose property?",
+      "authors": "A Phillips",
+      "year": "2013",
+      "cited_by": 67,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=7808630135051906131&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Bioequity\u2013property and the human body",
+      "id": "13599249941591853318",
+      "url": "https://books.google.com/books?hl=en&lr=&id=K5IGDAAAQBAJ&oi=fnd&pg=PP1&ots=nfBjzbDYN_&sig=tjMMJtcx4L4LVQ51zLFfoZ9eBgo",
+      "title": "Bioequity\u2013property and the human body",
+      "authors": "N Hoppe",
+      "year": "2016",
+      "cited_by": 24,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13599249941591853318&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Protecting the Traditional Knowledge and Cultural Expressions of Russia's Numerically-Small Indigenous Peoples: What Has Been Done, What Remains to Be\u00a0\u2026",
+      "id": "6851339913969242339",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/twlr15&section=18",
+      "title": "Protecting the Traditional Knowledge and Cultural Expressions of Russia's Numerically-Small Indigenous Peoples: What Has Been Done, What Remains to Be\u00a0\u2026",
+      "authors": "M Newcity",
+      "year": "2008",
+      "cited_by": 15,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=6851339913969242339&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Dissecting the dissectors: knowledge, attitude, and practice of body bequests by Nigerian anatomists",
+      "id": "16623181315964122190",
+      "url": "http://onlinelibrary.wiley.com/doi/10.1002/ase.1298/full",
+      "title": "Dissecting the dissectors: knowledge, attitude, and practice of body bequests by Nigerian anatomists",
+      "authors": "EG Anyanwu, EN Obikili",
+      "year": "2012",
+      "cited_by": 10,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16623181315964122190&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Dying to live: migrant deaths and citizenship politics along European borders: transgressions, disruptions, and mobilizations",
+      "id": "12693297149795329496",
+      "url": "http://www.tandfonline.com/doi/abs/10.1080/13621025.2016.1182682",
+      "title": "Dying to live: migrant deaths and citizenship politics along European borders: transgressions, disruptions, and mobilizations",
+      "authors": "K Rygiel",
+      "year": "2016",
+      "cited_by": 12,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=12693297149795329496&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Intellectual property and the ethical/legal status of human DNA: The (ir) relevance of context",
+      "id": "15367389431968107744",
+      "url": "https://www.erudit.org/en/journals/etudinuit/2011-v35-n1-2-etudinuit0322/1012839ar/abstract/",
+      "title": "Intellectual property and the ethical/legal status of human DNA: The (ir) relevance of context",
+      "authors": "D Pullman, G Nicholas",
+      "year": "2011",
+      "cited_by": 8,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=15367389431968107744&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Over My Dead Body: How the Albrecht Decisions Complicate the Constitutional Dilemma of Due Process & the Dead",
+      "id": "610203159904099518",
+      "url": "http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/utol41&section=9",
+      "title": "Over My Dead Body: How the Albrecht Decisions Complicate the Constitutional Dilemma of Due Process & the Dead",
+      "authors": "DLW Knope",
+      "year": "2009",
+      "cited_by": 7,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=610203159904099518&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Legal and ethical regulation of biomedical research in developing countries",
+      "id": "13703754963079310990",
+      "url": "https://books.google.com/books?hl=en&lr=&id=0tMFDAAAQBAJ&oi=fnd&pg=PP1&ots=cxbJQgtDTn&sig=_xWwZKaSMqpnYvNzok5QtGI53bM",
+      "title": "Legal and ethical regulation of biomedical research in developing countries",
+      "authors": "RN Nwabueze",
+      "year": "2016",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=13703754963079310990&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "Biobanks: Patents Or Open Science?",
+      "id": "14950425476209012120",
+      "url": "https://books.google.com/books?hl=en&lr=&id=C2dEAgAAQBAJ&oi=fnd&pg=PP1&ots=uQ1M6lOW9o&sig=QJWH3vafg4DiqKkEZBBgkUxAoTc",
+      "title": "Biobanks: Patents Or Open Science?",
+      "authors": "A De Robbio",
+      "year": "2012",
+      "cited_by": 6,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=14950425476209012120&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "From principles to practice: Implementing genetic database governance",
+      "id": "16763964473637133233",
+      "url": "http://journals.sagepub.com/doi/abs/10.1177/096853320800900201",
+      "title": "From principles to practice: Implementing genetic database governance",
+      "authors": "SMC Gibbons",
+      "year": "2008",
+      "cited_by": 5,
+      "cited_by_url": "https://scholar.google.com/scholar?cites=16763964473637133233&as_sdt=2005&sciodt=0,5&hl=en"
+    },
+    {
+      "label": "An ostensible exercise in modernity: law, religious intervention, and social science in the case of Bedford vs. Canada",
+      "id": "8377092972995166617",
+      "url": "http://lurepository.lakeheadu.ca:8080/handle/2453/493",
+      "title": "An ostensible exercise in modernity: law, religious intervention, and social science in the case of Bedford vs. Canada",
+      "authors": "V Lucky",
+      "year": "2014"
+    }
+  ],
+  "links": [
+    {
+      "source": "2790147971522139411",
+      "target": "7072474857778591479"
+    },
+    {
+      "source": "2790147971522139411",
+      "target": "15870344738835719000"
+    },
+    {
+      "source": "2790147971522139411",
+      "target": "588192888366503813"
+    },
+    {
+      "source": "2790147971522139411",
+      "target": "5349866036780099410"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "232304611668383564"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "3152508746406318074"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "12377837878390017068"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "13047363846447469092"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "4262626384096824517"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "8056098852243755487"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "15660986835128825369"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "10274644213518007284"
+    },
+    {
+      "source": "1129375404462025569",
+      "target": "V5oSkGzFJxcJ"
+    },
+    {
+      "source": "18010254703178680116",
+      "target": "5648957919626842877"
+    },
+    {
+      "source": "18010254703178680116",
+      "target": "12872345759804345080"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "18076604855570094284"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "4676179966883593743"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "15577180451892604809"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "13419051798319541361"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "11051540732422846551"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "16752696036649808812"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "10387987944130524411"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "1986560122871695617"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "2535539759875346882"
+    },
+    {
+      "source": "8003355105190003647",
+      "target": "14533247712599900118"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "7808630135051906131"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "13599249941591853318"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "6851339913969242339"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "16623181315964122190"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "12693297149795329496"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "15367389431968107744"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "610203159904099518"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "13703754963079310990"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "14950425476209012120"
+    },
+    {
+      "source": "10044929425116867787",
+      "target": "16763964473637133233"
+    }
+  ]
+};
+
+var link = svg.append("g")
+    .attr("class", "links")
+  .selectAll("line")
+  .data(graph.links)
+  .enter().append("line");
+
+var node = svg.append("g")
+    .attr("class", "nodes")
+  .selectAll("circle")
+  .data(graph.nodes)
+  .enter().append("circle")
+    .attr("r", 5)
+    .call(d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
+
+node.append("title")
+    .text(function(d) {
+        return d.authors ? d.title + ' - ' + d.authors : d.title
+    });
+
+node.on("click", function(d) {
+  window.open(d.url, '_blank');
+  d3.event.stopPropagation();
+});
+
+simulation
+    .nodes(graph.nodes)
+    .on("tick", ticked);
+
+simulation.force("link")
+    .links(graph.links);
+
+function ticked() {
+  link
+      .attr("x1", function(d) { return d.source.x; })
+      .attr("y1", function(d) { return d.source.y; })
+      .attr("x2", function(d) { return d.target.x; })
+      .attr("y2", function(d) { return d.target.y; });
+
+  node
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+}
+
+function dragstarted(d) {
+  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+}
+
+function dragended(d) {
+  if (!d3.event.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+</script>

@@ -1,0 +1,1085 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="url" type="string" />
+      <attribute id="1" title="title" type="string" />
+      <attribute id="2" title="authors" type="string" />
+      <attribute id="3" title="year" type="string" />
+      <attribute id="4" title="cited_by" type="long" />
+      <attribute id="5" title="cited_by_url" type="string" />
+    </attributes>
+    <meta>
+      <creator>NetworkX 2.1</creator>
+      <lastmodified>09/05/2018</lastmodified>
+    </meta>
+    <nodes>
+      <node id="7828242426326646006" label="New directions in bioarchaeology: Recent contributions to the study of human social identities">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s10814-008-9024-4" />
+          <attvalue for="1" value="New directions in bioarchaeology: Recent contributions to the study of human social identities" />
+          <attvalue for="2" value="KJ Knudson, CM Stojanowski" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="171" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7828242426326646006&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8748346449102412182" label="Bones of contention: A comparative examination of law governing human remains from archaeological...">
+        <attvalues>
+          <attvalue for="1" value="Bones of contention: A comparative examination of law governing human remains from archaeological..." />
+        </attvalues>
+      </node>
+      <node id="10341029148208895761" label="The origins of biocultural dimensions in bioarchaeology">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/9781444390537.ch2/summary" />
+          <attvalue for="1" value="The origins of biocultural dimensions in bioarchaeology" />
+          <attvalue for="2" value="MK Zuckerman, GJ Armelagos" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="58" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10341029148208895761&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="2252819996314481530" label="Sex and gender in bioarchaeological research">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/9781444390537.ch6/summary" />
+          <attvalue for="1" value="Sex and gender in bioarchaeological research" />
+          <attvalue for="2" value="SE Hollimon" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="55" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=2252819996314481530&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11151988767487438357" label="Infection, disease, and biosocial processes at the end of the Indus Civilization">
+        <attvalues>
+          <attvalue for="0" value="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0084814" />
+          <attvalue for="1" value="Infection, disease, and biosocial processes at the end of the Indus Civilization" />
+          <attvalue for="2" value="GR Schug, KE Blevins, B Cox, K Gray…" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="41" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11151988767487438357&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11184041727352138037" label="Skeletal injury across the life course">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/9781444390537.ch14/summary" />
+          <attvalue for="1" value="Skeletal injury across the life course" />
+          <attvalue for="2" value="BA Glencross" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="41" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11184041727352138037&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6611440212929350063" label="Practices for the living and the dead: medieval and post-Reformation burials in Scandinavia">
+        <attvalues>
+          <attvalue for="0" value="http://www.diva-portal.org/smash/record.jsf?pid=diva2:240817" />
+          <attvalue for="1" value="Practices for the living and the dead: medieval and post-Reformation burials in Scandinavia" />
+          <attvalue for="2" value="K Jonsson" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="35" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6611440212929350063&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8824201241669269378" label="The past of sex, gender, and health: bioarchaeology of the aging skeleton">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/j.1548-1433.2012.01428.x/full" />
+          <attvalue for="1" value="The past of sex, gender, and health: bioarchaeology of the aging skeleton" />
+          <attvalue for="2" value="SC Agarwal" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="38" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8824201241669269378&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6177391479265736749" label="Pre-Columbian Andean sickness ideology and the social experience of leishmaniasis: a contextualized analysis of bioarchaeological and paleopathological data from …">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S1879981711000040" />
+          <attvalue for="1" value="Pre-Columbian Andean sickness ideology and the social experience of leishmaniasis: a contextualized analysis of bioarchaeological and paleopathological data from …" />
+          <attvalue for="2" value="SJ Marsteller, C Torres-Rouff, KJ Knudson" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="35" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6177391479265736749&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4873329603678557833" label="Bioarchaeology of human sacrifice: violence, identity and the evolution of ritual killing at Cerro Cerrillos, Peru">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/antiquity/article/bioarchaeology-of-human-sacrifice-violence-identity-and-the-evolution-of-ritual-killing-at-cerro-cerrillos-peru/32B2960D8906EC1B4ABA92629A59CA21" />
+          <attvalue for="1" value="Bioarchaeology of human sacrifice: violence, identity and the evolution of ritual killing at Cerro Cerrillos, Peru" />
+          <attvalue for="2" value="HD Klaus, J Centurión, M Curo" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="30" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4873329603678557833&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1460374730563944510" label="Between‐group Differences in the Patterning of Musculo‐skeletal Stress Markers: Avoiding Confounding Factors by Focusing on Qualitative Aspects of Physical …">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/oa.1243/full" />
+          <attvalue for="1" value="Between‐group Differences in the Patterning of Musculo‐skeletal Stress Markers: Avoiding Confounding Factors by Focusing on Qualitative Aspects of Physical …" />
+          <attvalue for="2" value="S Stefanović, M Porčić" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="27" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1460374730563944510&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14770327547083302351" label="Mobility and the diversity of Early Neolithic lives: isotopic evidence from skeletons">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0278416512000104" />
+          <attvalue for="1" value="Mobility and the diversity of Early Neolithic lives: isotopic evidence from skeletons" />
+          <attvalue for="2" value="RA Bentley" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="28" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14770327547083302351&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14684434648392889813" label="Cultural law: international, comparative, and indigenous">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.ca/books?hl=en&amp;lr=&amp;id=OyirBAAAQBAJ&amp;oi=fnd&amp;pg=PR23&amp;ots=Pirz1xd3EE&amp;sig=kJ7uoILr7QWX1Ah1yiIwWDX_FnY" />
+          <attvalue for="1" value="Cultural law: international, comparative, and indigenous" />
+          <attvalue for="2" value="JAR Nafziger, RK Paterson, AD Renteln" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="56" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14684434648392889813&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16629789719155368810" label="Indigenous peoples, customary law and human rights–why living law matters">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=e3JeBAAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=YphWoYkEFa&amp;sig=Qo9NnMsRG05igzVlTnsozlQ3SEA" />
+          <attvalue for="1" value="Indigenous peoples, customary law and human rights–why living law matters" />
+          <attvalue for="2" value="B Tobin" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="44" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16629789719155368810&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1616865547387191973" label="The settlement of international cultural heritage disputes">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=DekkAwAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=G0Z7jDRKKA&amp;sig=dIqdf09cpBTKVgjK4LLDOgdr7sU" />
+          <attvalue for="1" value="The settlement of international cultural heritage disputes" />
+          <attvalue for="2" value="A Chechi" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="19" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1616865547387191973&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10510357527756775219" label="[CITATION][C] Cultural heritage in international investment law and arbitration">
+        <attvalues>
+          <attvalue for="1" value="[CITATION][C] Cultural heritage in international investment law and arbitration" />
+          <attvalue for="2" value="V Vadi" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="22" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10510357527756775219&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8690217653301420038" label="“Italian Hours”: The globalization of cultural property law">
+        <attvalues>
+          <attvalue for="0" value="https://academic.oup.com/icon/article-abstract/9/2/369/649612" />
+          <attvalue for="1" value="“Italian Hours”: The globalization of cultural property law" />
+          <attvalue for="2" value="L Casini" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8690217653301420038&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16721932117795645780" label="Indigenous Peoples' Cultural Property Claims">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/content/pdf/10.1007/978-3-319-01655-9.pdf" />
+          <attvalue for="1" value="Indigenous Peoples' Cultural Property Claims" />
+          <attvalue for="2" value="K Kuprecht" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16721932117795645780&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4755478151837713839" label="Reframing cultural diplomacy: the instrumentalization of culture under the soft power theory">
+        <attvalues>
+          <attvalue for="0" value="http://www.cultureunbound.ep.liu.se/v8/a12/cu16v8a12.pdf" />
+          <attvalue for="1" value="Reframing cultural diplomacy: the instrumentalization of culture under the soft power theory" />
+          <attvalue for="2" value="MM Zamorano" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4755478151837713839&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5404767721462674611" label="Il giudice antropologo: Costituzione e tecniche di composizione dei conflitti multiculturali">
+        <attvalues>
+          <attvalue for="0" value="https://www.torrossa.com/resources/an/2651893" />
+          <attvalue for="1" value="Il giudice antropologo: Costituzione e tecniche di composizione dei conflitti multiculturali" />
+          <attvalue for="2" value="I Ruggiu" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="21" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5404767721462674611&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16317952575917715267" label="Immunity from seizure and suit in Australia: the protection of cultural objects on Loan Act 2013">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/immunity-from-seizure-and-suit-in-australia-the-protection-of-cultural-objects-on-loan-act-2013/F64794BAD9B2D28694081579E0E337F4" />
+          <attvalue for="1" value="Immunity from seizure and suit in Australia: the protection of cultural objects on Loan Act 2013" />
+          <attvalue for="2" value="C Forrest" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16317952575917715267&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7108036231371292250" label="Cultural defenses in international criminal tribunals: a preliminary consideration of the issues">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/sjlta18&amp;section=26" />
+          <attvalue for="1" value="Cultural defenses in international criminal tribunals: a preliminary consideration of the issues" />
+          <attvalue for="2" value="AD Renteln" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7108036231371292250&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12221497930837884031" label="Cultural co-ownership: preventing and solving cultural property claims">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/cultural-coownership-preventing-and-solving-cultural-property-claims/E61D449A1CD23CB570C2B0EE6AC4FA65" />
+          <attvalue for="1" value="Cultural co-ownership: preventing and solving cultural property claims" />
+          <attvalue for="2" value="MA Renold" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12221497930837884031&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3753917766714900092" label="Goading a Reluctant Dinosaur: Mutual Recognition Agreements as a Policy Response to the Misapprop...">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/pepplr34&amp;section=42" />
+          <attvalue for="1" value="Goading a Reluctant Dinosaur: Mutual Recognition Agreements as a Policy Response to the Misapprop..." />
+          <attvalue for="2" value="P Kuruk" />
+          <attvalue for="3" value="2006" />
+          <attvalue for="4" value="27" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3753917766714900092&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9806644333158430855" label="In re Tam">
+        <attvalues>
+          <attvalue for="0" value="/scholar_case?case=9806644333158430855&amp;hl=en&amp;as_sdt=2005&amp;sciodt=0,5" />
+          <attvalue for="1" value="In re Tam" />
+          <attvalue for="2" value="808 F. 3d 1321" />
+          <attvalue for="3" value="Federal Circuit" />
+          <attvalue for="4" value="154" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9806644333158430855&amp;as_sdt=2005&amp;sciodt=6&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17362209681001861886" label="Cultural relics, intellectual property, and intangible heritage">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/temple81&amp;section=16" />
+          <attvalue for="1" value="Cultural relics, intellectual property, and intangible heritage" />
+          <attvalue for="2" value="PK Yu" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="64" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17362209681001861886&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10198669657380292565" label="In re Tam">
+        <attvalues>
+          <attvalue for="0" value="/scholar_case?case=10198669657380292565&amp;hl=en&amp;as_sdt=2005&amp;sciodt=0,5" />
+          <attvalue for="1" value="In re Tam" />
+          <attvalue for="2" value="785 F. 3d 567" />
+          <attvalue for="3" value="Federal Circuit" />
+          <attvalue for="4" value="47" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10198669657380292565&amp;as_sdt=2005&amp;sciodt=6&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5438245202650714833" label="A sui generis regime for traditional knowledge: the cultural divide in intellectual property law">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/marq15&amp;section=6" />
+          <attvalue for="1" value="A sui generis regime for traditional knowledge: the cultural divide in intellectual property law" />
+          <attvalue for="2" value="JJ OseiTutu" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="35" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5438245202650714833&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6429838684249526296" label="Protecting Newly Discovered Antiquities: Thinking Outside the Fee Simple Box">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/flr76&amp;section=37" />
+          <attvalue for="1" value="Protecting Newly Discovered Antiquities: Thinking Outside the Fee Simple Box" />
+          <attvalue for="2" value="PT Wendel" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="26" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=6429838684249526296&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="11597685332351772634" label="Justifying property rights in Native American traditional knowledge">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/twlr15&amp;section=15" />
+          <attvalue for="1" value="Justifying property rights in Native American traditional knowledge" />
+          <attvalue for="2" value="JT Cross" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=11597685332351772634&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18432635179602494881" label="Regulating Access to Tradional Knowledge and Genetic Resources: The Disclosure Requirement as a Strategy to Combat Biopiracy">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/sdintl17&amp;section=5" />
+          <attvalue for="1" value="Regulating Access to Tradional Knowledge and Genetic Resources: The Disclosure Requirement as a Strategy to Combat Biopiracy" />
+          <attvalue for="2" value="P Kuruk" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18432635179602494881&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8307466044055128939" label="The United States and Iraq: Plant Patent Protection and Saving Seed">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wasglo9&amp;section=23" />
+          <attvalue for="1" value="The United States and Iraq: Plant Patent Protection and Saving Seed" />
+          <attvalue for="2" value="KT Crosby" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8307466044055128939&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15295590585615987184" label="Legal Effects and Policy Considerations for Free Trade Agreements: What Is Wrong with FTAs?">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-3-642-30888-8_3" />
+          <attvalue for="1" value="Legal Effects and Policy Considerations for Free Trade Agreements: What Is Wrong with FTAs?" />
+          <attvalue for="2" value="RM Hilty, T Jaeger" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15295590585615987184&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7305889921698207667" label="Traditional Knowledge: Is Perpetual Protection a Good Idea">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/idea50&amp;section=30" />
+          <attvalue for="1" value="Traditional Knowledge: Is Perpetual Protection a Good Idea" />
+          <attvalue for="2" value="JJ Oseitutu" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7305889921698207667&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12824968710680184360" label="Reburying the past: the effects of repatriation and reburial on scientific inquiry">
+        <attvalues>
+          <attvalue for="1" value="Reburying the past: the effects of repatriation and reburial on scientific inquiry" />
+          <attvalue for="2" value="E Weiss" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="18" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12824968710680184360&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3134329545539964743" label="The archaeology of human bones">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=xUhZBwAAQBAJ&amp;oi=fnd&amp;pg=PP1&amp;ots=nAHbAJJmOn&amp;sig=10l5HNWeWNRBFPvWhjWqtNo9wLM" />
+          <attvalue for="1" value="The archaeology of human bones" />
+          <attvalue for="2" value="S Mays" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="831" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3134329545539964743&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4709839626268057553" label="An anthropology of repatriation: Contemporary physical anthropological and Native American ontologies of practice">
+        <attvalues>
+          <attvalue for="0" value="http://www.journals.uchicago.edu/doi/abs/10.1086/662331" />
+          <attvalue for="1" value="An anthropology of repatriation: Contemporary physical anthropological and Native American ontologies of practice" />
+          <attvalue for="2" value="AM Kakaliouras" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="42" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4709839626268057553&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15965167057738106816" label="Limiting Principles and Empowering Practices in American Indian Religious Freedoms">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/conlr45&amp;section=14" />
+          <attvalue for="1" value="Limiting Principles and Empowering Practices in American Indian Religious Freedoms" />
+          <attvalue for="2" value="KA Carpenter" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15965167057738106816&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="247258008090862602" label="Touching the body: The living and the dead in Osteoarchaeology and the performance art of Marina Abramović">
+        <attvalues>
+          <attvalue for="0" value="http://www.tandfonline.com/doi/abs/10.1080/00293652.2012.703686" />
+          <attvalue for="1" value="Touching the body: The living and the dead in Osteoarchaeology and the performance art of Marina Abramović" />
+          <attvalue for="2" value="J Sofaer" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=247258008090862602&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1970759156376964355" label="Tapu and the invention of the “death taboo”: An analysis of the transformation of a Polynesian cultural concept">
+        <attvalues>
+          <attvalue for="0" value="http://journals.sagepub.com/doi/abs/10.1177/1469605313503229" />
+          <attvalue for="1" value="Tapu and the invention of the “death taboo”: An analysis of the transformation of a Polynesian cultural concept" />
+          <attvalue for="2" value="H Gilmore, C Schafer…" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1970759156376964355&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17488877497799804714" label="Places Worth Saving: A Legal Guide to the Protection of Historic Cemeteries in Louisiana and Recommendations for Additional Protection">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/loyolr55&amp;section=24" />
+          <attvalue for="1" value="Places Worth Saving: A Legal Guide to the Protection of Historic Cemeteries in Louisiana and Recommendations for Additional Protection" />
+          <attvalue for="2" value="RM Seidemann, RL Moss" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17488877497799804714&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="49719647131006578" label="Anatomical and Functional Consideration of the Trigemino-Facial Nervous Communication and Facial Expresssion Muscles">
+        <attvalues>
+          <attvalue for="0" value="https://synapse.koreamed.org/search.php?where=aview&amp;id=10.11637/kjpa.2013.26.1.1&amp;code=0107KJPA&amp;vmode=AR" />
+          <attvalue for="1" value="Anatomical and Functional Consideration of the Trigemino-Facial Nervous Communication and Facial Expresssion Muscles" />
+          <attvalue for="2" value="HM Yang, KS Hu, HJ Kim" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=49719647131006578&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4095977366680099020" label="Giving up the dead?: the impact and effectiveness of the Human Tissue Act and the Guidance for the Care of Human Remains in English Museums">
+        <attvalues>
+          <attvalue for="0" value="https://theses.ncl.ac.uk/dspace/handle/10443/1344" />
+          <attvalue for="1" value="Giving up the dead?: the impact and effectiveness of the Human Tissue Act and the Guidance for the Care of Human Remains in English Museums" />
+          <attvalue for="2" value="E White" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=4095977366680099020&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="204801036950381620" label="Read all about it?: newspaper coverage of the archaeological excavation, retention, and reburial of human remains within the United Kingdom">
+        <attvalues>
+          <attvalue for="0" value="https://theses.ncl.ac.uk/dspace/bitstream/10443/2281/2/dspacelicence.pdf" />
+          <attvalue for="1" value="Read all about it?: newspaper coverage of the archaeological excavation, retention, and reburial of human remains within the United Kingdom" />
+          <attvalue for="2" value="VM Park" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=204801036950381620&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="17780876633990939854" label="A Review of Codes of Ethics in the United States and Ethical Dilemmas Surrounding the Native American Graves Protection and Repatriation Act (NAGPRA)">
+        <attvalues>
+          <attvalue for="0" value="https://synapse.koreamed.org/search.php?where=aview&amp;id=10.11637/kjpa.2014.27.2.47&amp;code=0107KJPA&amp;vmode=FULL" />
+          <attvalue for="1" value="A Review of Codes of Ethics in the United States and Ethical Dilemmas Surrounding the Native American Graves Protection and Repatriation Act (NAGPRA)" />
+          <attvalue for="2" value="J Kim, DW Steadman" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=17780876633990939854&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3726730512114066737" label="Cultural Heritage Issues">
+        <attvalues>
+          <attvalue for="0" value="http://booksandjournals.brillonline.com/content/books/9789004189928" />
+          <attvalue for="1" value="Cultural Heritage Issues" />
+          <attvalue for="2" value="JA Nafziger, AM Nicgorski" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="16" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3726730512114066737&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5745387218019692169" label="Conservation without nature: the trouble with in situ versus ex situ conservation">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0016718513002200" />
+          <attvalue for="1" value="Conservation without nature: the trouble with in situ versus ex situ conservation" />
+          <attvalue for="2" value="I Braverman" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="32" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5745387218019692169&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12157497946515048791" label="Provenance and price: autoregulation of the antiquities market?">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s10610-014-9235-9" />
+          <attvalue for="1" value="Provenance and price: autoregulation of the antiquities market?" />
+          <attvalue for="2" value="N Brodie" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="17" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12157497946515048791&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14953701022637427755" label="The concept of “cultural affiliation” in NAGPRA: its potential and limits in the global protection of indigenous cultural property rights">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/concept-of-cultural-affiliation-in-nagpra-its-potential-and-limits-in-the-global-protection-of-indigenous-cultural-property-rights/2EB2D738076627576CBE2E9B8CF9CF24" />
+          <attvalue for="1" value="The concept of “cultural affiliation” in NAGPRA: its potential and limits in the global protection of indigenous cultural property rights" />
+          <attvalue for="2" value="K Kuprecht" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14953701022637427755&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8008533159339929138" label="Culture and Customs of Libya">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=aBGk0uIqHdQC&amp;oi=fnd&amp;pg=PP2&amp;ots=gw5rUB49Op&amp;sig=hvo8PSoIqWfX_szoEfI6zhJ14B8" />
+          <attvalue for="1" value="Culture and Customs of Libya" />
+          <attvalue for="2" value="T Falola, J Morgan, BA Oyeniyi" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8008533159339929138&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="14475116189378172729" label="Private international law, art and cultural heritage">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=-sDiBwAAQBAJ&amp;oi=fnd&amp;pg=PR1&amp;ots=Yx-nLw49yi&amp;sig=LZecxPf-jvVbxXsjhfsQxX7nlME" />
+          <attvalue for="1" value="Private international law, art and cultural heritage" />
+          <attvalue for="2" value="C Roodt" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=14475116189378172729&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12087636775247271480" label="Heading Home: French law enables return of maori heads to New Zealand">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/international-journal-of-cultural-property/article/heading-home-french-law-enables-return-of-maori-heads-to-new-zealand/07F63E58690D319F522E88A308E0FA27" />
+          <attvalue for="1" value="Heading Home: French law enables return of maori heads to New Zealand" />
+          <attvalue for="2" value="RK Paterson" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12087636775247271480&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="7282363829472699072" label="The case for repatriating China's cultural objects">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/content/pdf/10.1007/978-981-10-0597-8.pdf" />
+          <attvalue for="1" value="The case for repatriating China's cultural objects" />
+          <attvalue for="2" value="Z Liu" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=7282363829472699072&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16709038780406155517" label="Art, cultural heritage and the market: legal and ethical issues">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-3-642-45094-5_1" />
+          <attvalue for="1" value="Art, cultural heritage and the market: legal and ethical issues" />
+          <attvalue for="2" value="V Vadi, H Schneider" />
+          <attvalue for="3" value="Cultural Heritage and the Market" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16709038780406155517&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8721734731632698595" label="Engaging bodies in the public imagination: Bioarchaeology as social science, science, and humanities">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/ajhb.22522/full" />
+          <attvalue for="1" value="Engaging bodies in the public imagination: Bioarchaeology as social science, science, and humanities" />
+          <attvalue for="2" value="CM Stojanowski, WN Duncan" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="15" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8721734731632698595&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="8995338734298021985" label="The osteological paradox 20 years later: past perspectives, future directions">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s10814-015-9084-1" />
+          <attvalue for="1" value="The osteological paradox 20 years later: past perspectives, future directions" />
+          <attvalue for="2" value="SN DeWitte, CM Stojanowski" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="74" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=8995338734298021985&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13097041289955012436" label="Exploring the social construction of disability: An application of the bioarchaeology of personhood model to a pathological skeleton from ancient Bahrain">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S1879981715300206" />
+          <attvalue for="1" value="Exploring the social construction of disability: An application of the bioarchaeology of personhood model to a pathological skeleton from ancient Bahrain" />
+          <attvalue for="2" value="AT Boutin" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13097041289955012436&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18123359463869575758" label="Bioarchaeology and kinship: integrating theory, social relatedness, and biology in ancient family research">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s10814-015-9086-z" />
+          <attvalue for="1" value="Bioarchaeology and kinship: integrating theory, social relatedness, and biology in ancient family research" />
+          <attvalue for="2" value="KM Johnson, KS Paul" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18123359463869575758&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="709685490717545745" label="Incisor ablation among the late upper paleolithic people of Tam Hang (Northern Laos): Social identity, mortuary practice, and oral health">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1002/ajpa.22988/full" />
+          <attvalue for="1" value="Incisor ablation among the late upper paleolithic people of Tam Hang (Northern Laos): Social identity, mortuary practice, and oral health" />
+          <attvalue for="2" value="JC Willman, L Shackelford…" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=709685490717545745&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1605451285454602764" label="Bioarchaeology and the skeletons of the pre-Columbian Maya">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s10814-016-9098-3" />
+          <attvalue for="1" value="Bioarchaeology and the skeletons of the pre-Columbian Maya" />
+          <attvalue for="2" value="AK Scherer" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1605451285454602764&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18034728172639869782" label="Stronger together: Advancing a global bioarchaeology">
+        <attvalues>
+          <attvalue for="0" value="http://journals.upress.ufl.edu/bioarchaeology/article/view/164" />
+          <attvalue for="1" value="Stronger together: Advancing a global bioarchaeology" />
+          <attvalue for="2" value="BJ Baker, SC Agarwal" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18034728172639869782&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="6BvhQ1-y5XsJ" label="Conflicting Cases: A Bibliometric Analysis of the Role of Case Studies in Paleopathology">
+        <attvalues>
+          <attvalue for="0" value="https://dspace.library.uvic.ca/bitstream/handle/1828/7770/SmithTaylor_Honours_2016.pdf?sequence=3" />
+          <attvalue for="1" value="Conflicting Cases: A Bibliometric Analysis of the Role of Case Studies in Paleopathology" />
+          <attvalue for="2" value="T Smith" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="-Ba7YD_PtK8J" label="[CITATION][C] Utilization of epidemiological, archaeological, and genome data for assessing the health of historic communities">
+        <attvalues>
+          <attvalue for="1" value="[CITATION][C] Utilization of epidemiological, archaeological, and genome data for assessing the health of historic communities" />
+          <attvalue for="2" value="NA Kelvin" />
+          <attvalue for="3" value="2015" />
+        </attvalues>
+      </node>
+      <node id="14514344849164711196" label="Conclusion: Challenging the Narrative">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/chapter/10.1007/978-3-319-71114-0_12" />
+          <attvalue for="1" value="Conclusion: Challenging the Narrative" />
+          <attvalue for="2" value="KC Nystrom" />
+          <attvalue for="3" value="2018" />
+        </attvalues>
+      </node>
+      <node id="7051869087135016739" label="A Journal of Collegiate Anthropology">
+        <attvalues>
+          <attvalue for="0" value="https://www.researchgate.net/profile/Lindsey_Thorson/publication/319311510_A_Book_Review_Essay_of_Recent_Publications_Concerning_Human_Skeletal_Trauma_Analysis_Violence_and_Conflict/links/59a354f6aca2726b90285a63/A-Book-Review-Essay-of-Recent-Publications-Concerning-Human-Skeletal-Trauma-Analysis-Violence-and-Conflict.pdf" />
+          <attvalue for="1" value="A Journal of Collegiate Anthropology" />
+          <attvalue for="2" value="J Skinner, S Christie, L Ghisleni, LJH Thorson" />
+          <attvalue for="3" value="researchgate.net" />
+        </attvalues>
+      </node>
+      <node id="16848442208346554360" label="Repatriation of cultural objects to indigenous peoples: A comparative analysis of US and...">
+        <attvalues>
+          <attvalue for="0" value="http://www.jstor.org/stable/40708093" />
+          <attvalue for="1" value="Repatriation of cultural objects to indigenous peoples: A comparative analysis of US and..." />
+          <attvalue for="2" value="EM Koehler" />
+          <attvalue for="3" value="2007" />
+          <attvalue for="4" value="12" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16848442208346554360&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12216817345466881943" label="In defense of property">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ylr118&amp;section=36" />
+          <attvalue for="1" value="In defense of property" />
+          <attvalue for="2" value="KA Carpenter, SK Katyal, AR Riley" />
+          <attvalue for="3" value="2008" />
+          <attvalue for="4" value="212" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12216817345466881943&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13129942843385577310" label="Culture, intangibles and metrics in environmental management">
+        <attvalues>
+          <attvalue for="0" value="https://www.sciencedirect.com/science/article/pii/S0301479712006184" />
+          <attvalue for="1" value="Culture, intangibles and metrics in environmental management" />
+          <attvalue for="2" value="T Satterfield, R Gregory, S Klain, M Roberts…" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="120" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13129942843385577310&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16700457331537124076" label="The challenges of incorporating cultural ecosystem services into environmental assessment">
+        <attvalues>
+          <attvalue for="0" value="https://link.springer.com/article/10.1007/s13280-013-0386-6" />
+          <attvalue for="1" value="The challenges of incorporating cultural ecosystem services into environmental assessment" />
+          <attvalue for="2" value="D Satz, RK Gould, KMA Chan, A Guerry, B Norton…" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="113" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16700457331537124076&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13282788154598893154" label="NAGPRA at 20: what have the States done to expand human remains protections?">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/j.1548-1379.2010.01098.x/full" />
+          <attvalue for="1" value="NAGPRA at 20: what have the States done to expand human remains protections?" />
+          <attvalue for="2" value="RM Seidemann" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13282788154598893154&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="15827467639649894355" label="Yearbook of Cultural Property Law 2008">
+        <attvalues>
+          <attvalue for="0" value="https://www.taylorfrancis.com/books/9781315415406" />
+          <attvalue for="1" value="Yearbook of Cultural Property Law 2008" />
+          <attvalue for="2" value="S Hutt, D Tarler" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15827467639649894355&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18171474535227416603" label="Ts' msyen Revolution: The Poetics and Politics of Reclaiming">
+        <attvalues>
+          <attvalue for="0" value="https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=1448&amp;context=dissertations_2" />
+          <attvalue for="1" value="Ts' msyen Revolution: The Poetics and Politics of Reclaiming" />
+          <attvalue for="2" value="RRR Gray" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18171474535227416603&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="18182858740299646626" label="Mapping intergenerational memories (Part I): Proving the contemporary truth of the indigenous past">
+        <attvalues>
+          <attvalue for="0" value="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2377486" />
+          <attvalue for="1" value="Mapping intergenerational memories (Part I): Proving the contemporary truth of the indigenous past" />
+          <attvalue for="2" value="R Hershey, J McCormack, G Newell" />
+          <attvalue for="3" value="2014" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=18182858740299646626&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3699320819635862391" label="Native American Oral Traditional Evidence in American Courts: Reliable Evidence or Useless Myth">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/dlr118&amp;section=26" />
+          <attvalue for="1" value="Native American Oral Traditional Evidence in American Courts: Reliable Evidence or Useless Myth" />
+          <attvalue for="2" value="R Awan" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3699320819635862391&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="93sETBvsFVoJ" label="A, Chahta sia: Reevaluating the Native American Graves Protection and Repatriation Act">
+        <attvalues>
+          <attvalue for="0" value="http://scholarsbank.uoregon.edu/xmlui/handle/1794/18631" />
+          <attvalue for="1" value="A, Chahta sia: Reevaluating the Native American Graves Protection and Repatriation Act" />
+          <attvalue for="2" value="M Reynolds" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="15757793582106883562" label="La dignità come rappresentazione giuridica della condizione umana">
+        <attvalues>
+          <attvalue for="0" value="https://iris.unitn.it/handle/11572/97282" />
+          <attvalue for="1" value="La dignità come rappresentazione giuridica della condizione umana" />
+          <attvalue for="2" value="C Piciocchi" />
+          <attvalue for="3" value="2013" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=15757793582106883562&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="13919556070448757988" label="They Sell Skulls Online?! A Review of Internet Sales of Human Skulls on eBay and the Laws in Place to Restrict Sales">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/1556-4029.13147/full" />
+          <attvalue for="1" value="They Sell Skulls Online?! A Review of Internet Sales of Human Skulls on eBay and the Laws in Place to Restrict Sales" />
+          <attvalue for="2" value="CL Halling, RM Seidemann" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13919556070448757988&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5354078848937461966" label="Cultural affiliation is not enough: the repatriation of Ainu human remains">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/polar-record/article/div-classtitlecultural-affiliation-is-not-enough-the-repatriation-of-ainu-human-remainsdiv/24D908B5A40B3DE2B20D4CEBB9E0570C" />
+          <attvalue for="1" value="Cultural affiliation is not enough: the repatriation of Ainu human remains" />
+          <attvalue for="2" value="N Nakamura" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5354078848937461966&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="16804605113892239873" label="The unburied victims of Kenya's Mau Mau Rebellion: where and when does the violence end?">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=ubP_DQAAQBAJ&amp;oi=fnd&amp;pg=PA14&amp;ots=gc1kJLJeNY&amp;sig=cOpWTEFQutKG2WkNX8KRK51SbDE" />
+          <attvalue for="1" value="The unburied victims of Kenya's Mau Mau Rebellion: where and when does the violence end?" />
+          <attvalue for="2" value="DM Anderson, PJ Lane" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=16804605113892239873&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="12092988032293707486" label="Anatomical Taphonomy at the Source: Alterations to a Sample of 84 Teaching Skulls at a Medical School">
+        <attvalues>
+          <attvalue for="0" value="https://www.researchgate.net/profile/James_Pokines/publication/320536287_Anatomical_taphonomy_at_the_source_Alterations_to_a_sample_of_84_teaching_skulls_at_a_medical_school/links/59ea3de6aca272cddddb7aff/Anatomical-taphonomy-at-the-source-Alterations-to-a-sample-of-84-teaching-skulls-at-a-medical-school.pdf" />
+          <attvalue for="1" value="Anatomical Taphonomy at the Source: Alterations to a Sample of 84 Teaching Skulls at a Medical School" />
+          <attvalue for="2" value="JT Pokines, N Appel, C Pollock, CJ Eck…" />
+          <attvalue for="3" value="2017" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12092988032293707486&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="zZuERUZSFS8J" label="The Road to Repatriation">
+        <attvalues>
+          <attvalue for="0" value="https://www.oswego.edu/writing-across-the-curriculum/sites/www.oswego.edu.writing-across-the-curriculum/files/ant_cilento_2-24-16.docx" />
+          <attvalue for="1" value="The Road to Repatriation" />
+          <attvalue for="2" value="SN Cilento" />
+          <attvalue for="3" value="oswego.edu" />
+        </attvalues>
+      </node>
+      <node id="10197871556136515459" label="Private Collections in Public Spaces: Identifying and Addressing Display and Treatment Concerns for Culturally-Sensitive Objects in Formerly Private …">
+        <attvalues>
+          <attvalue for="0" value="http://search.proquest.com/openview/3a9679190e030605e25a07e8ee15d6a7/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y" />
+          <attvalue for="1" value="Private Collections in Public Spaces: Identifying and Addressing Display and Treatment Concerns for Culturally-Sensitive Objects in Formerly Private …" />
+          <attvalue for="2" value="KM Crosmer" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="p0QOYrdUYtoJ" label="Perceptions of Repatriation in Anthropological Literature">
+        <attvalues>
+          <attvalue for="0" value="http://dspace.library.uvic.ca/handle/1828/8065" />
+          <attvalue for="1" value="Perceptions of Repatriation in Anthropological Literature" />
+          <attvalue for="2" value="S Kroeger" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="12009620999824671283" label="Personhood and Re-Embodiment in Osteological Practice">
+        <attvalues>
+          <attvalue for="0" value="https://books.google.com/books?hl=en&amp;lr=&amp;id=kBg9DAAAQBAJ&amp;oi=fnd&amp;pg=PA39&amp;ots=UqGfHwvN6f&amp;sig=CM29lI103O2DZ7pFL6j1rFA5xRg" />
+          <attvalue for="1" value="Personhood and Re-Embodiment in Osteological Practice" />
+          <attvalue for="2" value="J McClelland, JI Cerezo-Román" />
+          <attvalue for="3" value="2016" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=12009620999824671283&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9471982395736510190" label="Contemporary Museum Policies and the Ethics of Accepting Human Remains">
+        <attvalues>
+          <attvalue for="0" value="http://onlinelibrary.wiley.com/doi/10.1111/cura.12064/full" />
+          <attvalue for="1" value="Contemporary Museum Policies and the Ethics of Accepting Human Remains" />
+          <attvalue for="2" value="HJH Edgar, ALM Rautman" />
+          <attvalue for="3" value="2014" />
+        </attvalues>
+      </node>
+      <node id="976165050133756667" label="The protection and repatriation of Indigenous cultural heritage in the United States">
+        <attvalues>
+          <attvalue for="0" value="http://booksandjournals.brillonline.com/content/books/10.1163/ej.9789004160361.i-466.13?crawler=true" />
+          <attvalue for="1" value="The protection and repatriation of Indigenous cultural heritage in the United States" />
+          <attvalue for="2" value="JAR Nafziger" />
+          <attvalue for="3" value="2006" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=976165050133756667&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3912336697710475027" label="Indigenous International Repatriation">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/arzjl44&amp;section=35" />
+          <attvalue for="1" value="Indigenous International Repatriation" />
+          <attvalue for="2" value="H Keeler" />
+          <attvalue for="3" value="2012" />
+          <attvalue for="4" value="9" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3912336697710475027&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="9736309805930724566" label="NAGPRA in Colorado: a success story">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/ucollr83&amp;section=16" />
+          <attvalue for="1" value="NAGPRA in Colorado: a success story" />
+          <attvalue for="2" value="C Harms" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=9736309805930724566&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5739872194105744485" label="Tipping NAGPRA's Balancing Act: The Inequitable Disposition of Culturally Unidentified Human Remains under NAGPRA's New Provision">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wmitch37&amp;section=67" />
+          <attvalue for="1" value="Tipping NAGPRA's Balancing Act: The Inequitable Disposition of Culturally Unidentified Human Remains under NAGPRA's New Provision" />
+          <attvalue for="2" value="MH Birkhold" />
+          <attvalue for="3" value="2010" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5739872194105744485&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="1355716055126163854" label="Note: Tipping Nagpra's Balancing Act: The Inequitable Disposition of&quot; Culturally Unidentified&quot; Human Remains Under Nagpra's New Provision">
+        <attvalues>
+          <attvalue for="0" value="https://open.mitchellhamline.edu/cgi/viewcontent.cgi?article=1422&amp;context=wmlr" />
+          <attvalue for="1" value="Note: Tipping Nagpra's Balancing Act: The Inequitable Disposition of&quot; Culturally Unidentified&quot; Human Remains Under Nagpra's New Provision" />
+          <attvalue for="2" value="MH Birkhold" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=1355716055126163854&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="5960686924319621908" label="Cultural property aspects in international law: the case of the (still) inadequate safeguarding of indigenous peoples'(tangible) cultural heritage">
+        <attvalues>
+          <attvalue for="0" value="https://www.cambridge.org/core/journals/netherlands-international-law-review/article/cultural-property-aspects-in-international-law-the-case-of-the-still-inadequate-safeguarding-of-indigenous-peoples-tangible-cultural-heritage/3511380D5D7B225C8C3917C64E5D0CDE" />
+          <attvalue for="1" value="Cultural property aspects in international law: the case of the (still) inadequate safeguarding of indigenous peoples'(tangible) cultural heritage" />
+          <attvalue for="2" value="A Yupsanis" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=5960686924319621908&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3953018181696619386" label="Introduction: Propriété intellectuelle et éthique">
+        <attvalues>
+          <attvalue for="0" value="https://www.erudit.org/en/journals/etudinuit/2011-v35-n1-2-etudinuit0322/1012833ar/abstract/" />
+          <attvalue for="1" value="Introduction: Propriété intellectuelle et éthique" />
+          <attvalue for="2" value="M Nagy" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=3953018181696619386&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="4DQdRrFBhH0J" label="Exploring International Repatriation between US Museums and First Nations in Canada">
+        <attvalues>
+          <attvalue for="0" value="https://digital.lib.washington.edu/researchworks/handle/1773/39755" />
+          <attvalue for="1" value="Exploring International Repatriation between US Museums and First Nations in Canada" />
+          <attvalue for="2" value="EG Wessells" />
+          <attvalue for="3" value="2017" />
+        </attvalues>
+      </node>
+      <node id="722969612872206408" label="Make No Bones about It: The Need to Reform the Native American Graves Protection and Repatriation Act">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/qplj30&amp;section=20" />
+          <attvalue for="1" value="Make No Bones about It: The Need to Reform the Native American Graves Protection and Repatriation Act" />
+          <attvalue for="2" value="ED Melillo" />
+          <attvalue for="3" value="2016" />
+        </attvalues>
+      </node>
+      <node id="13358235593005825989" label="Altered meanings: The Department of the Interior's rewriting of the Native American Graves...">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/tempnlt28&amp;section=4" />
+          <attvalue for="1" value="Altered meanings: The Department of the Interior's rewriting of the Native American Graves..." />
+          <attvalue for="2" value="RM Seidemann" />
+          <attvalue for="3" value="2009" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=13358235593005825989&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10571347683715863452" label="Better Late than Never-The Effect of the Native American Graves Protection and Repatriation Act's 2010 Regulations">
+        <attvalues>
+          <attvalue for="0" value="http://heinonline.org/hol-cgi-bin/get_pdf.cgi?handle=hein.journals/wflr46&amp;section=37" />
+          <attvalue for="1" value="Better Late than Never-The Effect of the Native American Graves Protection and Repatriation Act's 2010 Regulations" />
+          <attvalue for="2" value="ZE Niesel" />
+          <attvalue for="3" value="2011" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10571347683715863452&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="10018963896255216803" label="Protecting Non-indigenous Human Remains under Cultural Heritage Law">
+        <attvalues>
+          <attvalue for="0" value="https://academic.oup.com/chinesejil/article-abstract/14/4/709/340347" />
+          <attvalue for="1" value="Protecting Non-indigenous Human Remains under Cultural Heritage Law" />
+          <attvalue for="2" value="J Huang" />
+          <attvalue for="3" value="2015" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="https://scholar.google.com/scholar?cites=10018963896255216803&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en" />
+        </attvalues>
+      </node>
+      <node id="3869024832318161324" label="The Supreme Court of the United States">
+        <attvalues>
+          <attvalue for="0" value="http://www.jstor.org/stable/1106576" />
+          <attvalue for="1" value="The Supreme Court of the United States" />
+          <attvalue for="2" value="J White" />
+          <attvalue for="3" value="1922" />
+        </attvalues>
+      </node>
+      <node id="3787473813018929543" label="PETITION FOR A WRIT OF CERTIORARI">
+        <attvalues>
+          <attvalue for="0" value="https://www.mcmanislaw.com/Templates/media/files/PDFs/2015-11-19-Petition-for-Writ-of-Certiorari-Appendix.pdf" />
+          <attvalue for="1" value="PETITION FOR A WRIT OF CERTIORARI" />
+          <attvalue for="2" value="T WHITE, RL BETTINGER, M SCHOENINGER" />
+          <attvalue for="3" value="2015" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="7828242426326646006" target="8748346449102412182" />
+      <edge id="1" source="7828242426326646006" target="10341029148208895761" />
+      <edge id="2" source="7828242426326646006" target="2252819996314481530" />
+      <edge id="3" source="7828242426326646006" target="11151988767487438357" />
+      <edge id="4" source="7828242426326646006" target="11184041727352138037" />
+      <edge id="5" source="7828242426326646006" target="6611440212929350063" />
+      <edge id="6" source="7828242426326646006" target="8824201241669269378" />
+      <edge id="7" source="7828242426326646006" target="6177391479265736749" />
+      <edge id="8" source="7828242426326646006" target="4873329603678557833" />
+      <edge id="9" source="7828242426326646006" target="1460374730563944510" />
+      <edge id="10" source="7828242426326646006" target="14770327547083302351" />
+      <edge id="11" source="8748346449102412182" target="14684434648392889813" />
+      <edge id="12" source="8748346449102412182" target="3753917766714900092" />
+      <edge id="13" source="8748346449102412182" target="12824968710680184360" />
+      <edge id="14" source="8748346449102412182" target="3726730512114066737" />
+      <edge id="15" source="8748346449102412182" target="8721734731632698595" />
+      <edge id="16" source="8748346449102412182" target="16848442208346554360" />
+      <edge id="17" source="8748346449102412182" target="13282788154598893154" />
+      <edge id="18" source="8748346449102412182" target="976165050133756667" />
+      <edge id="19" source="8748346449102412182" target="13358235593005825989" />
+      <edge id="20" source="14684434648392889813" target="16629789719155368810" />
+      <edge id="21" source="14684434648392889813" target="1616865547387191973" />
+      <edge id="22" source="14684434648392889813" target="10510357527756775219" />
+      <edge id="23" source="14684434648392889813" target="8690217653301420038" />
+      <edge id="24" source="14684434648392889813" target="16721932117795645780" />
+      <edge id="25" source="14684434648392889813" target="4755478151837713839" />
+      <edge id="26" source="14684434648392889813" target="5404767721462674611" />
+      <edge id="27" source="14684434648392889813" target="16317952575917715267" />
+      <edge id="28" source="14684434648392889813" target="7108036231371292250" />
+      <edge id="29" source="14684434648392889813" target="12221497930837884031" />
+      <edge id="30" source="10510357527756775219" target="3726730512114066737" />
+      <edge id="31" source="16721932117795645780" target="3726730512114066737" />
+      <edge id="32" source="16721932117795645780" target="976165050133756667" />
+      <edge id="33" source="3753917766714900092" target="9806644333158430855" />
+      <edge id="34" source="3753917766714900092" target="17362209681001861886" />
+      <edge id="35" source="3753917766714900092" target="10198669657380292565" />
+      <edge id="36" source="3753917766714900092" target="5438245202650714833" />
+      <edge id="37" source="3753917766714900092" target="6429838684249526296" />
+      <edge id="38" source="3753917766714900092" target="11597685332351772634" />
+      <edge id="39" source="3753917766714900092" target="18432635179602494881" />
+      <edge id="40" source="3753917766714900092" target="8307466044055128939" />
+      <edge id="41" source="3753917766714900092" target="15295590585615987184" />
+      <edge id="42" source="3753917766714900092" target="7305889921698207667" />
+      <edge id="43" source="6429838684249526296" target="16848442208346554360" />
+      <edge id="44" source="12824968710680184360" target="3134329545539964743" />
+      <edge id="45" source="12824968710680184360" target="4709839626268057553" />
+      <edge id="46" source="12824968710680184360" target="15965167057738106816" />
+      <edge id="47" source="12824968710680184360" target="247258008090862602" />
+      <edge id="48" source="12824968710680184360" target="1970759156376964355" />
+      <edge id="49" source="12824968710680184360" target="17488877497799804714" />
+      <edge id="50" source="12824968710680184360" target="49719647131006578" />
+      <edge id="51" source="12824968710680184360" target="4095977366680099020" />
+      <edge id="52" source="12824968710680184360" target="204801036950381620" />
+      <edge id="53" source="12824968710680184360" target="17780876633990939854" />
+      <edge id="54" source="3726730512114066737" target="5745387218019692169" />
+      <edge id="55" source="3726730512114066737" target="12157497946515048791" />
+      <edge id="56" source="3726730512114066737" target="14953701022637427755" />
+      <edge id="57" source="3726730512114066737" target="8008533159339929138" />
+      <edge id="58" source="3726730512114066737" target="14475116189378172729" />
+      <edge id="59" source="3726730512114066737" target="12087636775247271480" />
+      <edge id="60" source="3726730512114066737" target="7282363829472699072" />
+      <edge id="61" source="3726730512114066737" target="16709038780406155517" />
+      <edge id="62" source="14475116189378172729" target="976165050133756667" />
+      <edge id="63" source="8721734731632698595" target="8995338734298021985" />
+      <edge id="64" source="8721734731632698595" target="13097041289955012436" />
+      <edge id="65" source="8721734731632698595" target="18123359463869575758" />
+      <edge id="66" source="8721734731632698595" target="709685490717545745" />
+      <edge id="67" source="8721734731632698595" target="1605451285454602764" />
+      <edge id="68" source="8721734731632698595" target="18034728172639869782" />
+      <edge id="69" source="8721734731632698595" target="6BvhQ1-y5XsJ" />
+      <edge id="70" source="8721734731632698595" target="-Ba7YD_PtK8J" />
+      <edge id="71" source="8721734731632698595" target="14514344849164711196" />
+      <edge id="72" source="8721734731632698595" target="7051869087135016739" />
+      <edge id="73" source="16848442208346554360" target="12216817345466881943" />
+      <edge id="74" source="16848442208346554360" target="13129942843385577310" />
+      <edge id="75" source="16848442208346554360" target="16700457331537124076" />
+      <edge id="76" source="16848442208346554360" target="13282788154598893154" />
+      <edge id="77" source="16848442208346554360" target="15827467639649894355" />
+      <edge id="78" source="16848442208346554360" target="18171474535227416603" />
+      <edge id="79" source="16848442208346554360" target="18182858740299646626" />
+      <edge id="80" source="16848442208346554360" target="3699320819635862391" />
+      <edge id="81" source="16848442208346554360" target="93sETBvsFVoJ" />
+      <edge id="82" source="13282788154598893154" target="15757793582106883562" />
+      <edge id="83" source="13282788154598893154" target="13919556070448757988" />
+      <edge id="84" source="13282788154598893154" target="5354078848937461966" />
+      <edge id="85" source="13282788154598893154" target="16804605113892239873" />
+      <edge id="86" source="13282788154598893154" target="12092988032293707486" />
+      <edge id="87" source="13282788154598893154" target="zZuERUZSFS8J" />
+      <edge id="88" source="13282788154598893154" target="10197871556136515459" />
+      <edge id="89" source="13282788154598893154" target="p0QOYrdUYtoJ" />
+      <edge id="90" source="13282788154598893154" target="12009620999824671283" />
+      <edge id="91" source="13282788154598893154" target="9471982395736510190" />
+      <edge id="92" source="13282788154598893154" target="13358235593005825989" />
+      <edge id="93" source="15827467639649894355" target="13358235593005825989" />
+      <edge id="94" source="976165050133756667" target="3912336697710475027" />
+      <edge id="95" source="976165050133756667" target="9736309805930724566" />
+      <edge id="96" source="976165050133756667" target="5739872194105744485" />
+      <edge id="97" source="976165050133756667" target="1355716055126163854" />
+      <edge id="98" source="976165050133756667" target="5960686924319621908" />
+      <edge id="99" source="976165050133756667" target="3953018181696619386" />
+      <edge id="100" source="976165050133756667" target="4DQdRrFBhH0J" />
+      <edge id="101" source="976165050133756667" target="722969612872206408" />
+      <edge id="102" source="5739872194105744485" target="13358235593005825989" />
+      <edge id="103" source="1355716055126163854" target="13358235593005825989" />
+      <edge id="104" source="13358235593005825989" target="10571347683715863452" />
+      <edge id="105" source="13358235593005825989" target="10018963896255216803" />
+      <edge id="106" source="13358235593005825989" target="3869024832318161324" />
+      <edge id="107" source="13358235593005825989" target="3787473813018929543" />
+    </edges>
+  </graph>
+</gexf>
